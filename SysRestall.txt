@@ -1,0 +1,157 @@
+快速重装系统指南：
+*必备软件：系统镜像、万能网卡驱动
+
+1、安装纯净版系统(64位)优盘安装
+2、安装网卡驱动(需要万能网卡驱动)
+3、联网下载安装其他驱动
+4、系统设置
+4.1更改屏幕分辨率(重装的系统分辨率默认为800*600)
+    在桌面鼠标右键->屏幕分辨率->分辨率：选择最高(屏幕的最大分辨率)
+4.2关闭Windows Update(避免内存在开机一段时间爆满,电脑卡死)
+    操作方法:鼠标右键任务栏->任务管理器->服务(在上边)->服务(右下角)->名称->Windows Update->停止
+    ->属性->禁用
+    命令行关闭：cmd->sc config "wuauserv" start=disable   //讲windows update状态设置为禁用
+                sc stop wuauserv    //关闭windows update服务
+4.3设置休眠文件大小(可以节省C盘空间，位置C:\Hiberfil.sys,默认隐藏)
+    cmd-> powercfg -h -size 70(70为休眠文件所占电脑内存的百分比)
+5、翻墙(为后边开发软件的下载与配置铺垫)
+    hosts：最新Google的hosts文件---下载---替换本机hosts文件(可先备份，
+        hosts文件位置:C:\windows\System32\drivers\etc\hosts)
+        ---保存
+    DNS：刷新DNS缓存：cmd---ipconfig/flushdns //这样已经刷新dns缓存了
+    Chrome:下载安装Chrome(谷歌浏览器，现在已经可以从Google官网下载了)，
+        官网：https://www.google.com/chrome/browser/desktop/index.html
+        百度下载地址：http://rj.baidu.com/soft/detail/14744.html?ald   
+        ---强制使用https(SSL)访问Google等国外网站:
+        在Chrome网址栏输入： chrome://net-internals/#hsts ---Domain 栏输入:google.com ---下边的STS、PKP复选框都选中
+        ----点击 add 按钮(这里除了google,还可以添加youtube,facebook,google.com.hk等(一般大陆下载的Chrome默认是
+        google.com.hk版的,如果不添加，则在搜索框输入的搜不到结果,也打不开google))
+6、软件安装
+    编程软件：JDK，SDK，Android Studio,Eclipse,Sublime Text,NotePad,git,tomcat,Mysql,SqlLite
+        Orcale,
+
+6.1 JDK
+    下载：官网下载jdk1.8,网址：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+    (根据自己电脑的系统选择相应的JDK包下载)
+    安装：将安装位置和运行环境设置到D盘(尽量不要将开发软件安装在C盘)
+        jdk在安装的时候会同时安装两个jre(一个是在jdk目录下的专用jre,另一个是
+        公共的jre)
+    环境变量:
+    JAVA_HOME:右键我的电脑(计算机)---属性---高级系统设置---环境变量---新建
+        ---变量名：JAVA_HOME ---变量值: D:\Program Files\Java\jdk1.8.0_101 //这里为jdk的安装位置
+        ---确定
+    Path:在上一步环境变量的基础上---系统变量---Path(双击)---变量值---
+        在后边追加:";%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin" //""内为追加内容
+    CLASSPATH：环境变量---新建---变量名：CLASSPATH ---变量值: ".;%JAVA_HOME%/lib/dt.jar;%JAVA_HOME%/lib/tools.jar"
+        //""内为变量值,注意开头的一个"."
+6.2 SDK
+    下载：官网下载SDK，网址：https://developer.android.com/studio/index.html
+    (就是这个网址，在网页的底部才是SDK的下载，上边的是Android studio，需要翻墙)
+    配置：解压---打开SDK Manager---选择需要下载的SDK版本(从Google下载,需要翻墙)
+6.3 Android Studio
+    下载:官网下载Android Studio 网址：https://developer.android.com/studio/index.html
+    (这个网址包含Android Studio和SDK的下载，建议下载免安装无SDK版，需要翻墙)
+    配置：详细见一下网址: http://www.cnblogs.com/smyhvae/p/4390905.html
+    (免安装Android Studio 程序位置：bin目录下)
+    配置步骤：
+        6.3.1:配置SDK和JDK，打开Android Studio--Configue--Project Default--Project tructure
+        ---选择SDK和JDK位置
+        6.3.2:新建一个Android Studio工程：Start a new Android Studio project
+            设置Project localtion,API版本
+        6.3.3 编译器操作习惯设置(根据个人习惯，非必须)
+            *主题修改：File--setting--Apperance & Behavioer--Apperance--Tmeme--Darcule(酷黑色)
+            *第三方主题：http://color-themes.com/  (下载之后是一个jar包，导入：File--Import Setting--
+            选择jar包)
+            *代码字体修改：File--settings--Editor--Colors&Fonts--Font
+            Primary font:Consolas ,Size:16 (字体以及大小根据个人习惯修改，如果字体大小不能修改则将主题另存
+            即可:Scheme--Save As)
+            *控制台字体：File--settings--Editor--Colors&Fonts--Console Font--剩下的和字体修改操作一样
+            *关闭自动更新：File--setting--Apperance & Behavioer--System Setting--Updates--Automatically
+            check update ...点击取消
+            *快捷键设置：File--settings--Keymap(如果习惯使用Eclipse,则可以将快捷键修改为Eclipse的，本人只修改了代码提示键：class name completion)
+            *API文档悬浮提示：手动提示：Ctrl+Q，自动提示：File--settings--Editor--General(Other)--
+            Show quick documentation on mouse move Delay(ms) 500 ...点击选中
+            *代码自动提示(新版默认打开)：File--settings--Editor--General--Code Completion--Autopopup code completion
+            ...点击选中
+            *取消大小写敏感(AS默认大小写敏感)：File--settings--Editor--General--Code Completion--Case sensitive 
+            completion [None](选择None)
+            *自动导包：File--settings--Editor--General--Auto Import--Optimize imports on the fly && 
+            Add unambiguous imports on the fly ...点击选中
+            *显示代码行数：File--settings--Editor--General--Appearence--Show line numbers
+            *禁止自动打开上次的工程：:File--setting--Apperance & Behavioer--System Setting--
+            Reopen last project on startup
+            *修改注释位置，禁用语句堆一行:File--settings--Editor--Code Style--Java--Spase--
+            Comment at frist column：启用的话，注释的位置就会处于行首，否则就根据缩进来注释。
+            Control statement in one line：格式化代码的时候，会把些很短的语句合并成一行。
+            我觉得这样影响代码可读性，故取消。
+            *代码编码：File--settings--Editor--Code Style--File Encoding :IDE Encoding :UTF-8,
+            Project Encoding:UTF-8,Default encoding for properties files [utf-8]  
+6.4 Eclipse
+    6.4.1 下载:Eclipse官网下载地址：
+		http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neonr
+		(根据自己电脑的系统选择下载版本)
+	6.4.2 导入主题:file -- import -- general -- preferences -- 选择主题包 -- 导入
+	6.4.3 快捷键修改:Window -- preferences -- General--keys
+			Eclipse 切换窗口快捷键(Next Editor) ：Crtl + F6(默认)
+	6.4.4 修改提示文档 window -- perfences -- 搜索 content assist -- java --content assist -- 
+		auto activation delay(ms) :提示延时
+		auto activation ttiggers for java : ".@":
+		auto activation ttiggers for javadoc : "#":		自动提示代码
+	6.4.5 修改默认xml/jsp编码格式 window -- preferences -- 搜索xml/jsp -- xml/jsp file -- Encodeing:utf-8 
+	6.4.6 关闭自动更新：window -- preferences -- install/update -- automatic updates :automaticlly find 
+			new updates...:取消
+	6.4.7 修改package背景颜色:桌面 -- 个性化 -- 窗口颜色 -- 高级外观设置 -- 项目：窗口 -- 颜色：(204,232,207)
+		也可以使用其他颜色
+	6.4.8 自动导包:Crtl + Shift + O 除了自动导入需要的包之外还可以将多余的包去掉
+	6.4.9 插件安装:help -- install new software -- add -- archive -- 选择所安装的jar/包含jar的zip压缩包
+	6.4.10 xml文档自动提示:window -- preferences - 搜索xml -- xml catalog -- add -- localtion:选择本地xml的约束文档
+			key type:Schema localtion或者根据情况而定 	key:指定的uri(在xml的下边一般会有指定,将其复制粘贴到这里)
+	6.4.10 关闭错误报告数据(error reporting database):window -- perfences -- general -- startup and shutdown -- 取消Eclipse Automated Error 
+		Reporting
+	6.4.11 修改/选择工作空间(workspaces):window -- preferences -- general -- Startup and Shutdown -- Workspaces -- 选中Prompt for
+			workspaces on startup 
+	6.4.12 在使用Eclipse-sts版本的时候,可以将myplugins文件夹删掉
+	
+		
+6.5 Sublime text 
+		6.5.1 下载:官网:https://www.sublimetext.com/3
+			 国内:http://www.xiazaiba.com/html/24344.html
+		6.5.2 安装插件:
+			(1)安装插件包控制器(Sublime Text 3): Ctrl + ` -- 
+				import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+			(2)查看已安装的插件:preferences -- package setting
+            (3)添加插件:prferences -- package control/Ctrl+Shift+P
+            (4)中文乱码：Ctrl+Shift+P :ConvertToUTF8
+			(5)中文文件名乱码:perfences -- settings -- settings user :在属性的最后添加:"dpi_scale":1.0,
+			(6)中文输入光标不跟随:pcip(package control:Imstall package) -- IMESupport
+            (7)MarkDown编辑器插件:MarkDown Editing
+            (8)右键菜单增强:SideBarEnhancements
+		6.5.3 关闭自动更新：perfences -- settings -- settings user:在属性
+                的最后添加:"update_check": false,
+		6.5.4 激活:
+				网站:http://blog.csdn.net/kencaber/article/details/50651207
+				//以下为sublime text 3 最新版的注册码(已过期)				
+				—– BEGIN LICENSE —–
+				Michael Barnes
+				Single User License
+				EA7E-821385
+				8A353C41 872A0D5C DF9B2950 AFF6F667
+				C458EA6D 8EA3C286 98D1D650 131A97AB
+				AA919AEC EF20E143 B361B1E7 4C8B7F04
+				B085E65E 2F5F5360 8489D422 FB8FC1AA
+				93F6323C FD7F7544 3F39C318 D95E6480
+				FCCC7561 8A4A1741 68FA4223 ADCEDE07
+				200C25BE DBBC4855 C4CFB774 C5EC138C
+				0FEC1CEF D9DCECEC D3A5DAD1 01316C36
+				—— END LICENSE ——
+				
+				使用方法:help -- enter license -- 输入注册码
+            
+ 
+
+
+
+
+
+
+

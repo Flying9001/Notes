@@ -1,0 +1,113 @@
+java面试笔记
+
+一.必考面试题
+1、对象的概念
+	一个对象就是一个整体，其中包含各种属性
+2、类
+	类是对象的抽象，用来描述对象的行为和状态
+3、super
+	调用父类的方法或属性
+4、this
+	指的是当前类
+5、static
+	静态修饰符，被修饰的方法或者属性可以直接使用，不需要重新new，一般写单例模式的时候使用
+6、final
+	修饰符，表示终态，被修饰的对象不能改变，修饰的类不能被继承，修饰的方法不能被重写，修饰的变量在定义得时候需要初始化，并且也不能在改变
+	finally：表示表示最终处理用在cry/catch块中
+7.重载
+	方法名相同,但是参数数量或者类型不一样
+8.重写
+	子类继承父类的方法,对父类的方法进行重新编写
+9.线程
+	声明周期:线程一旦启动就会执行run方法,直到run方法中的任务执行完毕结束,也可以手动结束,使用stop/destroy方法
+	创建线程的方法:
+		(1)实现runnable接口
+		(2)继承Thread类
+	优先级:可以设置线程优先级,但是不能保证优先级高的一定先执行
+10.集合
+	用于放置同一类元素
+	List有序
+	set无序
+	Map键值
+
+二.重点面试题
+1.运行异常与一般异常
+2.ArrayList与Vector的区别
+3.事务概念,特性
+4.类的三大特性
+5.forward与redirect
+6.提高数据查询效率
+7.单例模式
+8.OGNL表达式取值
+9.列举Java中常用的设置模式
+10.HashMap与HashTable异同
+11.sleep()与wait()
+12.线程同步的方法
+13.反射
+14.jsp与Servlet的区别于联系
+15.xml解析
+16.启动异常(runtime Exception)
+17.Connection与Connections
+18.JVM加载Class机制
+19.数据库连接池的工作机制
+20.IO流,字节流,字符流
+21.java序列化
+
+
+	
+
+
+
+
+三.框架面试题
+
+1.Hibernate中不看数据库,XML,查询语句如何得知表结构
+2.Struts框架工作流程
+3.Spring的IOC(DI),AOP
+4.Hibernate关联关系
+5.AOP和OOP,IOC和DI
+6.Hibernate中对象的3种状态
+7.Hibernate延迟加载
+8.Hibernate中的缓存机制
+9.
+
+
+
+
+
+四.数据库面试题
+1.查询工资排名3-5的员工信息
+	select * from (select ename,sal,rownum num from (select ename,sal from emp where sal is not null order by sal desc))
+		where num between 3 and 5;
+2.用一条sql语句查询出姓名重复的员工/学员姓名并统计数量
+	select ename count(*) from emp group by name
+		having count(*)>1 order by count(*) desc;
+3.按照工资进行排序(工资相同则排名相同)
+	select e.empno,e.ename,e.salary,dense_rank() over(order by salary desc)
+		mingic from emp e;
+4.查询每个部门工资最高的前两名员工信息
+	select * from (select e.empno,e.dempno,e.ename,e.salary,dense_rank() over (partion by dempno order by salary desc ) 
+		mingic from emp e)x where x.mingic<=2;
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	

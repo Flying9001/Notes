@@ -1,0 +1,217 @@
+HTTP文件断点上传
+
+1.客户端计算本地要上传的文件的hashcode
+
+2.根据指定的块大小和文件大小计算最终的块数
+
+3.发送文件信息到服务器包括要上传的文件名、大小、类型、块数、Hashcode
+
+4.服务器根据hashcode查询服务器上是否已经存在对应的文件，以及文件的上传状态（上传是否完成、是否组装完成、已经上传了哪些块）
+
+5.6.已经上传完成的读取文件URL地址返回给客户端
+
+7.8.未上传完成的返回已经上传的块编号 
+
+9.客户端根据返回值判断，如果未上传完成则从本地文件中读取未上传完成的块内容
+
+10.使用HTTP方式上传到服务器
+
+11.记录已经上传完成的块到数据库
+
+12.检查整个文件是否已经上传完成
+
+13.未完成则返回已经上传的块编号到客户端让它继续上传
+
+14.上传完成则进行块文件合并过程，将其合并成目标文件
+
+15.合并完成后返回目标文件的URL地址 
+
+ 首先是数据库表格：
+ create table tb_fileupload(
+fseq int primary key auto_increment, #自增序列
+fusername varchar(50),   #上传者
+fhashcode varchar(100),  #hash码
+fsize int, #文件大小
+fblocks int, #块数
+ftype varchar(50),  #文件类型 
+fready varchar(1024),  #已上传完成的块编号
+finerpath varchar(200), #内部存储路径
+fouterpath varchar(200), #外部存储路径
+fisfinished int default 0,  #要否上传完成
+ftime datetime #创建时间
+)
+
+接下来是客户端代码：
+import java.io.FileInputStream;
+
+public class Auth{
+
+  public static byte[] create(String filename)   throws Excepiton{
+  InputStream fis = new FileInputStream(filename);
+  byte[] buf= new byte[1024];
+  MessageDigest com=MessageDigest.getInstance("MD5");
+  int num;
+  do{
+   num=fis.read(buf);
+   if(num>0){
+     com.update(buf,0,num);
+   }
+  }while(num!=-1)
+
+  fis.close();
+  return com.digest();
+  }
+
+  public static String getMD5(String filename) throw Exception {
+    byte[] b =create(filename);
+    String result=""; 
+    for(int i=0;i<b.length;i++){
+     result+=Integer.toString( (b[i]&0xff)+0x100,16).substring(1);
+    }
+    return result;
+  }
+
+}
+
+ 服务器端代码包括以下几部分：
+
+1.新增要上传的文件信息。
+
+2.接收文件的各个块。
+
+3.合并块。 
+
+ 1:
+ private FileService fileSer
+
+public void saveFileInfo(){
+   //先从数据库中根据hashcode查找
+   FileInfo info= fileSer.getFileByHash(hashcode);
+   if(info==null){}
+
+     //找不到则新增文件信息 
+
+     fileSer.saveFileInfo(username,filename,filesize,hashcode,blocks,filetype);
+
+     return "added"; 
+
+   }
+
+   if(info.fisfinished){
+
+     //如果已经上传完毕则返回外部访问路径 
+
+     return info.fouterpath;
+
+   } 
+
+   else{
+
+     //未上传完毕则返回已经上传的块 
+
+     return info.fready;
+
+   } 
+
+)
+
+ 2:
+ private File block;
+publicvoid saveblock(){
+
+  if([这里验证与块一起上传的block信息]){
+     return "error";
+  }
+
+  FileInfo info= fileSer.getFileByHash(hashcode);
+  if(info!=null){ 
+
+    if(info.fisfinished){
+     //如果已经上传完毕则返回外部访问路径 
+     return info.fouterpath;
+    }
+    FileInputStream inStream = new FileInputStream(block);
+    FileOutputStream outStream = new FileOutputStream(block存储路径+hashcode+block编号);
+
+    int len=-1;
+
+    byte[]buff= new byte[1024];
+
+    while((len=inStream.read(buff))!=-1){
+
+      outStream.write(buff,0,len);
+
+    } 
+
+    outStream.flush();
+
+    outStream.close(); 
+
+    //更新数据库中已经上传的blocks信息
+
+    fileSer.updateBlocks(hashcode,num);
+
+    //进行合并检查 
+
+    return union(); 
+
+  }
+
+}
+
+ 3:
+public String uion(){
+  int num =info.getFblocks();
+   if(info.fisfinished){
+    return info.fouterpah();
+
+   }
+
+   //这里要检查下上传的块数量是否与num一致 
+
+  try{
+
+    FileOutputStream outStream = new FileOutputStream(文件存储路径+info.ffilename);
+
+    File inputfile=null;
+
+     for(int i=1;i<num;i++){
+
+      inputfile = new File(block存储路径+info.fhashcode+i);
+
+      FileInputStream inStream = new FileInputStream(inputfile);
+
+      int len=-1;
+
+      byte[]buff = new byte[1024];
+
+      while((len=inStream.read(buff))!=-1){
+
+       outStream.write(buff,0,len);
+
+      }
+
+      outStream.flush();
+
+      inStream.close();
+
+      inputfile.delete();
+
+     }
+
+     outStream.close(); 
+
+  }catch(Excption ex){
+
+     return info.fblocks();
+
+  } 
+
+   fileSer.updateouterpath(文件存储路径+info.ffilename,info.fhashcode);
+
+   fileSer.updateFisfinished(true,info.fhashcode);
+
+   return 文件存储路径+info.ffilename;
+}
+
+  

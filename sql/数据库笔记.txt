@@ -1,0 +1,60 @@
+--创建数据库
+create database pictruescan on
+(
+	name='pictruescan',--数据库逻辑名
+	filename='E:\program\SQL\pictruescan\pictruescan.mdf',--数据库物理名
+	size=3mb,		--主数据文件初始值大小
+	filegrowth=15%	--文件增长速度
+)
+
+
+--创建数据库表格
+create table users
+(
+	id int,
+	name varchar(20),
+	name1 varchar(20),
+	age int
+)
+insert into users(id,name,name1)
+select id,name,name
+from stu 
+
+select * from users
+select * from stu
+--1.查询排序asc/desc
+select * from stu order by id desc
+select * from stu where name<>'德玛西亚' order by id desc
+--2.给已经查出的数据设置别名
+select id as '编号',name as '姓名' from stu
+--3.将结果集中的数据合并为1列并统一设置别名
+select name+'---'+name1 as '姓名' from users
+--4.查询某个列为空的数据
+select * from stu where id is null
+--5.查询某个列为不空的数据
+select * from stu where id is not null
+--6限制数据查询行数
+select top 50 percent * from stu 
+--7.将两个表的数据查询结果放在一个表中显示
+select name as '姓名'from users union
+select name as '姓名' from stu
+order by '姓名'asc 
+--8.字符串函数
+--查询位置
+select charindex('德玛西亚','我就是德玛西亚',1)
+--计算长度
+select len('我就是德玛西亚')
+--删除左边开头的空格
+select ltrim('   没错，我就是德玛西亚   haha   ')
+--删除右边结尾的空格
+select rtrim('   没错，我就是德玛西亚   haha   ')
+--输出结尾的N个字符
+select right('没错，我就是德玛西亚',4)
+--替换
+select replace('没错，我就是德玛西亚','德玛西亚','我')
+--删除
+select stuff('没错，我就是德玛西亚',7,4,'预言家')
+--获得当前系统时间
+select getdate()
+
+

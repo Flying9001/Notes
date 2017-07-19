@@ -1,0 +1,33 @@
+http://localhost:8080/JSP_2/index.jsp
+
+1、汉字代码utf-8
+
+2、新建JSP项目
+
+3、<%%>内可以是符合语法的Java小程序片段
+
+4、使用Servlet步骤
+	(1)创建Servlet类并继承HttpServlet
+	(2)配置web.xml(web.xml位于WebRoot/web-inf/web.xml)
+	(3)在web.xml中配置<servlet><servlet-mapping>
+
+5、web.xml配置注意事项
+	(1)<servlet-mapping>中的拦截地址前需要"/"
+	(2)<servlet-mapping>中的name要与<servlet>中的name要一致
+
+6、C:out标签
+	<!-- 在用c:out输出c:set中的变量时需要将变量名写在${}中 -->
+	<C:out value="${pwd }"></C:out>
+
+7、jsp批注
+		<!-- 批注内容(客户端可见)  -->
+		<%-- 批注内容(程序员可见)  --%>
+		<%/** 批注内容(程序员可见)  **/%>
+
+8、JSTL配置(在使用JSTL的页面首行进行配置)
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+
+9.使用Struts2标签实现页面图片显示
+	<img width="150" height="180" src="<%=path%>/UploadImages /<s:property value="pic"/>"/>	
+	
+	<img src="/UploadImages /<s:property value="pic"/>"/>	

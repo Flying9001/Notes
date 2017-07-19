@@ -1,0 +1,5 @@
+1、id主键自增长
+    语法：id int auto_increment primary key ,
+    //这里的id自增长默认是从1开始的，但是如果给其赋值的话，则会从赋的值
+    //开始计数
+    

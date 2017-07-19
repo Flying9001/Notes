@@ -1,0 +1,227 @@
+	Hibernate入门：
+
+	准备工作：下载Hibernate包 (官网：http://www.hibernate.org)
+		数据库的驱动包(根据自己的数据可类型下载相应的驱动)
+		
+1、Hibernate说明文档
+	路径：\hibernate-release-4.2.21.Final\documentation\manual\en-US\html_single
+2、创建对应的数据库以及表
+3、创建一个Java项目,并且创建实体类(与数据库表对应)
+4、配置Hibernate的XML文件
+	从说明文档(步骤1中已经提到)中拷贝hibernate.cfg.xml(或者直接到下载的Hibernate文件夹
+		中搜索hibernate.cfg.xml)
+	在src目录下新建文件:hibernate.cfg.xml,将说明文档中的配置拷贝到其中(或者直接将搜索到的xml文件复制到src目录下)
+	hibernate.cfg.xml中的标签说明详见此说明文档同一目录下的hibernate.cfg.xml
+	配置关联实体类的xml文件:Xxx.hbm.xml(这里的Xxx表示实体类名)
+		同样在说明文档或者Hibernate文件夹中找到,创建在和实体类同一个包下(具体参数详见同目录下User.hbm.xml)  
+2、导包
+	使用Hibernate的jar包:\lib\required 下边所有的jar包,以及连接相应数据库的驱动jar包
+	直接新建user library,将hibernate有关的包全部加进来
+	具体实现:window -- perference -- java -- build path --user library -- new --命名自己创建的包
+		--ok--add external jars--选中Hibernate 的包--ok(这里并没有将其加入到特定项目中)
+	或者:鼠标右键项目--build path -- configure build path -- libraries -- add library -- user library
+		-- next -- user libraries -- new -- 命名自己创建的包 -- ok -- 
+		add external jars--选中Hibernate 的包--ok
+3、测试(建议使用junit进行单元测试)
+	(详见同目录下Demo.java)
+
+4、使用Annotation注解
+	(1)导包(按照之前的步骤,里边已经包含所需要的jar,hibernate-release-4.2.21.Final版里边已经封装)
+	(2)在实体类前加:@Entity //这里需要 import javax.persistence.Entity;
+	(3)定义主键,在主键前边加:@Id
+	(4)配置Hibernate的XML文件:hibernate.cfg.xml
+		添加:<mapping class="com.hibernate.entity.Admin" />
+	(5)高级配置:
+		注解数据库表：@Table(name = "table name" catlog = "database name" schema = "dbo")
+			//在实体类的前边
+		注解列名:@Column( name="columnName") //在实体类的对应变量的get方法前边
+		不产生持久化:@Transient //只在实体类中存在,并不会在数据库中产生相应的列
+		时间日期精度:@Temporal(TemporalType.TIMESTAMP)
+			//TIMESTAMP:时间和日期,DATE:仅日期,TIME:时间
+			//一般用TIMESTAMP,在使用时java中数据类型为java.util.Date
+
+5、单元测试工具--junit
+	管理类库的方式:将开发代码和测试代码分开(借鉴meven,Ansroid Studio在新建项目的时候会自动生成测试类)
+	使用说明:
+	Java 框架的做法 :创建Junit test case测试类 -- 选择需要测试的类(也可以指定类中的方法) -- 
+		在需要测试的方法前边加注解:@Test(自己写的测试方法也需要加注解)
+	
+6、单例模式
+	使用单例模式创建 SessionFactory(SessionFactory的创建很耗时)来优化数据库链接
+	Action 不用单例模式
+7、Oracle数据库表名不能以下划线开头
+8、数据库配置文件可参考hibernate.properties(hibernate4.2.21\project\etc)
+9、联合主键注意事项,除了配置文件之外,还需要实现java.io.sirializable接口以及重写主键类的equals()方法和hashCode()方法(一般很少用到)
+	Annotation版:(1)@Embeddable 注解在主键类 @Id 注解在实体类主键上
+				(2)@EmbeddedID 注解在实体类主键上(*)
+				(3)@Id 注解在实体类主键上 @IdClass 注解在实体类上,参数为主键类
+10、常用主键生成策略:native(使用Annotation注解默认策略)、identity(支持Mysql,SQL Server)、sequence(Oracle数据库)、
+	uuid(都支持,但是主键数据类型为String)
+11、Hibernate核心开发接口
+	(1)Configuration:
+		[1]管理配置信息
+		[2]用来产生SessionFactory
+		[3]可以再configure()方法中指定配置文件
+12、关于Session的面试问题
+	openSession()与getCurrentSession()的区别:
+		openSession()每次打开新的Session(一个Session相当于一个连接),手动close
+		getCurrentSession是如果当前环境中有Session,则直接拿过来使用,并不会创建新的Session,没有的时候再创建新的Session
+			当一个Session已经做了提交之后,那么这个Session已经不存在了,使用getcCurrentSession获取到的并不是刚才的Session
+			用途:界定事务边界(比如添加日志)
+			getCurrentSession在提交事物之后自动close
+			推荐使用getCurrentSession(使用getcCurrentSession必须要指定上下文环境)
+			openSession不能与getCurrentSession混用,即使上边使用openSession,下边使用的getCurrentSession也不是用一个Session
+		上下文:thread和jta
+			thread是指当前线程,一般用于在一个数据库中进行操作,jta是指分布式事物管理,一般用于在多个数据库之间进行操作,jta的transmanager
+			有应用服务器提供,使用的驱动也不相同
+13、对象的3种状态:transient,persistent,detached
+	transient:内存中有一个对象,没有ID,缓存中也没有
+	persistent:内存中有,缓存中也有,数据库有,有ID
+	detached:内存中有,缓存中没有,数据库中有,有ID
+	3种状态的区分:
+		(1)有么有id
+		(2)id在数据库中有没有
+		(3)内存中有没有Session(缓存)
+14、Hibernate中load()方法与get()方法的区别(面试题)
+	(1)load()返回的是代理对象,只有在需要获取对象的时候才会发出sql语句
+	(2)get()会直接从数据库加载,没有延迟
+	(3)不存在对应记录的时候表现不一样(load()在没有发出sql语句之前即使所查询的对象在数据库不存在,依旧不会报错,但是由于get()是直接发出sql
+		语句去数据库查询的,因此,如果数据库中没有这一条的话就会报错)
+15、Hibernate中clear()方法
+	无论是load()还是get()方法,都会首先查找缓存(一级缓存),如果没有才会从数据库中查找,调用clear()方法可以强制清除session缓存,
+	clear()方法不会与数据库打交道
+16、Hibernate中flush()方法
+	flush()方法会强制将缓存中的数据域数据库中的数据保持一致(事物在执行commit()之前会自动flush())
+17、关系映射(重要,面试+实用,重在外键,主键次之)
+	一对一(了解):
+		单向外键:数据库int fk_id 实体类@onetoone
+		双向外键:数据库int fk_id 实体类两边@onetoone(),数据库中没有fk_id的一边设置@onetoone(mappedBy="xxx"),"xxx"表示
+			另一实体类中对应的属性(凡是双向外键关联,必设mappedBy)
+		*单向和多向在数据库中的表现没有差别,但是在Java程序中表现不一样,单向的只能从一方找到另一方,但是双向的可以两边相互找到
+		外键联合主键@columns({@column(name="xxx",referencedColumnName="yyy"),
+			{@column(name="xxx",referencedColumnName="yyy") ...})(不重要)
+	多对一:单向：
+		多的一方 @manytoone    @joincolmn(name="xxx"):指定多的一方对应表中生成的字段
+	一对多:单向:
+		一的一方使用set @onetomany @joincolmn(name="xxx"):"xxx"指定多的一方对应表中生成的字段	
+		双向:单的一方set @onetomany(mappedBy="aaa"):"aaa"为一的一方在多的一方对应的属性,
+			多的一方@manytoone @joincolmn(name="xxx"):"xxx"指定多的一方对应表中生成的字段
+	多对多:	单向:主动方set被动方,@ManyToMany
+				@JoinTable(name="t_s",	//"t_s"生成中间表的名称
+				joinColumns={@JoinColumn(name="tid")}, 	//"t_id"当前主动表在中间表中生成的字段名
+				inverseJoinColumns={@JoinColumn(name="sid")})	//"s_id"被动表在中间表中生成的字段名
+				被动方不用设置任何属性
+			双向(少用):	双向需要在双方都建立对应关系
+			在多对多关系中,若要向一方插入数据,则需要双方进行关联
+				eg:	e1.getProjects().add(p1);
+					e2.getProjects().add(p1);
+					p1.getEmployees().add(e1);
+					p1.getEmployees().add(e2);
+	多对一/一对多CRUD:需要建立关联(一般从多的一方进行操作方便一些),设置@manytoone(cascade={cascadeType.All})
+			/@onetomany(cascade={cascadeType.All})
+			/cascade:在关系映射中,一张表变动,与其有关的表中数据也跟着改变
+				双向必须设mappedBy()
+			在多对一的关系表中,从多的一方查询数据会默认将一的一方数据给查询出来,默认属性fetch=fetchType.eager,但是如果也将其设置为lazy,
+			则会出现在Session没有提交之前可以获取到一的一方数据,但是Session提交之后并不能获取到,而且如果提交之前没有去主动获取一的一方数据,
+			Hibernate也不会生成相应的sql语句
+			(一般不用)若要查询一的一方,同时将一对应的多的数据全部取出,则需要设置fetch=fetchType.eager	//这时候默认为lazy
+18、主键映射:将一个实体类作为另一个实体类的一部分,共同生成一张数据库表(作为嵌入的类不需要作实体类映射)
+19、在有关联的数据库表之间删除对象：
+	(1)在做delete和update之前,先load,除了精确知道id外
+	(2)如果消除关联关系,先设定关系为null,再删除对应记录
+	(3)使用hql语句进行删除(常用)
+	(4)一般从多的一方删除只删除一条数据,从一的一方删除,则将对应的多的一方全部删除
+20、QL查询(HQL和EJBQL)
+	功能:NativeSQL > HQL > EJBQL(jpa ql) > QBC(Query By Criteria) > QBE(Query By Example)
+	总结:QL应该和导航关系结合,共同为查询服务
+	导航关系:ManyToOne,OneToMany,ManyToMany
+21、Hibernate性能优化
+	(1)session.clear()的使用,尤其是在不断分页循环的过程中
+		[1]在一个大集合中进行遍历,遍历Msg,从中取出敏感字样的对象
+		[2]另外一种形式的内存泄露 //面试题:Java中有内存泄露吗? A:语法级别没有,但是在实际应用中会导致内存泄露
+	(2)1+N问题 (典型面试题)
+		问题描述:在一对多/多对一关系映射中,在取出多的一方数据的时候,会顺带将一的一方数据也取出来,如果取出的数据较多,则会多出很多次的查询
+		优化:
+			[1]在ManyToOne一方设置fetchType.lazy
+			[2]使用BatchSize(szie = n) //在一的一方实体类上边添加注解,意思是每次从中取 n 条数据,减少发出sql语句的数量
+			*[3]left join fetch 在写hql语句的时候,设置外连接,这样可以只发一条sql语句
+	(3)list与iterate的区别(不重要,一般就用List,主要用于面试):
+		[1]List直接获取对象所有数据,而Iterate现获取对象ID,等到需要用的时候再通过ID获取对象
+		[2]List连续发出两次数据请求,需要每次从数据库中获取,但是iterate在第二次不会像数据库发出请求,直接从Session缓存中读取
+		[3]在多对一/一对多关系中,List可以与left join fetch 搭配使用,但是iterate不能
+	(4)Hibernate缓存(不重要,面试题)
+		1)一级缓存:Session级别的缓存
+		2)二级缓存:SessionFactory级别的缓存,可以跨越Session的存在
+			使用场景:
+				[1]经常被访问的对象
+				[2]改动不大/不会经常改动
+				[3]数量有限
+				eg:用户权限,组织机构
+			load默认使用二级缓存,iterate默认使用二级缓存
+			list默认往二级缓存里边存数据,但是查询的时候不会在二级缓存里边进行查找
+		3)查询缓存(三级缓存):当两个查询语句一样的时候,打开查询缓存,则会只发出一条SQL语句
+		4)缓存算法(只做了解):当缓存占满之后从哪里开始将数据清出缓存
+			LRU:Least Resently Used,距离时间最远的
+			LFU:Least Frequently Used,使用次数最少的
+			FIFO:First In First Out,先进先出
+			设置缓存算法(ehcache缓存机制):memoryStoreEvictionPolicy="LRU"
+22、事物并发处理(面试)
+	事物概念:要么都完成,要么都不完成
+	事物特性:ACID
+		Atomicity:原子性
+		Consistency:一致性
+		Isolation:隔离性
+		Durability:永久性
+	事物并发可能出现的问题:
+		脏读:读了另外一个事物没有提交的数据
+		不可重复读:在同一个事物中,前后两次读取的数据不一样
+		幻读:在一个事物读取的时候,另一个事物进行插入和删除,影响了读取的结果
+	事物隔离机制:
+		read-uncommitted:能够读取未提交的事物,以上三种错误仍然会出现
+		read-committed:不会出现脏读,但是仍然会有重复读和幻读现象
+		repeatable read:可重复读(相当于给某一事物锁定,只有当前事物完成,其他事物才能访问数据)
+		serializable:序列化,可以解决任何问题
+		事物级别越高,效率越低,一般情况下设置为read-committed,这种模式下不会出现脏读,而且效率也可以,然后手动解决二次重复读和幻读问题
+		在Hibernate中设置事物的隔离级别属性:
+			hibernate.connection.isolation ,value=1,2,,4,8 ,分别对应以上4种事物隔离机制,不设置默认使用数据库本身的事物隔离机制
+		Hibernate解决脏读问题:
+			悲观锁:借助数据库,在每次执行事物的时候将数据锁住,事物执行结束之后再将锁解开,效率低
+				具体实现:在获取数据的时候设置,load/get中的第三个参数:LockMode.UPGRADE
+			乐观锁:不用借助数据库,在数据的表中添加相应的字段,当一个事物(事物1)将数据获取之后,字段不会改变,在另一个事物也获取
+				当前数据的时候,不会受影响,但是当这个事物(事物2)对数据进行了修改之后,字段就会发生改变,这时之前的事物(事物1)要将
+				数据进行修改的时候就会检查字段有没有改变,如果改变则重新获取数据,没有改变则直接修改,效率高
+				具体实现:在实体类中添加verson字段,在其get方法上加注解@verson //不用手动设值
+					每次更新之前检查比较verson值
+					
+				
+		
+	
+last、Hibernate重点
+	(1)ID生成策略(重点是AUTO)
+	(2)Hibernate核心开发接口
+	(3)关系映射
+	(4)Hibernate性能优化(尤其是面试)
+	(5)HQL语句
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

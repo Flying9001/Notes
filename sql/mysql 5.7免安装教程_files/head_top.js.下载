@@ -1,0 +1,3 @@
+document.writeln("<div id=\"zhead\" class=\"clearfix\"><div class=\"zlogin\"><a href=\"http:\/\/www.bkjia.com\/fenlei\/list-271-1.html\" target=\"_self\">头条<\/a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=\"http:\/\/kansha.bkjia.com\/kansha\/11.html\">业界<\/a><\/div>");
+document.writeln("<div class=\"znav\"><a target=\"_self\" href=\"http:\/\/www.bkjia.com\/\">帮客之家<\/a>|&nbsp;&nbsp;<a target=\"_self\" href=\"http:\/\/kansha.bkjia.com\/\">今天看啥<\/a>|&nbsp;&nbsp;<a target=\"_self\" href=\"http:\/\/wiki.bkjia.com\/\">IT百科<\/a>|&nbsp;&nbsp;<a href=\"http:\/\/file.bkjia.com\/\">dll文件大全<\/a>|&nbsp;&nbsp;<a class=\"zask\" href=\"http:\/\/tech.bkjia.com\/\">技术库搜索<\/a>&nbsp;&nbsp;<\/div>");
+document.writeln("<\/div>")

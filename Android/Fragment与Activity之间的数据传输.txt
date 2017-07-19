@@ -1,0 +1,301 @@
+Android:Activity+Fragment及它们之间的数据交换
+/*
+1.Fragment中通过getActivity()然后进行强制转化，调用Activity中的公有方法
+((XXXXActivity)getActivity()).fun();
+2.Activity在切换Fragment的时候，通过setArguments向Fragment传递参数，Fragment通过getArguments();获得从activity中传递过来的值
+3.Activity实现一个接口，Fragment在onAttach方法中，将该Activity转化为该接口，在需要调用的时候回调。
+注意：本Demo是通过FragmentManager来管理Fragment的，通过FragmentManager管理，我们创建Fragment和销毁Fragment的时候，可以通过栈的方式：
+a.FragmentTransaction的add方法，添加一个Fragment
+b.FragmentTransaction的popBackStack()弹出该Fragment
+演示实例：
+*/
+fragment1.xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:background="#FFFFFFFF"  
+    android:paddingBottom="@dimen/activity_vertical_margin"  
+    android:paddingLeft="@dimen/activity_horizontal_margin"  
+    android:paddingRight="@dimen/activity_horizontal_margin"  
+    android:paddingTop="@dimen/activity_vertical_margin"  
+    tools:context="com.example.testfragment.MainActivity$PlaceholderFragment" >  
+    <TextView  
+        android:id="@+id/tv"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentTop="true"  
+        android:text="fragment1" />  
+    <Button  
+        android:id="@+id/btn"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/tv"  
+        android:text="跳转到Fragment2" />  
+</RelativeLayout> 
+
+MyFragment1.java
+package com.example.testfragment;  
+  
+import android.app.Activity;  
+import android.os.Bundle;  
+import android.support.v4.app.Fragment;  
+import android.view.LayoutInflater;  
+import android.view.View;  
+import android.view.View.OnClickListener;  
+import android.view.ViewGroup;  
+import android.widget.Button;  
+  
+/* 
+ *@author: ZhengHaibo   
+ *web:     http://blog.csdn.net/nuptboyzhb 
+ *mail:    zhb931706659@126.com 
+ *2014-5-16  Nanjing,njupt,China 
+ */  
+public class MyFragment1 extends Fragment {  
+      
+    FragmentCallBack fragmentCallBack = null;  
+    Button btn;  
+    @Override  
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,  
+            Bundle savedInstanceState) {  
+        View rootView = inflater.inflate(R.layout.fragment1, container,  
+                false);  
+        btn = (Button)rootView.findViewById(R.id.btn);  
+        btn.setOnClickListener(new OnClickListener() {  
+              
+            @Override  
+            public void onClick(View v) {  
+                // TODO Auto-generated method stub  
+                fragmentCallBack.callbackFun1(null);  
+            }  
+        });  
+        return rootView;  
+    }  
+      
+    @Override  
+    public void onAttach(Activity activity) {  
+        // TODO Auto-generated method stub  
+        super.onAttach(activity);  
+        fragmentCallBack = (MainActivity)activity;  
+    }  
+}  
+
+fragment2.xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:background="#FFFFFFFF"  
+    android:paddingBottom="@dimen/activity_vertical_margin"  
+    android:paddingLeft="@dimen/activity_horizontal_margin"  
+    android:paddingRight="@dimen/activity_horizontal_margin"  
+    android:paddingTop="@dimen/activity_vertical_margin"  
+    tools:context="com.example.testfragment.MainActivity$PlaceholderFragment" >  
+    <TextView  
+        android:id="@+id/tv"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentTop="true"  
+        android:text="fragment2" />  
+    <Button  
+        android:id="@+id/btn1"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/tv"  
+        android:text="直接调用Activity" />  
+    <Button  
+        android:id="@+id/btn2"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/btn1"  
+        android:text="回调Activity" />  
+</RelativeLayout> 
+
+MyFragment2.java
+package com.example.testfragment;  
+  
+import android.app.Activity;  
+import android.os.Bundle;  
+import android.support.v4.app.Fragment;  
+import android.view.LayoutInflater;  
+import android.view.View;  
+import android.view.View.OnClickListener;  
+import android.view.ViewGroup;  
+import android.widget.Button;  
+import android.widget.Toast;  
+  
+/* 
+ *@author: ZhengHaibo   
+ *web:     http://blog.csdn.net/nuptboyzhb 
+ *mail:    zhb931706659@126.com 
+ *2014-5-16  Nanjing,njupt,China 
+ */  
+public class MyFragment2 extends Fragment {  
+      
+    FragmentCallBack fragmentCallBack = null;  
+    Button btn1;  
+    Button btn2;  
+    @Override  
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,  
+            Bundle savedInstanceState) {  
+        View rootView = inflater.inflate(R.layout.fragment2, container,  
+                false);  
+        Bundle data = getArguments();//获得从activity中传递过来的值  
+        Toast.makeText(getActivity(), data.getString("TEXT"), Toast.LENGTH_SHORT).show();  
+        btn1 = (Button)rootView.findViewById(R.id.btn1);  
+        btn1.setOnClickListener(new OnClickListener() {  
+              
+            @Override  
+            public void onClick(View v) {  
+                // 直接调用Activity中的方法  
+                ((MainActivity)getActivity()).changeButtonColor();  
+            }  
+        });  
+        btn2 = (Button)rootView.findViewById(R.id.btn2);  
+        btn2.setOnClickListener(new OnClickListener() {  
+              
+            @Override  
+            public void onClick(View v) {  
+                // 回调的方式  
+                fragmentCallBack.callbackFun2(null);  
+            }  
+        });  
+        return rootView;  
+    }  
+      
+    @Override  
+    public void onAttach(Activity activity) {  
+        // TODO Auto-generated method stub  
+        super.onAttach(activity);  
+        fragmentCallBack = (MainActivity)activity;  
+    }  
+}  
+回调接口：
+package com.example.testfragment;  
+  
+import android.os.Bundle; 
+public interface FragmentCallBack {  
+    public void callbackFun1(Bundle arg);  
+  
+    public void callbackFun2(Bundle arg);  
+}  
+
+main.xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:paddingBottom="@dimen/activity_vertical_margin"  
+    android:paddingLeft="@dimen/activity_horizontal_margin"  
+    android:paddingRight="@dimen/activity_horizontal_margin"  
+    android:paddingTop="@dimen/activity_vertical_margin" >  
+    <Button  
+        android:id="@+id/btn"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentBottom="true"  
+        android:text="切换" />  
+    <RelativeLayout  
+        android:id="@+id/rl_container"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_above="@id/btn" />  
+</RelativeLayout> 
+
+MainActivity.java
+package com.example.testfragment;  
+  
+import android.graphics.Color;  
+import android.os.Bundle;  
+import android.support.v4.app.Fragment;  
+import android.support.v4.app.FragmentManager;  
+import android.support.v4.app.FragmentTransaction;  
+import android.support.v7.app.ActionBarActivity;  
+import android.view.View;  
+import android.view.View.OnClickListener;  
+import android.widget.Button;  
+  
+public class MainActivity extends ActionBarActivity implements FragmentCallBack{  
+      
+    private Button btn;  
+      
+    private MyFragment1 fragment1;  
+    private MyFragment2 fragment2;  
+    private FragmentManager fragmentManager;  
+    private Fragment currentFragment;  
+    @Override  
+    protected void onCreate(Bundle savedInstanceState) {  
+        super.onCreate(savedInstanceState);  
+        setContentView(R.layout.activity_main);  
+        fragmentManager = getSupportFragmentManager();  
+          
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();  
+        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);  
+        fragment1 = new MyFragment1();  
+        Bundle data = new Bundle();  
+        data.putString("TEXT", "这是Activiy通过Bundle传递过来的值");  
+        fragment1.setArguments(data);//通过Bundle向Activity中传递值  
+        fragmentTransaction.add(R.id.rl_container,fragment1);//将fragment1设置到布局上  
+        fragmentTransaction.addToBackStack(null);  
+        fragmentTransaction.commitAllowingStateLoss();  
+        currentFragment = fragment1;  
+        //初始化button控件  
+        btn = (Button)findViewById(R.id.btn);  
+        btn.setOnClickListener(new OnClickListener() {  
+            @Override  
+            public void onClick(View v) {  
+                if(currentFragment instanceof MyFragment1){  
+                    switchFragment();  
+                }else{//当前是fragment2，因此，只需要将fragment2出栈即可变成fragment1  
+                    fragmentManager.popBackStack();  
+                    currentFragment = fragment1;  
+                }  
+            }  
+        });  
+    }  
+    /** 
+     * 切换Fragment 
+     */  
+    private void switchFragment(){  
+        if(null == fragment2){//可以避免切换的时候重复创建  
+            fragment2 = new MyFragment2();  
+        }  
+        Bundle data = new Bundle();  
+        data.putString("TEXT", "传递给fragment2");  
+        fragment2.setArguments(data);  
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();  
+        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);  
+        fragmentTransaction.add(R.id.rl_container,fragment2);  
+        fragmentTransaction.addToBackStack(null);  
+        fragmentTransaction.commitAllowingStateLoss();  
+        currentFragment = fragment2;  
+    }  
+      
+    public void changeButtonColor(){  
+        btn.setBackgroundColor(Color.RED);  
+    }  
+  
+    @Override  
+    public void callbackFun1(Bundle arg) {  
+        // TODO Auto-generated method stub  
+        switchFragment();//通过回调方式切换  
+    }  
+  
+    @Override  
+    public void callbackFun2(Bundle arg) {  
+        // TODO Auto-generated method stub  
+        changeButtonColor();//通过回调方式调用Activity中的方法  
+    }  
+  
+}  
+/*
+注意：
+1.直接在Fragment中通过getActivity然后强转Activity的方式调用Activity的方法，这个方式不推荐！因为这会使Fragment的适配性变差。
+解决方法：在使用之前，使用instanceof 判断一下Activity的类型
+2.FragmentTransaction通过使用setCustomAnimations方法，可以为Fragment的切换增添各种不同的动画。变化方式远比Activity与Activity之间的切换动画要多。
+3.多个Fragment之间，可以通过Activity复用很多代码，提高效率。
+4.我们还可以通过ViewPager来管理Fragment，通过Adapter添加多个Fragment，然后通过setcurrentitem进行切换。我们同样可以通过setArguments向Fragment传递数据。
+*/
+
+

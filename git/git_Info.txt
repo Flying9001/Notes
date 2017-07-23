@@ -1,7 +1,14 @@
 1、配置Git
-1.1创建用户
-	git config --global user.name "zhangshan"
-	git config --global user.email "example@qq.com"
+1.1创建与删除用户
+	创建全局用户：
+	git config --global user.name "yourname"
+	git config --global user.email "example@email.com"
+	删除全局用户: 
+	git config --unset --global user.name
+	git config --unset --global user.email
+	创建本地用户(一般用于多用户提交/不同的用户向不同的库提交):
+	git config user.name "yourname"
+	git config user.email "example@email.com"
 1.2创建版本库
 	cd e: /*表明将要在e盘创建*/
 	cd git	/*打开E盘下的文件夹git*/

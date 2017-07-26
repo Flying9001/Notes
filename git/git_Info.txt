@@ -113,8 +113,11 @@
 	git stash pop 	//恢复隐藏文件的同时，删除文件
 	git remote 	//查看远程库的信息
 	git remote -v 	//查看远程库的详细信息
-	git pull 	//从远程库中将文件下载下来
-	
+	git pull 	//从远程库中将文件下载下来	
+5.删除本地仓库
+    find . -name ".git" | xargs rm -Rf
+    
+
 	
 	
 	

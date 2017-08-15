@@ -49,7 +49,7 @@
 	git remote add origin url	//将本地仓库与远程仓库关联
 3.2推送push
 	git push -u origin master	//将本地仓库分支master推送到远程仓库(第一次推送使用)
-	git push origin master 	//将本地仓库分支master推送到远程仓库(创建之后使用)
+	git push origin master 	//将本地仓库分支master推送到远程仓库(创建之后使用,如果远程仓库没有该分支,则创建新的)
 3.3克隆远程库
 	git clone url	//将远程库克隆到本地
 3.4创建与合并分支
@@ -79,6 +79,11 @@
 	首先，可以试图用git push origin branch-name推送自己的修改.
 	如果推送失败，则因为远程分支比你的本地更新早，需要先用git pull试图合并。
 	如果合并有冲突，则需要解决冲突，并在本地提交。再用git push origin branch-name推送
+3.8 将本地分支与远程分支关联
+    git pull origin branch-name // 将本地当前分支与远程分支匹配
+3.9 取消本地仓库与远程仓库的关联
+    git remote remove origin 
+
 4、Git常用指令
 	mkdir test	//创建一个test目录
 	pwd 	//显示当前的路径

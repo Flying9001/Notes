@@ -93,44 +93,35 @@
         -i : 忽略大小写
         -c : 不输出文档名,仅计算找到的文档数量
         -l : 仅输出几行的意思，例如输出五行则是-l 5
-        -S ：输出locate 所使用的资料库档案的相关资讯，包括该资料库纪录的档案/目录数量等
+        -S ：输出locate 所使用的资料库文档的相关资讯，包括该资料库纪录的文档/目录数量等
         -r ：后面可接正规表示法的显示方式
     find [PATH] [option] file/dir : 查询文档/目录
-        选项与参数：
+        参数说明:
 		1. 与时间有关的选项：共有-atime, -ctime 与-mtime ，以-mtime 说明
-		   -mtime n ：n 为数字，意义为在n 天之前的『一天之内』被更动过内容的档案；
-		   -mtime +n ：列出在n 天之前(不含n 天本身)被更动过内容的档案档名；
-		   -mtime -n ：列出在n 天之内(含n 天本身)被更动过内容的档案档名。
-		   -newer file ：file 为一个存在的档案，列出比file 还要新的档案档名
+		   -mtime n ：n 为数字，意义为在n 天之前的『一天之内』被更动过内容的文档；
+		   -mtime +n ：列出在n 天之前(不含n 天本身)被更动过内容的文档；
+		   -mtime -n ：列出在n 天之内(含n 天本身)被更动过内容的文档。
+		   -newer file ：file 为一个存在的文档，列出比file 还要新的文档
 		2. 与使用者或群组名称有关的参数：
 		   -uid n ：n 为数字，这个数字是使用者的帐号ID，亦即UID ，这个UID 是记录在
-		            /etc/passwd 里面与帐号名称对应的数字。这方面我们会在第四篇介绍。
+		            /etc/passwd 里面与帐号名称对应的数字。
 		   -gid n ：n 为数字，这个数字是群组名称的ID，亦即GID，这个GID 记录在
-		            /etc/group，相关的介绍我们会第四篇说明～
-		   -user name ：name 为使用者帐号名称喔！例如dmtsai
-		   -group name：name 为群组名称喔，例如users ；
-		   -nouser ：寻找档案的拥有者不存在/etc/passwd 的人！
-		   -nogroup ：寻找档案的拥有群组不存在于/etc/group 的档案！
-		                当你自行安装软体时，很可能该软体的属性当中并没有档案拥有者，
-		                这是可能的！在这个时候，就可以使用-nouser 与-nogroup 搜寻。       
-		3. 与档案权限及名称有关的参数：
-		   -name filename：搜寻档案名称为filename 的档案；
-		   -size [+-]SIZE：搜寻比SIZE 还要大(+)或小(-)的档案。这个SIZE 的规格有：
-		                   c: 代表byte， k: 代表1024bytes。所以，要找比50KB
-		                   还要大的档案，就是『 -size +50k 』
-		   -type TYPE ：搜寻档案的类型为TYPE 的，类型主要有：一般正规档案(f), 装置档案(b, c),
+		            /etc/group
+		   -user name ：name 为使用者帐号名称
+		   -group name：name 为群组名称
+		   -nouser ：寻找文档的拥有者不存在/etc/passwd 的文档
+		   -nogroup ：寻找文档的拥有群组不存在于/etc/group 的文档！
+		3. 与文档权限及名称有关的参数：
+		   -name filename：搜索文档名称为filename 的文档；
+		   -size [+-]SIZE：搜索比SIZE 还要大(+)或小(-)的文档。这个SIZE 的规格有：
+		                   c: 代表byte， k: 代表1024bytes。
+		   -type TYPE ：搜索文档的类型为TYPE 的，类型主要有：一般正规文档(f), 装置文档(b, c),
 		                   目录(d), 连结档(l), socket (s), 及FIFO (p) 等属性。
-		   -perm mode ：搜寻档案权限『刚好等于』 mode 的档案，这个mode 为类似chmod
-		                 的属性值，举例来说， -rwsr-xr-x 的属性为4755 ！
-		   -perm -mode ：搜寻档案权限『必须要全部囊括mode 的权限』的档案，举例来说，
-		                 我们要搜寻-rwxr--r-- ，亦即0744 的档案，使用-perm -0744，
-		                 当一个档案的权限为-rwsr-xr-x ，亦即4755 时，也会被列出来，
-		                 因为-rwsr-xr-x 的属性已经囊括了-rwxr--r-- 的属性了。
-		   -perm /mode ：搜寻档案权限『包含任一mode 的权限』的档案，举例来说，我们搜寻
-		                 -rwxr-xr-x ，亦即-perm /755 时，但一个档案属性为-rw-------
-		                 也会被列出来，因为他有-rw.... 的属性存在！
+		   -perm mode ：搜索文档权限值为 mode 的文档 
+		   -perm -mode ：搜索全部包含 mode 权限的文档
+		   -perm /mode ：搜索包含 mode 中任一权限的文档
 		4. 额外可进行的动作：
-		   -exec command ：command 为其他指令，-exec 后面可再接额外的指令来处理搜寻到的结果。
+		   -exec command ：command 为其他指令，-exec 后面可再接额外的指令来处理搜索到的结果。
 		   -print ：将结果列印到萤幕上，这个动作是预设动作！
 
 

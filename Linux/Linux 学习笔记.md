@@ -42,9 +42,11 @@
         -f 强制移动 
         -i 文件覆盖提醒
         -u 如果目标文件已经存在,且 source 比较新,才会更新(update)
+
 8. 文档查看命令
     cat [option] finame-name : 从第一行显示文档内容
         -n : 显示行号(包括空白行)
+        cat -n file-name | grep "string" 在 file-name 文件中显示和 "string" 有关的行
     tac file-name : 从最后一行开始显示文档(反向显示)
     nl [option] file-name : 有行号的显示文档(类似 cat -n ,但是不给空白行编号)
     maore file-name : 从第一行开始一页一页的查看文档
@@ -81,6 +83,7 @@
         -d : 后边可以接欲修订的日期而不用当前的日期
         -m : 仅修改 mtime
         -t : 后边可以接与修订的日期而不用当前的日期,格式: [YYYYMMDDhhmm]
+
 9. 文件查询
     whereis [option] file/dir : 查询文档/目录
         -l : 列出 whereis 查询的目录以及查询结果
@@ -97,12 +100,12 @@
         -r ：后面可接正规表示法的显示方式
     find [PATH] [option] file/dir : 查询文档/目录
         参数说明:
-		1. 与时间有关的选项：共有-atime, -ctime 与-mtime ，以-mtime 说明
+		9.1 与时间有关的选项：共有-atime, -ctime 与-mtime ，以-mtime 说明
 		   -mtime n ：n 为数字，意义为在n 天之前的『一天之内』被更动过内容的文档；
 		   -mtime +n ：列出在n 天之前(不含n 天本身)被更动过内容的文档；
 		   -mtime -n ：列出在n 天之内(含n 天本身)被更动过内容的文档。
 		   -newer file ：file 为一个存在的文档，列出比file 还要新的文档
-		2. 与使用者或群组名称有关的参数：
+		9.2 与使用者或群组名称有关的参数：
 		   -uid n ：n 为数字，这个数字是使用者的帐号ID，亦即UID ，这个UID 是记录在
 		            /etc/passwd 里面与帐号名称对应的数字。
 		   -gid n ：n 为数字，这个数字是群组名称的ID，亦即GID，这个GID 记录在
@@ -111,7 +114,7 @@
 		   -group name：name 为群组名称
 		   -nouser ：寻找文档的拥有者不存在/etc/passwd 的文档
 		   -nogroup ：寻找文档的拥有群组不存在于/etc/group 的文档！
-		3. 与文档权限及名称有关的参数：
+		9.3 与文档权限及名称有关的参数：
 		   -name filename：搜索文档名称为filename 的文档；
 		   -size [+-]SIZE：搜索比SIZE 还要大(+)或小(-)的文档。这个SIZE 的规格有：
 		                   c: 代表byte， k: 代表1024bytes。
@@ -120,9 +123,72 @@
 		   -perm mode ：搜索文档权限值为 mode 的文档 
 		   -perm -mode ：搜索全部包含 mode 权限的文档
 		   -perm /mode ：搜索包含 mode 中任一权限的文档
-		4. 额外可进行的动作：
+		9.4 额外可进行的动作：
 		   -exec command ：command 为其他指令，-exec 后面可再接额外的指令来处理搜索到的结果。
-		   -print ：将结果列印到萤幕上，这个动作是预设动作！
+		   -print ：将结果打印到屏幕上
+
+10. 查看磁盘信息/磁盘分割/磁盘挂载
+    df [option] : 列出整体磁盘使用量(也可以看到磁盘挂载信息)
+        -h : 根据大小使用适当格式显示,eg:kBytes,Mbytes,Gbytes
+        -i : 不使用磁盘容量,而是用 inode 数量显示磁盘使用情况
+    du [option] file/dir : 显示文件/目录所占用的磁盘大小
+        -s : 列出磁盘占用总量,而不列出每个目录占用的磁盘容量
+    lsblk : 列出本机磁盘容量信息,可以看到磁盘的分区以及各分区大
+    parted device-name print : 查看磁盘分割表类型(MBR/GPT)与分割信息 eg: parted /dev/sda print
+    gdisk : GPT分区格式的磁盘分区工具
+        常用指令: 
+        d : 删除一个分区
+        n : 添加一个分区
+        p : 打印分割表
+        q : 不保存退出
+        w : 保存并退出
+        ? : 菜单
+    fdisk : MBR分区格式的磁盘分区工具
+        常用命令和 gdisk 相同
+    partprobe [option]: 更新磁盘分区表(partprobe 归属 parted 包下,在使用 gdisk/fdisk 将磁盘分区之后,并没有立刻更新分区表,
+        需要重启或者使用 partprobe 命令更新分区表)
+        -s : 显示磁盘分区信息(不加 s 则不显示)
+    mkfs : 格式化磁盘(磁盘分割之后需要对其进行格式化, mkfs:make fliesyatem,即制作文件系统 如:ext2/3/4/xfs/vfat等 ,具体参数可参考网络) 
+        eg:mkfs.xfs /dev/sda4  将sda4盘格式化为 xfs 文件系统
+    mount : 挂载 (内容较多,具体操作可参考网络)
+        挂载注意事项: 
+            (1) 同一个文件系统不要重复挂载在不同的挂载点
+            (2) 单一目录不要挂载多个文件系统
+            (3) 挂载点要为空目录
+        eg: mount /dev/sr0 /mnt/cdrom : 将 CD/DVD 挂载到 /mnt/cdrom 目录下(过载DVD可以使用 loop 方式挂载)
+    umount [option] dev-name/mount-point: 卸载,通过 设备名/挂载点
+        -f : 强制卸载
+        -n : 不更新 /etc/mtab 情况下卸载
+        eg : umount /mnt/cdrom : 将挂载在 /mnt/cdrom 目录下的设备卸载
+    开机挂载设置目录: /etc/fstab /etc/mtab (具体设置参考网络)   
+    
+11. 文件链接 link (不能跨文件系统(filesystem))
+    ln [option] source target : 创建文件链接(hard link 不支持目录)
+        -s : 创建的是 symbolic link(相当于 windows 快捷方式),不加 -s 相当于 hard link 		
+
+12. 终端运行结果输出
+    一般情况下,终端运行结果输出在屏幕,但是如果输出结果较多,则前边的输出结果就会看不到(在纯命令行的 Linux系统中)
+    为解决这个问题,可以将输出结果保存到文件中
+    (1) > file-name : 将「本次」运行结果只输出到文件(默认文件会保存在当前工作目录,文件存在则会覆盖)
+        eg: ll / > ll.txt
+    (2) tee : 可以将「本次」运行结果输出到屏幕同时保存到文件
+        tee [option] file-name : 将本次命令运行的结果显示在屏幕,同时输出到文件(默认文件会保存在当前工作目录,文件存在则会覆盖) eg: ll / | tee ll.txt
+        -a : 解决上边文件覆盖问题,将数据结果追加到文件后边
+            eg: ll / | tee -a ll.txt
+    (3) script : 可以将终端的所有输出(包括「多次」的 命令+运行结果)都保存到文件中(默认文件会保存在当前工作目录,文件存在则会覆盖)
+        使用方法: 
+            开启script: $ script -- 开始记录 -- 结束 script : $ exit 
+        说明: 默认会在当前工作目录生成一个 typescript 文件,文件存在会覆盖
+        -a : 解决文件覆盖问题,将数据结果追加的文件后边  eg: script -a script.txt
+        -f : 刷新输出,实时记录
+        -q : 不显示 script 的启动与退出信息(用户不知道在录屏)
+        -t : 显示输出的时间
+13. Linux 设置 swap 虚拟内存(用途: 防止服务器遇到程序内存占用过高情况,具体设置参考网络)
+
+
+
+
+
 
 
 

@@ -133,6 +133,7 @@
         -i : 不使用磁盘容量,而是用 inode 数量显示磁盘使用情况
     du [option] file/dir : 显示文件/目录所占用的磁盘大小
         -s : 列出磁盘占用总量,而不列出每个目录占用的磁盘容量
+        -h : 根据大小使用适当格式显示,eg:kBytes,Mbytes,Gbytes
     lsblk : 列出本机磁盘容量信息,可以看到磁盘的分区以及各分区大
     parted device-name print : 查看磁盘分割表类型(MBR/GPT)与分割信息 eg: parted /dev/sda print
     gdisk : GPT分区格式的磁盘分区工具
@@ -185,15 +186,62 @@
         -t : 显示输出的时间
 13. Linux 设置 swap 虚拟内存(用途: 防止服务器遇到程序内存占用过高情况,具体设置参考网络)
 
+14. 文件压缩
+    14.1 gzip [option] file-name : gzip 解/压缩(gzip 可以打开compress/zip/gzip 等软件压缩的文档, gzip 压缩的文件后缀为 .gz,压缩后会将源文件删除)
+        -c : 将压缩的资料输出到屏幕(实测一堆乱码)
+        -d : 解压缩
+        -t : 检验压缩文件的一致性(用于判断文件是否有误
+        -v : 显示压缩比等信息
+        -# : # 表示数字,设置压缩等级, 1 最快,压缩比最差, 9 最慢,压缩比最好, 默认为 6 
+            eg: gzip -c test.txt  将 test.txt 文件压缩
+    14.2 bzip2 [option] file-name : bzip2 解/压缩(bzip2 压缩率高于 gzip, 支持保留源文件)
+        -c : 将压缩的资料输出到屏幕(实测报错)
+        -d : 解压缩
+        -k : 保留源文件压缩
+        -v : 显示压缩比等信息
+        -# : 同 gzip (实测小文件看不出对比效果)
+    14.3 xz [option] file-name : xz 解/压缩
+        -c : 将压缩的资料输出到屏幕
+        -d : 解压缩
+        -k : 保留源文件压缩
+        -l : 列出压缩文件的而相关信息
+        -v : 显示压缩比等信息
+        -# : 同 gzip (实测小文件看不出对比效果)
+    14.4 tar [option] target-file source-file : 打包与解/压缩
+        -c : 建立打包文件
+        -t : 打包时查看打包文件包含的文件信息 
+        -x : 解包/解压缩
+        -z : 通过 gzip 进行解/压缩(文件名建议设置为 *.tar.gz)
+        -j : 通过 bzip2 进行解/压缩(文件名建议设置为 *.tar.bz2)
+        -J : 通过 xz 进行解/压缩(文件名建议设置为 *.tar.xz)(-z -j -J 不能同时出现在一串命令行中)
+        -v : 将解/压缩过程中处理的文件名显示出来
+        -f : 后边要立刻接需要处理的文件名(一般将其放在最后)
+        -C : 将压缩文件解压缩到指定目录
+            eg: tar -Jcvf /home/test.tar.xz /home/text/  
+                tar -Jxvf /home/text.tar.xz
+
+15. 系统备份
+    15.1 xfsdump [option] [file/dir] : 使用 xfsdump 对 xfs 文件系统进行备份
+        -L : 系统备份的标签(给系统备份打标签,便于记忆)
+        -M : 对备份资料的简易说明 
+        -l : 备份等级,包含 0~9(默认为 0 ,级完整备份)
+        -f : 后边接文件名 
+        -I : 列出当前系统备份的信息(存放目录: /var/lib/xfsdump/inventory) 
+        
+        注意事项: xfsdump 只能备份已经挂载的文件系统
+                  xfsdump 必须使用 root 身份操作
+                  xfsdump 只能备份 xfs 文件系统
+                  xfsdump 备份的资料只能使用 xfsrestore 解析
+                  xfsdump 是根据文件系统的 UUID 来进行备份的(不能备份具有相同 UUID 的文件系统)
+            eg: xfsdump -l 0 -L boot_backups -M boot_backups -f /srv/boot.dump /boot 
+        
 
 
 
 
 
 
-
-
-
+                
 
 
 

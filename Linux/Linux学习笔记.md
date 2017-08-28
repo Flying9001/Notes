@@ -43,10 +43,14 @@
         -i 文件覆盖提醒
         -u 如果目标文件已经存在,且 source 比较新,才会更新(update)
 
-8. 文档查看命令
+8. 文档查看命令(尤其在日志查询方面很重要)
     cat [option] finame-name : 从第一行显示文档内容
         -n : 显示行号(包括空白行)
-        cat -n file-name | grep "string" 在 file-name 文件中显示和 "string" 有关的行
+        -b 查询前 n 行数据,去除空白行 eg: cat -b 10 text.log 
+        cat -n file-name | grep "string" 在 file-name 文件中显示和 "string" 附近的数据(很重要,根据关键字查询日志)
+        sed -n '/2014-12-17 16:17:20/,/2014-12-17 16:17:36/p' test.log  (按照日期查询数据) 在 test.log 中查询这两个时间点之间的数据
+        grep '2014-12-17 16:17:20' test.log (按照日期查询数据) 在 test.log 中查询这个时间点的日志(通常用于确认这个时间点是否存在)
+
     tac file-name : 从最后一行开始显示文档(反向显示)
     nl [option] file-name : 有行号的显示文档(类似 cat -n ,但是不给空白行编号)
     maore file-name : 从第一行开始一页一页的查看文档
@@ -72,6 +76,7 @@
     tail [option] file-name : 查看文档的后几行(默认 10 行)
         -n : 查看的行数 eg: tail -n 20  test.txt
         -f : 表示持续监测文档后边的数据,只有按 [Ctrl + c] 才能停止 (在监控日志输出的时候常用)
+        tail -n 50 -f test.log (前两个命令的组合) 显示 test.log 文件的后 50 行数据，并在文件内容增加后，自动显示新增的文件内容
     touch [option] file-name 创建/修改 文档时间
         文档时间: 
         access time(atime): 文档被读取,则会更新这个时间

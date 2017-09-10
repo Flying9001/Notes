@@ -333,7 +333,27 @@
     17.9 vim 其他
         (1) vim 程序被中断,则会生成 .filename.swp 文档,下次代开的时候根据需要进进行操作即可(不用担心突然断电等导致 vim 编辑的文档没有保存)
         (2) vim 中文乱码,设置 Linux 语言编码(支持中文的有big5/utf8),文件位置: /etc/locale.conf
-             
+
+18. shell 
+    18.1 bash 
+        ~/.bash_history : 使用 bash 的历史记录(在使用者的 home 目录下)
+        命令补全 : 在输入一个不完整指令的时候按下 [Table] 键可以补全确定唯一的命令,如果根据输入的不完整指令不能确定唯一指令
+                    则可以双击 [Table] 查看所有的可能指令
+        设置别名(alias) : alias ll="ls -l" (仅限于本用户本次登录)
+        type [option] command : 查看命令是否为 bash 内置命令
+            -a : 将所有包含该 command 命令的路径都显示出来,包括 alias 和 PATH 中定义的
+        \ : 转译字符(eg: 按下\+_[Enter] 则是换行,而不是执行)
+        echo : 打印信息,输出信息 eg: echo $PATH
+        变量设定 : name='hahaha' (注意单双引号区别,单引号过滤特殊字符属性;双引号保留特殊字符原有属性) 
+        取消变量 : unset name
+        取变量 : $name
+        PS1变量: 由于设置命令行前边的显示属性,具体设置可参考网络 
+                 eg: [ljq@learn ~ 02:03 #82]$
+        
+
+
+
+
     
 
 
@@ -344,6 +364,6 @@
 
 
 
-
+ 
 </code></pre>
 

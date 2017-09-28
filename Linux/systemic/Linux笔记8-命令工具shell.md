@@ -3,7 +3,8 @@
 <pre><code>
 bash 
     ~/.bash_history : 使用 bash 的历史记录(在使用者的 home 目录下)
-    命令补全 : 在输入一个不完整指令的时候按下 [Table] 键可以补全确定唯一的命令,如果根据输入的不完整指令不能确定唯一指令
+    命令补全 : 在输入一个不完整指令的时候按下 [Table] 键可以补全确定唯一的命令,如果根据输入的不完整指令不能确定
+              唯一指令
                 则可以双击 [Table] 查看所有的可能指令
     设置别名(alias) : alias ll='ls -l' (仅限于本用户本次登录)
         unalias ll : 删除别名
@@ -13,10 +14,12 @@ bash
     echo : 打印信息,输出信息 eg: echo $PATH
     变量设定 : name='hahaha' (注意单双引号区别,单引号过滤特殊字符属性;双引号保留特殊字符原有属性) 
     取消变量 : unset name
-    取变量 : $variable,${variable}  (推荐使用 ${variable},因为在取数组类型变量(array)的时候必须要这样才可以取到 eg: ${arr[1]})
+    取变量 : $variable,${variable}  (推荐使用 ${variable},因为在取数组类型变量(array)的时候必须要这样才
+            可以取到 eg: ${arr[1]})
     PS1变量: 用于设置命令行前边的显示属性,具体设置可参考网络 
              eg: [ljq@learn ~ 02:03 #82]$
-    export variable : 可以让子程序共享父程序的变量(将局部变量/自定义变量变成环境变量/全局变量) eg: export : 查看当前共享的变量
+    export variable : 可以让子程序共享父程序的变量(将局部变量/自定义变量变成环境变量/全局变量)
+            eg: export : 查看当前共享的变量
             export PS1 : 共享 PS1 这个变量
     变量操作:
         read [option] variable : 读取键盘输入的变量
@@ -25,7 +28,8 @@ bash
         declare/typeset [option] variable : 声明变量类型
             -a : 将变量声明为数组类型(array)
             -i : 将变量声明为整数类型(integer)
-            -p : 列出变量的类型属性以及变量值 eg: declare -p sum  : 列出 sum 变量的属性和变量值(eg: $ declare -ir sum="300")
+            -p : 列出变量的类型属性以及变量值 eg: declare -p sum  : 列出 sum 变量的属性和变量值
+                (eg: $ declare -ir sum="300")
             -r : 将变量声明为只读类型(readonly),该变量不可被更改,也不能unset
             -x : 将变量声明为环境变量,相当于 export
             使用 "+" 可以将相关类型取消 eg: declare +r tmp  : 将 tmp 变量的只读性取消
@@ -34,14 +38,16 @@ bash
             ## 从左开始最长的那部分
             * 代表 任何长度的任何字符
                 eg: [ljq@learn ~]$ echo ${path}
-                        /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ljq/.local/bin:/home/ljq/bin
+                        /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ljq/.local/bin:/home
+                          /ljq/bin
                     [ljq@learn ~]$ echo ${path#/*bin:}
                         /usr/bin:/usr/local/sbin:/usr/sbin:/home/ljq/.local/bin:/home/ljq/bin
         ${variable%:*end} : 修改变量,将变量 variable 从右边 : 开始删除到以 end 结束,中间最短的那一部分
             % 从优开始最短的那一部分
             %% 从优开始最长的那一部分
                 eg: [ljq@learn ~]$ echo ${path}
-                        /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ljq/.local/bin:/home/ljq/bin
+                        /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ljq/.local/bin:
+                        /home/ljq/bin
                     [ljq@learn ~]$ echo ${path%%:*bin}
                         /usr/local/bin
         ${variable/old_str/new_str} : 将变量 variable 中包含的第一个 old_str 替换为 new_str
@@ -52,7 +58,8 @@ bash
             -H : 硬性限制,使用者一定不能超过该限定值(类似于机器所能承受的最大载荷)
             -S : 软限制,使用者超过该值会有警告(类似于机器限定的载荷),一般软限制比硬限制小
             -a : 后边不接参数,列出所有限制额度
-            -c : 限制核心文件(core file)的最大容量(核心文件: 程序崩溃时,系统可能会将内存中的文件写入文件,这类文件称为核心文件)
+            -c : 限制核心文件(core file)的最大容量(核心文件: 程序崩溃时,系统可能会将内存中的文件写入文件,这类
+                    文件称为核心文件)
             -f : 限制此 shell 可以建立的最大文件(单位: Kbytes)
             -l : 限制内存的容量
             -t : 限制 CPU 的使用时间(单位: s)
@@ -84,7 +91,8 @@ bash
         ? : 代表 一定有一个 任意字符
         [] : 代表 一定有一个在括号内的字符 eg: [asdf] 表示 一定有一个字符,可能是 a,s,d,f 中的任意一个
         [-] : 代表 在编码顺序内的所有字符 。eg: [0-9] 代表 0 到9 之间的所有数字 [a-z] [A-Z] 类似
-        [^] : 代表 不包括括号内的字符,即当前字符不属于括号内提供的字符,eg: [^asd] : 表示一定有一个字符,但是不是 a,s,d
+        [^] : 代表 不包括括号内的字符,即当前字符不属于括号内提供的字符,eg: [^asd] : 表示一定有一个字符,
+              但是不是 a,s,d
                 
         # : 表示注释 (常用在脚本或script者程序中)
         \ : 转译字符,指跳过下一个字符(程序中通常有些特殊字符具有其特殊意义,因此在需要输入特定字符的时候用转译字符)
@@ -138,7 +146,8 @@ bash
             -d : 删除文件中包含 str 字符串
             -s : 替换文件中包含 str 字符串
                 eg: cat demo.txt | tr -d '[test]' : 表示删除 demo.txt 中包含 test 的字符串
-                    cat demo.txt | tr -s '[test]' '[TEST]' : 表示将 demo.txt 中将 test 的字符串替换为 TEST   
+                    cat demo.txt | tr -s '[test]' '[TEST]' : 表示将 demo.txt 中将 test 的字符串
+                    替换为 TEST   
     
     Linux 字符对比
         paste [-d] file1 file2 : 对比两个资料(将两个资料中具有相关性的资料放在一行作为对比)
@@ -151,7 +160,8 @@ bash
             -b : 后边可以接将要分割成的文件大小,可以加单位,eg: b,k,m,g等
             -l : 以行数进行分割
             PREFIX : 表示前缀,可以作为分割文件的前缀
-                eg: split -b 10k demo.log demos : 表示将 demo.log 文件以 10k 为单位进行分割,分割的文件前缀为 demos
+                eg: split -b 10k demo.log demos : 表示将 demo.log 文件以 10k 为单位进行分割,分割的文件
+                    前缀为 demos
                     cat demos* >> demo.log.bak : 表示将之前分割的文件合成一个文件 demo.log.bak 
 
 

@@ -19,7 +19,8 @@
         -f : 后边接备份文件名
         -I : 查看备份信息(同 xfsdump -I 功能)
         -i : 进入互动模式(执行每一步都有反馈,高级管理员使用,一般不用)
-        -s : 还原特定文件/目录 eg: xfsrestore -f /srv/boot.dump -L boot_backups -s test.txt /boot 只将boot.dump备份文件中的 test.txt 文件
+        -s : 还原特定文件/目录 eg: xfsrestore -f /srv/boot.dump -L boot_backups -s test.txt /boot 
+             只将boot.dump备份文件中的 test.txt 文件
             还原到 /boot 目录(前提是 boot.dump 本分文件中要有 test.txt 文件)
         累积还原操作同完整还原: 操作顺序 level0 -- level1 -- level2 ......
 
@@ -37,7 +38,8 @@
                >  : 备份符号
             还原参数:          
                 -i : 将资料从备份文件/设备中复制到系统中
-                -d : 自动创建目录(使用 cpio 所备份的资料文件不一定会在同一层目录中,一次需要进 cpio 还原时自动创建新目录)
+                -d : 自动创建目录(使用 cpio 所备份的资料文件不一定会在同一层目录中,一次需要进 cpio 还原时
+                     自动创建新目录)
                 -u : 自动将新文件覆盖旧文件
                 -t : 配合 -i,查看以 cpio 建立的文件/设备的内容
             公共参数: 
@@ -46,7 +48,8 @@
             eg: find boot | cpio -ovcB > file/device : (要在 / 目录下)将 /boot 目录下所有文件备份
                 cpio -ivcdu < file/device : 还原
                 cpio -ivct < file/device : 查看
-            cpio 备份特点: (1)不区分绝对路径/相对路径 (2)需要借助其他命令辅助(比如 find),才能创建需要备份的文件
+            cpio 备份特点: (1)不区分绝对路径/相对路径 (2)需要借助其他命令辅助(比如 find),才能创建需
+                         要备份的文件
 
      
 </ode></pre>

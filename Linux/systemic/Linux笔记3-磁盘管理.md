@@ -20,10 +20,12 @@
         ? : 菜单
     fdisk : MBR分区格式的磁盘分区工具
         常用命令和 gdisk 相同
-    partprobe [option]: 更新磁盘分区表(partprobe 归属 parted 包下,在使用 gdisk/fdisk 将磁盘分区之后,并没有立刻更新分区表,
+    partprobe [option]: 更新磁盘分区表(partprobe 归属 parted 包下,在使用 gdisk/fdisk 将磁盘分区之后,并
+                        没有立刻更新分区表,
         需要重启或者使用 partprobe 命令更新分区表)
         -s : 显示磁盘分区信息(不加 s 则不显示)
-    mkfs : 格式化磁盘(磁盘分割之后需要对其进行格式化, mkfs:make fliesyatem,即制作文件系统 如:ext2/3/4/xfs/vfat等 ,具体参数可参考网络) 
+    mkfs : 格式化磁盘(磁盘分割之后需要对其进行格式化, mkfs:make fliesyatem,即制作文件系统 
+           如:ext2/3/4/xfs/vfat等 ,具体参数可参考网络) 
         eg:mkfs.xfs /dev/sda4  将sda4盘格式化为 xfs 文件系统
     mount : 挂载 (内容较多,具体操作可参考网络)
         挂载注意事项: 

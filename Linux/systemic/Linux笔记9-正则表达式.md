@@ -15,6 +15,15 @@
     [:xdigit:] : 表示 16 位的数字,即 0-9,a-f,A-F
   其中标注 * 的比较常用
 
+2. grep 进阶
+    grep [option] 'search_str' filename : 在文件中搜寻关键字
+        -A : 后边可以加数字(after),除了列出该行外,后续的 n 行也列出来
+        -B : 后边可以加数字(before),除了列出该行外,前边的 n 行也列出来
+        --color=auto : 用不同的颜色标记处关键字
+
+
+
+
 
 
 

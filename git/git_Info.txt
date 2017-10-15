@@ -44,7 +44,7 @@
 3.1管理GitHub仓库
 	先注册一个GitHub账号
 	ssh-keygen -t rsa -C "youremail@example.com" //创建SSH Key
-	//id_rsa 私钥，不要泄露
+	//id_rsa 私钥，不要泄露(windows路径: C:\Users\username\.ssh)
 	//id_rsa.pub 公钥
 	git remote add origin url	//将本地仓库与远程仓库关联
 3.2推送push

@@ -67,11 +67,17 @@
 	//dev分支合并到master分支,则master分支上的代码为合并之后的代码，而dev分支上的代码不变
 	git merge --no-ff dev 	//将dev合并到当前分支，并且分支dev删除之后，分支上边修改的信息
 	//不变(这一种情况需要重新添加代码)
+
 3.5分支策略
 	git stash //隐藏当前分支
 	git stash list 	//查看所有隐藏分支
 	git stash apply		//恢复隐藏
 	git stash drop 	//恢复隐藏,并同时把隐藏的内容删除(一次只能删除一条)
+
+	关于分支的切换: 当一个分支创建之后,假设为 dev 分支,那么在 dev 分支提交之前,从 dev 分支切换到其他分支(master),
+    则 dev 分支上边没有提交的代码也会被带到新的分支 master, 不论原来的 dev 分支上边的修改代码是否添加到缓存区
+    (git add file-changed),解决办法,在切换分支之前先执行 git stash 命令,切换回来之后再执行 git stash apply 命令
+
 3.6查看远程库
 	git remote 	//查看远程库的信息
 	git remote -v 	//查看远程库的详细信息

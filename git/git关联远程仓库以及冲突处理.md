@@ -25,7 +25,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
     
   解决办法: 
 <pre><code>
-  git pull --rebase progin master  
+  git pull --rebase origin master  
   git push -u origin master  
 </code></pre>  
     

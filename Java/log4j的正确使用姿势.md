@@ -113,8 +113,10 @@ log4j.xml 配置文件
 该 log4j.xml文件实现的功能: `debug` 级别及以上的日志都会通过 `console` (控制台)输出    
 `info`级别到 `error` 级别的日志会通过 `mainLog` 输出到指定文件, 错误日志单独通过 `errorLog`  
 输出到指定文件,`com.ljq.demo.LogDemo1` 中只有 `error` 级别的日志会通过 `errorLog`  
-被记录(`com.ljq.demo.LogDemo1`必须是项目中本身的package/class,如果是引用的 `jar` 则  
-不一定起作用)  
+被记录(`com.ljq.demo.LogDemo1`是属于项目本身的package/class，如果是控制引用jar中的  
+类一定要选择正确的package/class,如果指定的class不起作用可以尝试使用package/class的上一级作为  
+控制对象, eg: 选择 `org.apache.http.impl.conn.Wire` 作为日志输出控制对象，却不起作用，可以使用  
+`org.apache.http`作为日志等级控制对象)    
     
 ### 3. 测试用例  
     

@@ -28,6 +28,10 @@
 2.3查看日志
 	git log 	//每一次操作以一个结果显示
 	git log --pretty=oneline 	//所用操作在一个结果显示,每次操作占一行
+	设置日志格式与别名: 
+	git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%
+d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
 2.4版本回退
 	git reset --hard HEAD^		//会退到上一个版本
 	git reset --hard HEAD^^		//回退到上上一个版本

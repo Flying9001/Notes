@@ -122,10 +122,11 @@
 			(2)查看已安装的插件:preferences -- package setting
             (3)添加插件:prferences -- package control/Ctrl+Shift+P
             (4)中文乱码：Ctrl+Shift+P :ConvertToUTF8
-			(5)中文文件名乱码:perfences -- settings -- settings user :在属性的最后添加:"dpi_scale":1.0,
+			(5)中文文件名乱码:perfences -- settings:在属性的最后添加:"dpi_scale":1.0,
 			(6)中文输入光标不跟随:pcip(package control:Imstall package) -- IMESupport
             (7)MarkDown编辑器插件:MarkDown Editing
             (8)右键菜单增强:SideBarEnhancements
+            (9)设置全局Ruler: preferences -- settings: 在属性的最后添加:"rulers":[100],
 		6.5.3 关闭自动更新：perfences -- settings -- settings user:在属性
                 的最后添加:"update_check": false,
 		6.5.4 激活:
@@ -197,7 +198,12 @@
            在 user setting 项选择 Browse -- 选中 Maven 的 settings.xml 文件 -- 保存(Apply and close) -- 可以将原来的默认仓库
            删除了,同时更新项目
            
-
+6.7 intellij IDEA  
+    6.7.1 intellij 快捷键设置  
+	    代码提示: file -- settings -- Keymap -- 搜索"Cyclic Expand Word" -- 删除「Alt + 斜杠」的快捷键
+	        -- 搜索"show intention actions" -- 删除「Ctrl + 空格」快捷键,添加「Alt + 斜杠」快捷键  
+            
+	         
 
 
 

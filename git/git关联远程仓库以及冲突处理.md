@@ -31,8 +31,9 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
     
 - 在本地分支与远程分支同步后出现分支冲突  
   eg: 当执行 `git pull --rebase master` 命令后出现 分支冲突（是因为远程分支和本地分支对  
-    于同一份文件修改不一致导致）此时，需要手动解决分支冲突，在命令中会有提示什么文件  
-    不能自动合并  
+    于同一份文件修改不一致导致）在命令中会有提示什么文件不能自动合并;此时，需要手动解决分支冲突，  
+    使用 `git diff` 命令查看有冲突的文件  
+      
   抛出异常:  
 <pre><code>
 (error: Failed to merge in the changes.
@@ -43,7 +44,7 @@ CONFLICT (add/add): Merge conflict in README.md
 ) 
 </code></pre>  
     
-  手动处理冲突文件之后，需要执行命令: `git add .`   
+  手动处理冲突文件之后，需要执行命令: `git add -A `   
   然后执行命令: `git rebase --continue`  
   
   ok，问题解决  

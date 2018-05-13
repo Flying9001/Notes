@@ -115,7 +115,7 @@ ShadowSockets:
 #### 7.7 浏览器  
     
 - 7.7.1 Chrome  
-官网下载(需要饭蔷):[https://www.google.com/chrome/](https://www.google.com/chrome/ "https://www.google.com/chrome/")
+官网下载(需要饭蔷):[https://www.google.com/chrome/](https://www.google.com/chrome/ "https://www.google.com/chrome/")  
 「PCOnline」下载: [http://dl.pconline.com.cn/download/51614.html](http://dl.pconline.com.cn/download/51614.html "http://dl.pconline.com.cn/download/51614.html")  
 「下载之家」下载: [http://www.downza.cn/soft/26885.html](http://www.downza.cn/soft/26885.html "http://www.downza.cn/soft/26885.html")  
     
@@ -128,12 +128,12 @@ ShadowSockets:
 - 7.8.1 TIM(相当于企业版QQ):  
 下载: [https://tim.qq.com/download.html](https://tim.qq.com/download.html "https://tim.qq.com/download.html")     
     
-- 7.8.2 微信: 
+- 7.8.2 微信:   
 下载: [https://weixin.qq.com/](https://weixin.qq.com/ "https://weixin.qq.com/")  
     
 #### 7.9 输入法  
 
-- 7.9.1 搜狗输入法: 
+- 7.9.1 搜狗输入法:   
 下载: [https://pinyin.sogou.com/](https://pinyin.sogou.com/ "https://pinyin.sogou.com/")  
     
 - 7.9.2 QQ输入法:  
@@ -152,19 +152,19 @@ Clover: 一款像浏览器一样使用的 Windows 资源管理器
     
 #### 7.12 垃圾清理工具  
     
-- CCleaner: 
+- CCleaner:  
 Pro版官网下载: [https://www.ccleaner.com/ccleaner/download/professional](https://www.ccleaner.com/ccleaner/download/professional "https://www.ccleaner.com/ccleaner/download/professional")  
 绿色免安装「百度云」下载1: [https://pan.baidu.com/share/init?surl=i5x21Rf](https://pan.baidu.com/share/init?surl=i5x21Rf "https://pan.baidu.com/share/init?surl=i5x21Rf"),密码: etdw  
 绿色免安装下载2: [https://pan.lanzou.com/b22558/](https://pan.lanzou.com/b22558/)  
 CCleaner Professional 注册码  
-**断网**以后在需要注册的地方输入以下即可,后期更新需要**手动更新**：
+**断网**以后在需要注册的地方输入以下即可,后期更新需要**手动更新**:  
 Name : Registered User  
 License Key : CBB4-FJN4-EPC6-G5P6-QT4C  
     
 #### 7.13 下载工具  
     
 - 7.13.1 迅雷精简版:  
-官网下载: [http://dl.xunlei.com/mini.html](http://dl.xunlei.com/mini.html "http://dl.xunlei.com/mini.html")
+官网下载: [http://dl.xunlei.com/mini.html](http://dl.xunlei.com/mini.html "http://dl.xunlei.com/mini.html")  
 「百度云」网盘下载: MiniThunder*: [https://pan.baidu.com/s/1LkNMnsJUTz4V6mDVsbEQtQ](https://pan.baidu.com/s/1LkNMnsJUTz4V6mDVsbEQtQ "https://pan.baidu.com/s/1LkNMnsJUTz4V6mDVsbEQtQ") 密码: c3pn  
 「MEGA」网盘下载: [https://mega.nz/#!rS4k2RyS!05IZ90rFVRWr5cClKUriSp6ID3F054ae5pCk9955L_U](https://mega.nz/#!rS4k2RyS!05IZ90rFVRWr5cClKUriSp6ID3F054ae5pCk9955L_U "https://mega.nz/#!rS4k2RyS!05IZ90rFVRWr5cClKUriSp6ID3F054ae5pCk9955L_U")    
     
@@ -203,8 +203,8 @@ v6.30 绿色破解版下载3: [https://mega.nz/#!KGBR1BDL!bW_vX4i9cUrf3CETMuZ3lr
     
 - JDK  
 下载: [http://www.oracle.com/technetwork/java/javase/overview/index.html](http://www.oracle.com/technetwork/java/javase/overview/index.html "http://www.oracle.com/technetwork/java/javase/overview/index.html")  
-环境配置: 
-Windows: 
+环境配置:   
+Windows:  
 [Windows环境下JDK安装与环境变量配置详细的图文教程](http://www.cnblogs.com/liuhongfeng/p/4177568.html "http://www.cnblogs.com/liuhongfeng/p/4177568.html")  
 [Win10下 Java环境变量配置](https://www.cnblogs.com/cnwutianhao/p/5487758.html "https://www.cnblogs.com/cnwutianhao/p/5487758.html")    
 Linux:  
@@ -214,7 +214,7 @@ Linux:
     
 #### 8.3 Maven  
     
-- Maven
+- Maven  
 下载: [https://maven.apache.org/index.html](https://maven.apache.org/index.html "https://maven.apache.org/index.html")  
 环境配置: 
 [Maven - 环境配置](http://wiki.jikexueyuan.com/project/maven/environment-setup.html "http://wiki.jikexueyuan.com/project/maven/environment-setup.html")  
@@ -234,7 +234,8 @@ Maven 仓库:
 winPcap 下载: [https://www.winpcap.org/](https://www.winpcap.org/ "https://www.winpcap.org/")  
     
 - 8.4.3 ShadowSockets: 自动网络代理工具(**需要有自己的VPS**,可实现**只有被蔷的网站才走代理**)  
-详见: 7.6
+详见: 
+#### 7.6
     
 - 8.4.4 Lantern: 免费的代理工具(免费版限流)  
 官网下载: [https://getlantern.org/en_US/](https://getlantern.org/en_US/ "https://getlantern.org/en_US/")    
@@ -244,7 +245,7 @@ winPcap 下载: [https://www.winpcap.org/](https://www.winpcap.org/ "https://www
     
 - Redis: 内存数据库,处理高速缓存  
 下载:  
-Windows: 
+Windows:   
 [https://github.com/MicrosoftArchive/redis/releases](https://github.com/MicrosoftArchive/redis/releases "https://github.com/MicrosoftArchive/redis/releases")  
 Linux:  
 [https://redis.io/download](https://redis.io/download "https://redis.io/download")  

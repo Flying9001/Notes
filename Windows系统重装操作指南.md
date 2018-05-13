@@ -234,8 +234,7 @@ Maven 仓库:
 winPcap 下载: [https://www.winpcap.org/](https://www.winpcap.org/ "https://www.winpcap.org/")  
     
 - 8.4.3 ShadowSockets: 自动网络代理工具(**需要有自己的VPS**,可实现**只有被蔷的网站才走代理**)  
-详见: 
-#### 7.6
+详见:  7.6
     
 - 8.4.4 Lantern: 免费的代理工具(免费版限流)  
 官网下载: [https://getlantern.org/en_US/](https://getlantern.org/en_US/ "https://getlantern.org/en_US/")    

@@ -112,7 +112,7 @@
 			workspaces on startup 
 	6.4.12 在使用Eclipse-sts版本的时候,可以将myplugins文件夹删掉
 	
-		
+​		
 6.5 Sublime text 
 		6.5.1 下载:官网:https://www.sublimetext.com/3
 			 国内:http://www.xiazaiba.com/html/24344.html
@@ -203,16 +203,16 @@
 	    代码提示: file -- settings -- Keymap -- 搜索"Cyclic Expand Word" -- 删除「Alt + 斜杠」的快捷键
 	        -- 搜索"show intention actions" -- 删除「Ctrl + 空格」快捷键,添加「Alt + 斜杠」快捷键  
             
-	         
+​	         
 
 
 
-            
+​            
 
 
- 
 
- 
+
+
 
 
 

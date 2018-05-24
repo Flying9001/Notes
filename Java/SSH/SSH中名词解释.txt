@@ -1,9 +1,0 @@
-	三大框架中的一些名词:
-1.JPA:Java persistence api,Java持久化API
-2.O/R Mapping:object relationship mapping ,对象关系映射
-3.设计模式:单例,工厂,代理,原型,
-4.JTA:java transaction API:Java中管理事物的API
-5.IoC:Inversion of Control,控制反转 (或者成为DI:Dependency Injection,依赖注入)
-6.AOP:Aspect Oriented Pragramming ,面向切面编程
-
-

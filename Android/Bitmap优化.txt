@@ -1,6 +1,0 @@
-Bitmap优化
-(1)及时回收Bitmap内存
-(2)在实例化Bitmap对象时进行OOM(OutOfMemory)异常捕获,实例化失败返回默认图片
-(3)压缩图片inSimpleSize,先判断原图大小(injustDecodeBounds方法设置为true)
-
-

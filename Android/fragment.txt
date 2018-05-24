@@ -1,5 +1,0 @@
-fragment 使用方法：
-
-1、1个fragment对应一个界面(使用XML绘制)
-2、1个Activity可以由多个fragment组成,同时1个fragment也可以被多个Activity调用
-(fragment相当于一个组件)

@@ -203,7 +203,9 @@ v6.30 绿色破解版下载3: [https://mega.nz/#!KGBR1BDL!bW_vX4i9cUrf3CETMuZ3lr
 
 - 7.16.1 AdobeReader  
 
-  下载: [https://adobe-reader.en.softonic.com/](https://adobe-reader.en.softonic.com/ "https://adobe-reader.en.softonic.com/")  
+  下载1: [https://mega.nz/#!jKYnVA6A!Ounb3QkUtLbOzcPIbuMstnsnKPYWJLcFijtxC1pMjuk](https://mega.nz/#!jKYnVA6A!Ounb3QkUtLbOzcPIbuMstnsnKPYWJLcFijtxC1pMjuk "https://mega.nz/#!jKYnVA6A!Ounb3QkUtLbOzcPIbuMstnsnKPYWJLcFijtxC1pMjuk")  
+
+  官网下载(有捆绑): [https://adobe-reader.en.softonic.com/](https://adobe-reader.en.softonic.com/ "https://adobe-reader.en.softonic.com/")  
 
 
 
@@ -310,10 +312,15 @@ winPcap 下载: [https://www.winpcap.org/](https://www.winpcap.org/ "https://www
 #### 8.7 版本管理  
 
 - 8.7.1 git  
-分布式版本管理工具  
-下载: [https://git-scm.com/downloads](https://git-scm.com/downloads "https://git-scm.com/downloads")  
-  
-####  8.8 数据库  
+  分布式版本管理工具  
+  下载: [https://git-scm.com/downloads](https://git-scm.com/downloads "https://git-scm.com/downloads")  
+
+- 8.7.2 [TortoiseGit](https://tortoisegit.org/)   
+
+  git 辅助管理工具  
+
+  下载: [https://tortoisegit.org/download/](https://tortoisegit.org/download/ "https://tortoisegit.org/download/")  
+####  8.8 数据库   
 
 - 8.8.1 MySQL  
 下载: [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/ "https://dev.mysql.com/downloads/mysql/")  
@@ -346,7 +353,7 @@ Navicat Preminum 11 破解: [https://mega.nz/#!Xf4ilQhL!53cmLVITe9xM1DgWmMEw2VNm
 `%intellij install home%\bin\idea.exe.vmoptions`  
 `%intellij install home%\bin\idea64.exe.vmoptions`  
 注册代码(Active code):  
-```
+```json
 ThisCrackLicenseId-{  
 "licenseId":"ThisCrackLicenseId",  
 "licenseeName":"idea",  

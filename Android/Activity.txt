@@ -1,5 +1,0 @@
-1创建两个界面
-2创建两个activity
-3在一个activity中调用另一个activity
-4配置两个activity
-5调用时需要创建intent

@@ -18,5 +18,24 @@ at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodI
     
 ### 2. Spring 读取多个properties配置文件  
   可参考: [Spring中配置和读取多个Properties文件](https://blog.csdn.net/anhuidelinger/article/details/70315863 "https://blog.csdn.net/anhuidelinger/article/details/70315863")  
-    
+
+### 3. java 正则表达式性能消耗问题  
+
+[邮箱正则表达式优化，避免阻塞](https://blog.csdn.net/u012816142/article/details/48142137 "https://blog.csdn.net/u012816142/article/details/48142137")  
+
+### 4. Spring Controller 方法为 `private` 时,AOP代理类无法获取参数  
+
+[Spring的Controller方法声明为private获取注入属性为null到的问题 ](https://blog.csdn.net/weixin_41633157/article/details/80083636 "https://blog.csdn.net/weixin_41633157/article/details/80083636")  
+
+### 5.Spring AOP 实现日志记录  
+
+[Logging with Spring AOP](https://five.agency/logging-with-spring-aop/ "https://five.agency/logging-with-spring-aop/")  
+
+[利用 AOP 打印方法入参、返回值、描述、耗时](https://segmentfault.com/a/1190000012030364)  
+
+### 6. Mybatis 传入参数为List、Map等复杂参数写法  
+
+
+
+
 

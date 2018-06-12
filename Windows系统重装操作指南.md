@@ -66,22 +66,8 @@ win10激活命令(cmd 下执行,**激活过程需要联网**):
   
 ### 6.系统设置  
 
-#### 6.1 关闭系统更新服务  
+参考: [与windows的斗智斗勇](https://github.com/Flying9001/Notes/blob/master/Tools/%E4%B8%8EWindows%E7%9A%84%E6%96%97%E6%99%BA%E6%96%97%E5%8B%87.md "https://github.com/Flying9001/Notes/blob/master/Tools/%E4%B8%8EWindows%E7%9A%84%E6%96%97%E6%99%BA%E6%96%97%E5%8B%87.md")  
 
-6.1.1 Win + R --- 输入 `services.msc`进入「服务」设置 --- 在服务列表中找到 `Windows update` 服务,右键「属性」,进入属性设置,「停止」服务，并设置为「手动」  
-    
-6.1.2 鼠标右键任务栏->任务管理器->服务(在上边)->服务(右下角)->名称->Windows Update->停止->属性->禁用  
-    
-6.1.3 命令行关闭：cmd->sc config "wuauserv" start=disable   //将windows update状态设置为禁用  
-   sc stop wuauserv    //关闭windows update服务  
-    
-#### 6.2 卸载无关应用  
-
-  6.2.1 Win + R --- 输入 `control`进入「控制面板」  --- 选择「卸载程序」  --- 卸载无关紧要的程序  
-    
-  6.2.2 关于 win10: 点击「开始」菜单 --- 进入「设置」 --- 选择「应用」 --- 卸载无关紧要的应用程序  
-    
-​    
 ### 7.常用软件安装  
 
 #### 7.1 解压软件  

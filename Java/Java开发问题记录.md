@@ -37,6 +37,10 @@ Stackoverflow相关问题: [NoSuchMethodError exception with spring-data-redis](
 
 ### 6. Mybatis 传入参数为List、Map等复杂参数写法  
 
+### 7 java bean 在定义 boolean 类型字段时不要使用 isXxx  
+
+
+
 
 
 

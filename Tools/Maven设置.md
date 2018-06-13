@@ -1,0 +1,109 @@
+## Maven 设置  
+
+
+
+### 1 下载    
+
+官网: [https://maven.apache.org/](https://maven.apache.org/)  
+
+Maven 仓库: [https://mvnrepository.com/](https://mvnrepository.com/)  
+
+### 2 安装  
+
+将官网下载的压缩文件解压即可,其所在的位置(路径)即为安装路径  
+
+### 3 本地仓库设置  
+
+windows 下 Maven 的默认本地仓库位置在 `C:\Users\${user}\.m2\repository`  
+
+`/* ${user} 为计算机的用户名 */`  
+
+修改: 打开 `${maven解压路径}\apache-maven-3.5.0\conf`  下的 `settings.xml` -- 找到  `localRepository` 选项  
+
+(默认是被注释掉的),下边添加  `<localRepository>${yourPath}\mavenPepository</localRepository>`  
+
+--  保存    
+
+### 4 Maven 默认 JDK 版本为 1.5  
+
+在使用 `Eclipse/IntelliJ IDEA` 导入外部 `Maven` 项目的时候,会出现 jdk版本被限制在 1.5的情况,  
+
+修改项目 jdk 无效,更新 `Maven project` 无效  
+
+解决办法:  
+
+- 第一种: 修改本地 `Maven` 仓库 JDK 版本  
+
+ 在 `Maven` 配置文件,还是刚才的 `settings.xml` 文件, 找到 `profiles`,在其目录下添加  
+
+```xml
+<profile>   
+    <id>jdk1.6</id>    
+    <activation>   
+        <activeByDefault>true</activeByDefault>    
+       <jdk>1.8</jdk>   
+    </activation>    
+    <properties>   
+        <maven.compiler.source>1.8</maven.compiler.source>    
+        <maven.compiler.target>1.8</maven.compiler.target>    
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>   
+    </properties>          
+</profile> 
+```
+
+**其中 1.8 为 jdk 版本号,可根据需要修改为自己当前的 jdk 版本**  
+
+在这一项中, `Maven` 的配置文件中已经包含了关于 jdk 版本的设置,只是将其注释了而已,就在 `profiles` 设置项下,  
+
+看得懂的话可以直接将注释打开,修改相关版本号即可  
+
+- 第二种: 修改 Maven 项目的 pom.xml 配置文件  
+
+在 `pom.xml` 文件中添加  
+
+```xml
+<build>  
+     <plugins>  
+         <plugin>  
+             <groupId>org.apache.maven.plugins</groupId>  
+             <artifactId>maven-compiler-plugin</artifactId>  
+             <configuration>  
+                 <source>1.8</source>  
+                 <target>1.8</target>  
+             </configuration>  
+         </plugin>  
+     </plugins>  
+</build>
+```
+
+**1.8 也是 jdk 版本号**  
+
+推荐使用第二种方法,第一种方法会将 jdk 版本固定,而在实际开发中可能需要多个版本的 jdk  
+
+### 5 将 IDE(集成开发环境)中的 `Maven` 设置为本地 `Maven`  
+
+无论是 `Eclipse` 还是 `IntelliJ IDEA`,其工具本身自带的有 `Maven` 工具,使用的是 `Maven` 默认的设置  
+
+(默认的保存路径和 jdk 版本等),使用过程中会受限与 `Maven`的版本,因此建议使用本地 `Maven`  
+
+修改:  
+
+- Eclipse  
+
+`Eclipse` -- `window` -- `preferences` -- `Maven` -- 搜索找到 `Maven` 项 -- 展开 `Maven` 设置项 -- `user settings` --  
+
+在 `user setting` 项选择 `Browse` -- 选中 `Maven` 的 `settings.xml` 文件 -- 保存(`Apply and close`)  
+
+- IntelliJ IDEA  
+
+`Settings`  ---  `Build,Execution,Development`  ---  `Build Tools`  --- `Maven`  ---    
+
+`Maven home directory` : 选择本地 `Maven` 地址(eg: `D:/develop/software/apache-maven-3.5.3`)  
+
+`Use setting file`: 选择本地 `Maven setting.xml` (eg: `D:\develop\software\apache-maven-3.5.3\conf\settings.xml`)  
+
+选中后边的 `Override`, 最后点击 `OK`  
+
+
+
+ 

@@ -42,15 +42,21 @@ win 10 解决方案:
 
 下载地址: [https://github.com/zcodes/IMESupport](https://github.com/zcodes/IMESupport)  
 
-#### 2.7 设置全局标尺(Ruler)  
+#### 2.7 侧栏右键功能增强  
+
+插件: `SideBarEnhancements`  
+
+### 3 属性设置  
+
+#### 3.1 设置全局标尺(Ruler)  
 
 `preferences` -- `settings` : 在属性的最后添加: `"rulers":[100]`  
 
-#### 2.8 关闭自动更新  
+#### 3.2 关闭自动更新  
 
 `perfences` -- `settings` : 在属性最后添加 : `"update_check": false`  
 
-#### 2.9 激活  
+### 4 激活  
 
 下载注册机  
 

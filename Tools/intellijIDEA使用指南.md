@@ -118,7 +118,7 @@ ThisCrackLicenseId-{
 
 - 自动导包  
 
-  `Settings`  ---  `Editor`  ---  `Auto Import`  -- 选中 `Add unambiguous implorts to fly` 和  
+  `Settings`  ---  `Editor`  ---  `General`  ---  `Auto Import`  -- 选中 `Add unambiguous implorts to fly` 和  
 
   `Optimize imports on the fly(for current project)`  
 

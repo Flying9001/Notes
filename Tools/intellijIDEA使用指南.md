@@ -200,3 +200,26 @@ File --- Settings --- Plugins --- Browse respositories --- 搜索「Jrebel」 --
 
 [JRebel 2018.1使用反代失败解决](http://blog.lanyus.com/archives/337.html)  
 
+(6) jrebel maven plugin  
+
+在**最外层父项目的 `pom.xml` 文件中**添加一下配置  
+
+```xml
+<plugin>
+  <groupId>org.zeroturnaround</groupId>
+  <artifactId>jrebel-maven-plugin</artifactId>
+  <version>1.1.8</version>
+  <executions>
+    <execution>
+      <id>generate-rebel-xml</id>
+      <phase>process-resources</phase>
+      <goals>
+        <goal>generate</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>
+```
+
+官方文档地址: [https://manuals.zeroturnaround.com/jrebel/standalone/maven.html](https://manuals.zeroturnaround.com/jrebel/standalone/maven.html)  
+

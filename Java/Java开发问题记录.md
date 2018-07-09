@@ -39,6 +39,10 @@ Stackoverflow相关问题: [NoSuchMethodError exception with spring-data-redis](
 
 ### 7 java bean 在定义 boolean 类型字段时不要使用 isXxx  
 
+### 8 Mabatis 中 resultMap 中定义的 `collection` 集合标签中的 `id` 属性必须定义  
+
+否则会出现当 `result` 标签中 `column` 值相等时,本来有多个结果,但是只显示一个  
+
 
 
 

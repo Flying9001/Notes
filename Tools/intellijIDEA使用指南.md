@@ -142,3 +142,61 @@ ThisCrackLicenseId-{
 
   关键点: 在 `Tomcat` 设置界面,`On 'Update' action` 和 `On frame deaction` 选项选择 `Update classes and resources` ,然后使用 `Debug 模式启动`(如果有`Jrebel` 插件,使用 `Jrebel`的 `Debug` 模式)  
 
+
+
+### 5 插件安装  
+
+#### 5.1 Jrebel  
+
+jrebel 是一款 java 热部署插件,功能强大,开发必备,唯一不好，收费太贵  
+
+- 安装:  
+
+File --- Settings --- Plugins --- Browse respositories --- 搜索「Jrebel」 --- 选择「Jrebel for IntelliJ」  
+
+点击「install」 进行安装(安装之后需要对 intellij 进行重启)  
+
+- 破解:  
+
+(1)在安装之后,设置中会有 「jrebel」选项, File --- Settings --- Jrebel --- 点击「change license」 --- 出现激活面板  
+
+(2)下载激活工具(反代理工具),根据不同的系统，下载对应的版本,windows 系统下载 `ReverseProxy_windows_386.exe`  
+
+或者 `ReverseProxy_windows_amd64.exe`  
+
+下载地址: [https://github.com/ilanyu/ReverseProxy/releases](https://github.com/ilanyu/ReverseProxy/releases)  
+
+(3)打开反代理工具,直接双击下载的 `.exe` 文件,打开之后**窗口不要关闭**，否则无法进行激活  
+
+(4)生成一个 `GUID`  
+
+在线生成 `GUID` 地址:   
+
+[https://www.guidgen.com/](https://www.guidgen.com/)  
+
+[https://1024tools.com/uuid](https://1024tools.com/uuid)  
+
+(5)激活,在 Jrebel 激活面板下边选中 「Co在nnect to License Server」  
+
+第一行填入本地反代理地址: [http://127.0.0.1:8888/24d0606a-606b-48c2-b39d-83ed43b3463f](http://127.0.0.1:8888/24d0606a-606b-48c2-b39d-83ed43b3463f)  
+
+第二行填入邮箱(符合邮箱规则即可,可以随意写)  
+
+关于地址和端口,都是可以修改的,在反代理工具的 Github 中都有说明，以上为在本机进行反代理设置,也可以在搭建本地服务器用于激活    
+
+填好之后点击「chenge license」(这个时候,反代理工具窗口会有一些激活信息输出)  
+
+此时, Jrebel 已经被激活,但是 **关闭反代理窗口,则激活失效**  
+
+因此，**在激活之后，在 Jrebel 的选项面板选择 `Work offline` ，开启离线模式之后,可以有 180天(半年)的有效时间，半年之后可以用同样的方法再进行激活**  
+
+在开启离线模式之后,可以关闭反代理工具的窗口了，关闭之后 Jrebel 仍然可以使用(如果是通过本地内网服务器进行激活，则不需要开启离线模式，只要服务器开着就可以了)  
+
+至此,破解工作结束  
+
+破解教程(原创作者):  
+
+[撸了个反代工具, 可用于激活JRebel](http://blog.lanyus.com/archives/317.html)  
+
+[JRebel 2018.1使用反代失败解决](http://blog.lanyus.com/archives/337.html)  
+

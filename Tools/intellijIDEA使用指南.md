@@ -130,13 +130,13 @@ ThisCrackLicenseId-{
 
   `Setting` --- 搜索 `Serializable`  ---  在展开的 `Serialization issues` 下拉列表下边选择 `Serializable class without 'seriaVersionUID'` ，勾选即可  
 
-- 添加 `Jrebel`  插件  
+- 添加 `Jrebel`  插件  (**已经失效**)
 
-  `Settings` ---  `Plugins`  --- 选择 `Browse repositories` ， 从应用市场中安装 --- 在弹出的窗口中搜索 `Jrebel`  
+  ~~`Settings` ---  `Plugins`  --- 选择 `Browse repositories` ， 从应用市场中安装 --- 在弹出的窗口中搜索 `Jrebel`~~  
 
-  `Jrebel` 个人免费激活码网站: [https://my.jrebel.com/](https://my.jrebel.com/ "https://my.jrebel.com/")  
+  ~~`Jrebel` 个人免费激活码网站: [https://my.jrebel.com/](https://my.jrebel.com/ "https://my.jrebel.com/")~~  
 
-  (用Facebook账号登录这个网站，就能获得一个免费的激活码,**需要饭蔷**)  
+  ~~(用Facebook账号登录这个网站，就能获得一个免费的激活码,**需要饭蔷**)~~  
 
 - 设置 `Tomcat` 热部署  
 

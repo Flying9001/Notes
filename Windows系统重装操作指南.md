@@ -129,11 +129,18 @@ ShadowSockets
 #### 7.9 输入法  
 
 - 7.9.1 搜狗输入法   
-下载: [https://pinyin.sogou.com/](https://pinyin.sogou.com/ "https://pinyin.sogou.com/")  
-  
+  下载: [https://pinyin.sogou.com/](https://pinyin.sogou.com/ "https://pinyin.sogou.com/")  
+
 - 7.9.2 QQ输入法  
-下载: [http://qq.pinyin.cn/](http://qq.pinyin.cn/ "http://qq.pinyin.cn/")  
-  
+  下载: [http://qq.pinyin.cn/](http://qq.pinyin.cn/ "http://qq.pinyin.cn/")  
+
+- 7.9.3 Rime  
+
+  一款高度自定义的输入法,适合需要经常打字的工作者使用,上手难度较高  
+
+  下载: [https://rime.im/](https://rime.im/)  
+
+  教程(Github): [https://github.com/rime/home/wiki](https://github.com/rime/home/wiki)  
 #### 7.10 邮箱  
 
 - 7.10.1 Foxmail:  

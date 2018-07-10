@@ -403,7 +403,7 @@ windows 快速启动程序插件,类似与 macOS 的 SpoitLight,可和 Everythin
 下载: [http://www.wox.one/](http://www.wox.one/ "http://www.wox.one/")  
     
 #### 9.4 Seer  
-类似于 macOS 平台按「空格」进行文件预览的工具  
+类似于 macOS 平台Quick Look功能(按「空格」进行文件预览)  
 (本文链接中的版本免费,最新版收费)  
 下载: [https://sourceforge.net/projects/ccseer/](https://sourceforge.net/projects/ccseer/ "https://sourceforge.net/projects/ccseer/")  
     
@@ -411,11 +411,19 @@ windows 快速启动程序插件,类似与 macOS 的 SpoitLight,可和 Everythin
 Windows 平台状态栏工具,可将状态栏设置为磨砂/全透明状态  
 下载: [https://github.com/TranslucentTB/TranslucentTB](https://github.com/TranslucentTB/TranslucentTB "https://github.com/TranslucentTB/TranslucentTB")  
     
-#### 9.5 ScreenToGif  
+#### 9.6 ScreenToGif  
 录屏转为 gif, gif 制作  
 下载: [https://github.com/NickeManarin/ScreenToGif](https://github.com/NickeManarin/ScreenToGif)  
 
-​    
+#### 9.7 TrafficMonitor 网速显示  
+网速,CPU显示工具,轻量，开源  
+下载: [https://github.com/zhongyang219/TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)  
+
+#### 9.8 Snipaste  
+
+截图工具  
+
+下载: [https://www.snipaste.com/](https://www.snipaste.com/)  
 
 
 

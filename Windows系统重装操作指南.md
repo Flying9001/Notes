@@ -200,6 +200,14 @@ v6.30 绿色破解版下载3: [https://mega.nz/#!KGBR1BDL!bW_vX4i9cUrf3CETMuZ3lr
 
   官网下载(有捆绑): [https://adobe-reader.en.softonic.com/](https://adobe-reader.en.softonic.com/ "https://adobe-reader.en.softonic.com/")  
 
+#### 7.17 安卓模拟器  
+
+- 7.17.1 消遥安卓  
+
+  官网下载: [https://www.xyaz.cn/](https://www.xyaz.cn/)  
+
+  
+
 
 
 ---

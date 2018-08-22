@@ -43,6 +43,21 @@ Stackoverflow相关问题: [NoSuchMethodError exception with spring-data-redis](
 
 否则会出现当 `result` 标签中 `column` 值相等时,本来有多个结果,但是只显示一个  
 
+### 9 MySQL 数据库连接超时  
+
+异常抛出:    
+
+```
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 54,124,574 milliseconds ago.  The last packet sent successfully to the server was 54,124,574 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+
+```
+
+解决办法:   
+
+1) 如错误日志所提示,在 JDBC URL 后边添加 `autoReconnect=true`  
+
+2) [ mysql超时：The last packet successfully received from the server was 172,848,658 milliseconds ago. ](https://blog.csdn.net/su20145104009/article/details/78579634)  
+
 
 
 

@@ -58,6 +58,10 @@ org.springframework.transaction.CannotCreateTransactionException: Could not open
 
 2) [ mysql超时：The last packet successfully received from the server was 172,848,658 milliseconds ago. ](https://blog.csdn.net/su20145104009/article/details/78579634)  
 
+### 10 文件上传问题  
+
+数据库保存文件相对路径,在取出时后台拼接出完整路径然后再返回给客户端  
+
 
 
 

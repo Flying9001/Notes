@@ -62,6 +62,12 @@ org.springframework.transaction.CannotCreateTransactionException: Could not open
 
 数据库保存文件相对路径,在取出时后台拼接出完整路径然后再返回给客户端  
 
+### 11 SpringBoot 配置文件`application*.yml` 中属性值不能有下划线(`_`),否则无法识别  
+
+
+
+
+
 
 
 

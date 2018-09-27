@@ -16,6 +16,10 @@
 
 ### 8. [Mybatis+Mysql 返回插入的主键ID](http://gonethen.iteye.com/blog/2323804 "http://gonethen.iteye.com/blog/2323804")    
 
+### 9 数据库测试的SQL脚本在执行之后必须注释，防止下次刷新脚本,全盘执行  
+
+
+
 
 
 

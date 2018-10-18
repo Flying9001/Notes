@@ -105,7 +105,13 @@ Office:
 
 ShadowSockets  
 下载: [https://github.com/shadowsocks/shadowsocks-windows/releases](https://github.com/shadowsocks/shadowsocks-windows/releases "https://github.com/shadowsocks/shadowsocks-windows/releases")  
-    
+
+v2ray  
+
+官网: [https://www.v2ray.com/](https://www.v2ray.com/ "https://www.v2ray.com/")   
+
+ 
+
 #### 7.7 浏览器  
 
 - 7.7.1 Chrome  

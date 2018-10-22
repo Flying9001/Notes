@@ -8,13 +8,19 @@
 
 brew 官网(包含安装教程): [https://brew.sh/](https://brew.sh/ "https://brew.sh/")  
 
+
+
+### 2 版本管理工具-git    
+
+#### 2.1 安装  
+
 mac 下 `brew` 安装 `git` 命令: `brew install git`  
 
+#### 2.2 使用技巧  
 
+[在Mac、Linux 终端显示 Git 当前所在分支](https://gist.github.com/yisibl/8281454 "https://gist.github.com/yisibl/8281454")  
 
-### 2 mac 终端显示 git 当前所在分支  
-
-教程: [在Mac、Linux 终端显示 Git 当前所在分支](https://gist.github.com/yisibl/8281454 "https://gist.github.com/yisibl/8281454")  
+[Mac: mac git 的安装 及实现自动补全](https://blog.csdn.net/DinnerHowe/article/details/79838444 "https://blog.csdn.net/DinnerHowe/article/details/79838444")
 
 
 

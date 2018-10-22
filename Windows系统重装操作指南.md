@@ -4,29 +4,29 @@
 ### 1.优盘启动盘制作  
 
 优盘启动制作软件/PE系统制作: [http://www.wepe.com.cn/download.html](http://www.wepe.com.cn/download.html "http://www.wepe.com.cn/download.html")  
-    
+​    
 ​    
 ### 2.系统镜像以及驱动下载  
 
 系统镜像下载地址(原装系统): [https://msdn.itellyou.cn/](https://msdn.itellyou.cn/ "https://msdn.itellyou.cn/")  
 驱动精灵装机版/离线版: [http://www.drivergenius.com/zhuangji.asp](http://www.drivergenius.com/zhuangji.asp "http://www.drivergenius.com/zhuangji.asp")  
 **系统镜像与离线驱动软件需要保存在启动优盘中**  
-    
+​    
 ​    
 ### 3.优盘启动并安装系统  
 
 微PE优盘系统安装操作指南: [用微PE在UEFI+GPT模式下安装WIN7、WIN10教程（已修正）](https://tieba.baidu.com/p/4445983090 "https://tieba.baidu.com/p/4445983090")  
-    
+​    
 注意事项: **win7 必须使用 MBR 磁盘分区格式,win10 建议使用 GPT 分区格式**  
 关于 MBR 与 GPT 区别卡参考:  
 [UEFI+GPT与BIOS+MBR各自有什么优缺点](https://www.zhihu.com/question/28471913 "https://www.zhihu.com/question/28471913")  
 [EFI、UEFI、MBR、GPT的区别](https://blog.csdn.net/mao0514/article/details/51162915 "https://blog.csdn.net/mao0514/article/details/51162915")  
-    
+​    
 ​    
 ### 4.驱动安装  
 
 根据系统版本运行步骤2中的离线版驱动软件,完成网卡驱动的安装(有了网卡去重才能上网,为后边的系统激活与软件安装做准备)  
-    
+​    
 ​    
 ### 5.系统激活  
 
@@ -36,15 +36,15 @@
 工具下载(WIN7Activation.exe):  
 MEGA 网盘: [https://mega.nz/#!KbYk2CKC!3Jg1qHicp5K1T6gevXM3GQnUX2uAn4PWj_p7wnMg-Gk](https://mega.nz/#!KbYk2CKC!3Jg1qHicp5K1T6gevXM3GQnUX2uAn4PWj_p7wnMg-Gk "https://mega.nz/#!KbYk2CKC!3Jg1qHicp5K1T6gevXM3GQnUX2uAn4PWj_p7wnMg-Gk")  
 百度云网盘: [https://pan.baidu.com/s/1QQWgbDSwdzsb0Y-cD3rkiw](https://pan.baidu.com/s/1QQWgbDSwdzsb0Y-cD3rkiw "https://pan.baidu.com/s/1QQWgbDSwdzsb0Y-cD3rkiw") 密码: 5j87  
-    
+​    
 #### 5.2 win10 激活:  
 
 [win10专业版激活方法](https://blog.csdn.net/AinUser/article/details/79247841 "https://blog.csdn.net/AinUser/article/details/79247841")  
 [win10激活密钥](https://blog.csdn.net/timo1160139211/article/details/79308755 "https://blog.csdn.net/timo1160139211/article/details/79308755")  
 [Win10激活失败的原因及解决方法大全](http://www.w10zj.com/Win10xy/Win10xf_1381.html "http://www.w10zj.com/Win10xy/Win10xf_1381.html")  
-    
+​    
 win10激活命令(cmd 下执行,**激活过程需要联网**):  
-    
+​    
 - (1) 删除原有产品密钥  
 `slmgr.vbs /upk`  
   
@@ -74,24 +74,24 @@ win10激活命令(cmd 下执行,**激活过程需要联网**):
 
 Bandizip:  
 下载:  [https://www.bandisoft.com/bandizip/](https://www.bandisoft.com/bandizip/ "https://www.bandisoft.com/bandizip/")  
-    
+​    
 #### 7.2 完整驱动安装  
 
 驱动精灵免安装版(dirvergeniusGreen.zip):  
 PC6下载: [驱动精灵绿色版 v9.61.412.1420单文件纯净版](http://www.pc6.com/softview/SoftView_120008.html "http://www.pc6.com/softview/SoftView_120008.html")  
 MEGA网盘: [https://mega.nz/#!7LhyAYAQ!WjBS3_BUWTtmnwpUDDbNH9NyPrgUJ_z1XNh2p0tVYIM](https://mega.nz/#!7LhyAYAQ!WjBS3_BUWTtmnwpUDDbNH9NyPrgUJ_z1XNh2p0tVYIM)  
 百度云网盘: [https://pan.baidu.com/s/1QQWgbDSwdzsb0Y-cD3rkiw](https://pan.baidu.com/s/1QQWgbDSwdzsb0Y-cD3rkiw "https://pan.baidu.com/s/1QQWgbDSwdzsb0Y-cD3rkiw") 密码: 5j87  
-    
+​    
 #### 7.3 远程控制  
 
 TeamViewer:  
 下载: [https://www.teamviewer.com/zhcn/download/windows/](https://www.teamviewer.com/zhcn/download/windows/ "https://www.teamviewer.com/zhcn/download/windows/")    
-    
+​    
 #### 7.4 安全软件  
 
 火绒安全  
 下载: [https://www.huorong.cn/](https://www.huorong.cn/ "https://www.huorong.cn/")  
-    
+​    
 #### 7.5 办公软件(office)  
 
 Office:  
@@ -100,7 +100,7 @@ Office:
 [http://www.officezhushou.com/office/office2010pojie.html](http://www.officezhushou.com/office/office2010pojie.html "http://www.officezhushou.com/office/office2010pojie.html")  
 [http://www.jb51.net/softs/74332.html](http://www.jb51.net/softs/74332.html "http://www.jb51.net/softs/74332.html")  
 可参考 5.3 ,使用 windows 万能激活工具  
-    
+​    
 #### 7.6 代理软件  
 
 ShadowSockets  
@@ -212,7 +212,6 @@ v6.30 绿色破解版下载3: [https://mega.nz/#!KGBR1BDL!bW_vX4i9cUrf3CETMuZ3lr
 
   官网下载: [https://www.xyaz.cn/](https://www.xyaz.cn/)  
 
-  
 
 
 
@@ -414,24 +413,24 @@ VMware 2017 v14.x 永久许可证激活密钥:
 #### 9.1 f.lux  
 智能护眼软件  
 下载: [https://justgetflux.com/](https://justgetflux.com/ "https://justgetflux.com/")  
-    
+​    
 #### 9.2 Everything  
 windows 平台快速搜索文件软件  
 下载: [https://www.voidtools.com/](https://www.voidtools.com/ "https://www.voidtools.com/")  
-    
+​    
 #### 9.3 Wox  
 windows 快速启动程序插件,类似与 macOS 的 SpoitLight,可和 Everything 无缝对接,插件丰富  
 下载: [http://www.wox.one/](http://www.wox.one/ "http://www.wox.one/")  
-    
+​    
 #### 9.4 Seer  
 类似于 macOS 平台Quick Look功能(按「空格」进行文件预览)  
 (本文链接中的版本免费,最新版收费)  
 下载: [https://sourceforge.net/projects/ccseer/](https://sourceforge.net/projects/ccseer/ "https://sourceforge.net/projects/ccseer/")  
-    
+​    
 #### 9.5 TranslucentTB  
 Windows 平台状态栏工具,可将状态栏设置为磨砂/全透明状态  
 下载: [https://github.com/TranslucentTB/TranslucentTB](https://github.com/TranslucentTB/TranslucentTB "https://github.com/TranslucentTB/TranslucentTB")  
-    
+​    
 #### 9.6 ScreenToGif  
 录屏转为 gif, gif 制作  
 下载: [https://github.com/NickeManarin/ScreenToGif](https://github.com/NickeManarin/ScreenToGif)  

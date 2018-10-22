@@ -36,7 +36,9 @@ mac 下 `brew` 安装 `git` 命令: `brew install git`
 
 ### 5 Mac 安装 Java IDE -- InttelliJ IDEA  
 
-教程: [Mac版Intelli IDEA 2018.2.2永久破解（到2100年1月）——2018.09.04亲测]
+教程: [Mac版Intelli IDEA 2018.2.2永久破解（到2100年1月）——2018.09.04亲测](https://blog.csdn.net/qq_32732581/article/details/82381271 "https://blog.csdn.net/qq_32732581/article/details/82381271")  
+
+
 
 
 

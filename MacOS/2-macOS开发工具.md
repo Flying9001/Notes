@@ -46,6 +46,70 @@ mac 下 `brew` 安装 `git` 命令: `brew install git`
 
 
 
+### 6 Mac 安装 MySQL 及其管理工具 Navicat Preminum  
+
+#### 6.1 Mac 使用 brew 安装 MySQL  
+
+教程: [https://segmentfault.com/q/1010000000475470](https://segmentfault.com/q/1010000000475470 "https://segmentfault.com/q/1010000000475470")  
+
+操作步骤:  
+
+6.1.1 安装: `brew install mysql`  
+
+6.1.2 启动 mysql: `mysql.server`  
+
+6.1.3 执行 mysql 初始化脚本(mysql 自带): `/usr/local/opt/mysql/bin/mysql_secure_installation`  
+
+根据脚本提示进行设置即可  
+
+6.1.4 MySQL 常用命令  
+
+启动: `mysql.server stop`  
+
+停止: `mysql.server stop`  
+
+查看状态: `mysql.server status`  
+
+(使用 `root` 账户)登陆 MySQL(必须在 MySQL启动的情况下): `mysql -u root -p`  
+
+
+
+#### 6.2 Mac 版 Navicat Preminum 的安装与使用 
+
+下载(版本12.022):   
+
+链接: [https://pan.baidu.com/s/13jcisKkQfESikJExhR7bsw](https://pan.baidu.com/s/13jcisKkQfESikJExhR7bsw "https://pan.baidu.com/s/13jcisKkQfESikJExhR7bsw") 提取码: `vrga`  
+
+激活教程:  
+
+[https://github.com/DoubleLabyrinth/navicat-keygen](https://github.com/DoubleLabyrinth/navicat-keygen "https://github.com/DoubleLabyrinth/navicat-keygen")  
+
+首次使用 `Navicat` 连接 MySQL 会抛出以下错误:  
+
+```bash
+- Authentication plugin 'caching_sha2_password' cannot be loaded
+```
+
+解决办法:  
+
+使用终端应用(terminal.app)登陆 MySQL,然后执行以下命令:  
+
+```bash
+ALTER USER 'username'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+`username`: 待添加的用户名  
+
+`ip_address`: 连接数据库的 ip 地址,如果是本机连接,则可以填 `localhost` 或者 `127.0.0.1`   
+
+`password`:  需要设定的密码  
+
+
+
+
+
+
+
 
 
   

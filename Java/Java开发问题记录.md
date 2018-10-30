@@ -64,6 +64,10 @@ org.springframework.transaction.CannotCreateTransactionException: Could not open
 
 ### 11 SpringBoot 配置文件`application*.yml` 中属性值不能有下划线(`_`),否则无法识别  
 
+### 12 SpringBoot 项目部署到外部 tomcat出现404  
+
+参考: [Spring Boot打包war部署到tomcat，并解决404问题](https://my.oschina.net/yejunxi/blog/886023 "https://my.oschina.net/yejunxi/blog/886023")  
+
 
 
 

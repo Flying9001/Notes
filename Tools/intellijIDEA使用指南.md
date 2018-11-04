@@ -166,6 +166,17 @@ File --- Settings --- Plugins --- Browse respositories --- 搜索「Jrebel」 --
 
 下载地址: [https://github.com/ilanyu/ReverseProxy/releases](https://github.com/ilanyu/ReverseProxy/releases)  
 
+**注意**: Mac 用户下载 `ReverseProxy_darwin_amd64` ,使用 safari 浏览器下载会保留`.dms` 后缀,使用 Chrome 浏览器下载 会将后缀名 `.dms` 去掉,不过不影响使用(Linux/Unix 系统执行程序不区分后缀名)   
+
+下载之后通过命令行(terminal.app)执行以下操作:  
+
+```bash
+# 赋予该文件可执行权限
+chmod 777 ReverseProxy_darwin_amd64
+```
+
+修改权限之后,就可以双击打开程序了  
+
 (3)打开反代理工具,直接双击下载的 `.exe` 文件,打开之后**窗口不要关闭**，否则无法进行激活  
 
 (4)生成一个 `GUID`  

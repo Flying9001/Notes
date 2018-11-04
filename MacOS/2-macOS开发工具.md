@@ -92,7 +92,7 @@ mac 下 `brew` 安装 `git` 命令: `brew install git`
 
 解决办法:  
 
-使用终端应用(terminal.app)登陆 MySQL,然后执行以下命令:  
+1 使用终端应用(terminal.app)登陆 MySQL,然后执行以下命令:  
 
 ```bash
 ALTER USER 'username'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'password';
@@ -103,6 +103,31 @@ ALTER USER 'username'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'pas
 `ip_address`: 连接数据库的 ip 地址,如果是本机连接,则可以填 `localhost` 或者 `127.0.0.1`   
 
 `password`:  需要设定的密码  
+
+2 修改 MySQL 配置文件  
+
+查看 MySQL 配置文件位置命令:  
+
+```bash
+mysql --verbose --help | grep my.cnf
+```
+
+得到的结果为:  
+
+```bash
+order of preference, my.cnf, $MYSQL_TCP_PORT,
+/etc/my.cnf /etc/mysql/my.cnf /usr/local/etc/my.cnf ~/.my.cnf 
+```
+
+经查看,只有 `/usr/local/etc/my.cnf` 这个文件存在,打开该文件,添加以下内容:  
+
+```properties
+default_authentication_plugin=mysql_native_password
+```
+
+开启远程连接:  
+
+修改 `/usr/local/etc/my.cnf` 文件,修改 `bind_address`,将 `127.0.0.1` 改为 `0.0.0.0`  
 
 
 

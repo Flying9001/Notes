@@ -354,7 +354,7 @@
 
 
 
-    
+​    
 
 
 
@@ -364,6 +364,17 @@
 
 
 
- 
 </code></pre>
+
+### 19 Linux 命令行目录提示不区分大小写  
+
+```bash
+cd
+echo "set completion-ignore-case on" >> .inputrc
+source .inputrc
+```
+
+然后重新登陆(不需要重启)  
+
+
 

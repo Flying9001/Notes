@@ -142,7 +142,17 @@ ThisCrackLicenseId-{
 
   关键点: 在 `Tomcat` 设置界面,`On 'Update' action` 和 `On frame deaction` 选项选择 `Update classes and resources` ,然后使用 `Debug 模式启动`(如果有`Jrebel` 插件,使用 `Jrebel`的 `Debug` 模式)  
 
+- 设置 文件/工作空间 编码格式  
 
+  设置当前项目的文件编码格式:  
+
+  File --- Settings --- Editor --- File Encodings ,将所有编码文件编码格式都设置为 `utf-8`,BOM for new UTF-8 files 选择 `with no BOM`  
+
+  设置 其他/新建 项目的文件编码格式:  
+
+  File --- Other Settings --- Default Settings --- Editor --- File encodings,格式设置同上  
+
+   
 
 ### 5 插件安装  
 

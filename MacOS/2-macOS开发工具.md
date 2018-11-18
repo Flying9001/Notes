@@ -131,6 +131,22 @@ default_authentication_plugin=mysql_native_password
 
 
 
+### 7 虚拟机  
+
+#### 7.1 Vmware Fusion--虚拟机软件  
+
+简介: Vmware Fusion 是一款功能强大的虚拟机软件,收费  
+
+教程: [Mac虚拟机VMware Fusion 8安装Win10教程](https://www.jianshu.com/p/ade09a6dbc61 "https://www.jianshu.com/p/ade09a6dbc61")  
+
+官网下载: [https://my.vmware.com/web/vmware/downloads](https://my.vmware.com/web/vmware/downloads "https://my.vmware.com/web/vmware/downloads")  
+
+备用下载(含注册码):[https://mega.nz/#F!3HpgwICI!tTCoupGBQ4ryUwhYBp5gLQ](https://mega.nz/#F!3HpgwICI!tTCoupGBQ4ryUwhYBp5gLQ "https://mega.nz/#F!3HpgwICI!tTCoupGBQ4ryUwhYBp5gLQ")  
+
+vmware fusion 11 注册码:  `7HYY8-Z8WWY-F1MAN-ECKNY-LUXYX`  
+
+
+
 
 
 

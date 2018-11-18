@@ -13,6 +13,7 @@
 **系统镜像与离线驱动软件需要保存在启动优盘中**  
 ​    
 ​    
+
 ### 3.优盘启动并安装系统  
 
 微PE优盘系统安装操作指南: [用微PE在UEFI+GPT模式下安装WIN7、WIN10教程（已修正）](https://tieba.baidu.com/p/4445983090 "https://tieba.baidu.com/p/4445983090")  
@@ -23,9 +24,10 @@
 [EFI、UEFI、MBR、GPT的区别](https://blog.csdn.net/mao0514/article/details/51162915 "https://blog.csdn.net/mao0514/article/details/51162915")  
 ​    
 ​    
+
 ### 4.驱动安装  
 
-​根据系统版本运行步骤2中的离线版驱动软件,完成网卡驱动的安装(有了网卡驱动才能上网,为后边的系统激活与软件安装做准备)    
+根据系统版本运行步骤2中的离线版驱动软件,完成网卡驱动的安装(有了网卡驱动才能上网,为后边的系统激活与软件安装做准备)    
 
 ​    ​    
 
@@ -47,24 +49,28 @@ MEGA 网盘: [https://mega.nz/#!KbYk2CKC!3Jg1qHicp5K1T6gevXM3GQnUX2uAn4PWj_p7wnM
 win10激活命令(cmd 下执行,**激活过程需要联网**):  
 ​    
 - (1) 删除原有产品密钥  
-`slmgr.vbs /upk`  
-  
+  `slmgr.vbs /upk`  
 - (2) 安装激活码  
-`slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX`  
-  
+  `slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX`  
 - (3) 设置密钥管理服务  
-`slmgr /skms zh.us.to`  
-  
+  `slmgr /skms zh.us.to`  
 - (4) 验证激活  
-`slmgr /ato`  
-  
+  `slmgr /ato`  
+
+ Windows 10 LTSC 2019 正式版  
+
+激活码: `M7XTQ-FN8P6-TTKYV-9D4CC-J462D`  
+
+`kms` 服务器地址:  `kms.03k.org`  
+
+​    
+
 #### 5.3 windows 万能激活工具  
 
 - Windows 万能激活工具: 包括 windows 系统,Office  
-下载:  
-[http://www.microsofttoolkitofficial.info/](http://www.microsofttoolkitofficial.info/ "http://www.microsofttoolkitofficial.info/")  
-[http://freemicrosofttoolkit.com](http://freemicrosofttoolkit.com "http://freemicrosofttoolkit.com")  
-  
+  下载:  
+  [http://www.microsofttoolkitofficial.info/](http://www.microsofttoolkitofficial.info/ "http://www.microsofttoolkitofficial.info/")  
+  [http://freemicrosofttoolkit.com](http://freemicrosofttoolkit.com "http://freemicrosofttoolkit.com")  
 ### 6.系统设置  
 
 参考: [与windows的斗智斗勇](https://github.com/Flying9001/Notes/blob/master/Tools/%E4%B8%8EWindows%E7%9A%84%E6%96%97%E6%99%BA%E6%96%97%E5%8B%87.md "https://github.com/Flying9001/Notes/blob/master/Tools/%E4%B8%8EWindows%E7%9A%84%E6%96%97%E6%99%BA%E6%96%97%E5%8B%87.md")  
@@ -76,6 +82,7 @@ win10激活命令(cmd 下执行,**激活过程需要联网**):
 Bandizip:  
 下载:  [https://www.bandisoft.com/bandizip/](https://www.bandisoft.com/bandizip/ "https://www.bandisoft.com/bandizip/")  
 ​    
+
 #### 7.2 完整驱动安装  
 
 驱动精灵免安装版(dirvergeniusGreen.zip):  
@@ -100,8 +107,25 @@ Office:
 激活:   
 [http://www.officezhushou.com/office/office2010pojie.html](http://www.officezhushou.com/office/office2010pojie.html "http://www.officezhushou.com/office/office2010pojie.html")  
 [http://www.jb51.net/softs/74332.html](http://www.jb51.net/softs/74332.html "http://www.jb51.net/softs/74332.html")  
+[一句命令激活windows/office](https://03k.org/kms.html "https://03k.org/kms.html")  
+[KMS激活服务](https://kms.library.hk/archives/kms.html "https://kms.library.hk/archives/kms.html")  
+
 可参考 5.3 ,使用 windows 万能激活工具  
+
+**注意: KMS 激活服务有效期均为 180 天,过期后需要重新激活**
+
+命令行激活(kms):  
+
+进入 office 安装目录(目录地址根据实际安装路径而定):  
+
+  `cd C:\Program Files\Microsoft Office\Office14`    
+
+注册 kms 服务器:  `cscript ospp.vbs /sethst:kms.03k.org`  
+
+激活:  `cscript ospp.vbs /act`  
+
 ​    
+
 #### 7.6 代理软件  
 
 ShadowSockets  

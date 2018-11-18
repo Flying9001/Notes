@@ -12,7 +12,7 @@
 
 ### 2 macOS 文件管理-Finder  
 
-可参考: [https://www.jianshu.com/p/6505ead00d59](https://www.jianshu.com/p/6505ead00d59 "https://www.jianshu.com/p/6505ead00d59")  
+可参考: [一篇文章带你玩转Mac Finder](https://www.jianshu.com/p/6505ead00d59 "https://www.jianshu.com/p/6505ead00d59")  
 
 
 

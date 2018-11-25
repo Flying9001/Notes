@@ -8,7 +8,9 @@
 
 ### 2 插件管理  
 
-#### 2.1 插件安装控制包  
+#### 2.1 插件安装控制包    
+
+插件安装包(package control)官网: [https://packagecontrol.io/](https://packagecontrol.io/ "https://packagecontrol.io/")  
 
 `Ctrl` + ` ` `  --- 将以下代码复制到输入框  
 

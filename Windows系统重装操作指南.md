@@ -469,6 +469,28 @@ Windows 平台状态栏工具,可将状态栏设置为磨砂/全透明状态
 
 下载: [https://www.snipaste.com/](https://www.snipaste.com/)  
 
+#### 9.9 Space Sniffer  
+
+简介: 强大的磁盘分析工具  
+技巧: 使用过滤规则搜索更精确,eg: 使用`*.mp4` 搜索 `mp4` 文件  
+官网: [http://www.uderzo.it/main_products/space_sniffer/index.html](http://www.uderzo.it/main_products/space_sniffer/index.html "http://www.uderzo.it/main_products/space_sniffer/index.html")  
+备用下载: [https://mega.nz/#!eHJkDAKT!bErZ2OY8FXL6OoOMLnAmxrtPPd9139UH5sHuNwynfQQ](https://mega.nz/#!eHJkDAKT!bErZ2OY8FXL6OoOMLnAmxrtPPd9139UH5sHuNwynfQQ "https://mega.nz/#!eHJkDAKT!bErZ2OY8FXL6OoOMLnAmxrtPPd9139UH5sHuNwynfQQ")  
+
+#### 9.10 万彩办公大师  
+
+简介: 一系列办公软件集合,包括 `PDF`处理,格式转换,图片编辑,OCR图像识别,屏幕录制,教学办公,文件批处理等实用工具,最主要一点该软件**免费**  
+官网: [http://www.wofficebox.com/](http://www.wofficebox.com/ "http://www.wofficebox.com/")  
+绿色免安装版备用下载: [https://mega.nz/#!TGJ3FQyA!rydFrpw4rxtQDuFqHcTzuNLvGHJqh7Z7GJz9Ins5XPU](https://mega.nz/#!TGJ3FQyA!rydFrpw4rxtQDuFqHcTzuNLvGHJqh7Z7GJz9Ins5XPU "https://mega.nz/#!TGJ3FQyA!rydFrpw4rxtQDuFqHcTzuNLvGHJqh7Z7GJz9Ins5XPU")  
+标准安装版备用下载: [https://mega.nz/#!aeJlECZL!qe0een0CHTxJUpL2QCrNoHN8DJx4EhEy8975Gi4o4Kw](https://mega.nz/#!aeJlECZL!qe0een0CHTxJUpL2QCrNoHN8DJx4EhEy8975Gi4o4Kw "https://mega.nz/#!aeJlECZL!qe0een0CHTxJUpL2QCrNoHN8DJx4EhEy8975Gi4o4Kw")  
+完整离线版备用下载: [https://pan.baidu.com/s/1ZM3yWDv_tZeI3MxUdCLOmQ](https://pan.baidu.com/s/1ZM3yWDv_tZeI3MxUdCLOmQ "https://pan.baidu.com/s/1ZM3yWDv_tZeI3MxUdCLOmQ") 提取码: `fm57`  
+
+
+
+
+
+
+
+
 
 
 

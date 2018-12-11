@@ -68,7 +68,6 @@ MEGA网盘: [https://mega.nz/#!7LhyAYAQ!WjBS3_BUWTtmnwpUDDbNH9NyPrgUJ_z1XNh2p0tV
 
   下载: [https://mega.nz/#!3WAjGCjT!VDGOFJ02XdrMN6hcdMoLsPHIADrHexQOS-kR6c3JRfc](https://mega.nz/#!3WAjGCjT!VDGOFJ02XdrMN6hcdMoLsPHIADrHexQOS-kR6c3JRfc "https://mega.nz/#!3WAjGCjT!VDGOFJ02XdrMN6hcdMoLsPHIADrHexQOS-kR6c3JRfc")  
 
-  
 
 
 
@@ -84,14 +83,14 @@ MEGA网盘: [https://mega.nz/#!7LhyAYAQ!WjBS3_BUWTtmnwpUDDbNH9NyPrgUJ_z1XNh2p0tV
 
 
 
-### 6 虚拟机工具  
+### 6 虚拟机工具    
 
-- VMware Workstation Pro  
-  官网下载: [https://www.vmware.com/products/workstation-pro.html](https://www.vmware.com/products/workstation-pro.html "https://www.vmware.com/products/workstation-pro.html") 
-  v14版 下载: [VMware Pro v14.1.1 官方版本及激活密钥](http://www.zdfans.com/5928.html "http://www.zdfans.com/5928.html")  
-  VMware 2017 v14.x 永久许可证激活密钥:  
-  `FF31K-AHZD1-H8ETZ-8WWEZ-WUUVA`  
-  `CV7T2-6WY5Q-48EWP-ZXY7X-QGUWD`  
+- VMware Workstation Pro    
+  官网下载: [https://www.vmware.com/products/workstation-pro.html](https://www.vmware.com/products/workstation-pro.html "https://www.vmware.com/products/workstation-pro.html")   
+  v14版 下载: [VMware Pro v14.1.1 官方版本及激活密钥](http://www.zdfans.com/5928.html "http://www.zdfans.com/5928.html")    
+  VMware 2017 v14.x 永久许可证激活密钥:    
+  `FF31K-AHZD1-H8ETZ-8WWEZ-WUUVA`    
+  `CV7T2-6WY5Q-48EWP-ZXY7X-QGUWD`    
 
 
 
@@ -135,7 +134,6 @@ MEGA网盘: [https://mega.nz/#!7LhyAYAQ!WjBS3_BUWTtmnwpUDDbNH9NyPrgUJ_z1XNh2p0tV
 
   备用下载: [https://mega.nz/#!mSoQkYTI!00Ulh6Upw-c28hs-DrSom3X5dyeDteP2xmSaQzkUmnE](https://mega.nz/#!mSoQkYTI!00Ulh6Upw-c28hs-DrSom3X5dyeDteP2xmSaQzkUmnE "https://mega.nz/#!mSoQkYTI!00Ulh6Upw-c28hs-DrSom3X5dyeDteP2xmSaQzkUmnE")  
 
-  
 
 
 ​    

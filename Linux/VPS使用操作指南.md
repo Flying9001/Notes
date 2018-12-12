@@ -53,13 +53,17 @@ firewall-cmd --zone=public --remove-port=22/tcp --permanent
 
 目前(2018年)流行的代理工具有 ShadowSocket系列以及v2ray,推荐使用 v2ray  
 
-v2ray 是比 shadowSocket 更快更安全的代理工具  
+v2ray 是比 shadowSocket **更快更安全**的代理工具  
 
-原因:  稍后添加  
+原因:    
+
+[新一代科学上网利器：V2Ray扫盲教程 ](http://blog.whiterabbitxyj.com/2018/08/31/V2Ray/ "http://blog.whiterabbitxyj.com/2018/08/31/V2Ray/")  
+
+[传说中的性能测试](https://steemit.com/cn/@v2ray/3cjiux "https://steemit.com/cn/@v2ray/3cjiux")    
 
 
 
-#### 6.1 v2ray 服务端配置    
+#### 6.1 V2ray 服务端配置    
 
 - 安装 `wget` 工具  
 
@@ -106,9 +110,9 @@ systemctl stop v2ray
 systemctl restart v2ray
 ```
 
-可参考教程:  
+详细配置可参考教程:  
 
-[V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/ "https://yuan.ga/v2ray-complete-tutorial/")  
+[V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/ "https://yuan.ga/v2ray-complete-tutorial/")    
 
 
 
@@ -130,17 +134,35 @@ Android 系统:
 
 
 
-### 7 常见问题    
+### 7 手动添加代理规则  
 
-[搬瓦工能 ping 通但是 SSH 无法连接的原因和解决方法](https://www.bandwagonhost.net/1990.html "https://www.bandwagonhost.net/1990.html")  
+客户端可以选择使用 `pac` 自动代理模式,但是由于某些网站并没有即时添加到公共 `pac` 规则中,因此需要手动添加代理规则,具体教程可参考:  
 
-[搬瓦工换IP方法总结：免费换IP / 付费换IP方法](https://www.bandwagonhost.net/1983.html "https://www.bandwagonhost.net/1983.html")  
+[浅析PAC，教你动手修改你的PAC文件及user-rule文件实现自动代理](https://www.cnblogs.com/edward2013/p/5560836.html "https://www.cnblogs.com/edward2013/p/5560836.html")  
+
+**该教程适用于 Shadowsocket 系列以及 V2ray**  
+
+推荐使用手动创建 `user-rule.txt ` 文件,将其放到和 `pac.txt` 同一个目录中,重启服务即可  
+
+
+
+
+
+### X 常见问题    
+
+[搬瓦工能 ping 通但是 SSH 无法连接的原因和解决方法](https://www.bandwagonhost.net/1990.html "https://www.bandwagonhost.net/1990.html")      
+
+[搬瓦工换IP方法总结：免费换IP / 付费换IP方法](https://www.bandwagonhost.net/1983.html "https://www.bandwagonhost.net/1983.html")    
 
 [2018 最新检查搬瓦工 IP / 端口是否被封的方法](https://www.bandwagonhost.net/1934.html "https://www.bandwagonhost.net/1934.html")  
-
-
-
-—— update 2018-12-11  
+    
+​    
+​    
+​    
+​    
+​    
+​    
+—— update 2018-12-12  
 
 
 

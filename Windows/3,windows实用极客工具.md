@@ -168,6 +168,30 @@ MEGA网盘: [https://mega.nz/#!7LhyAYAQ!WjBS3_BUWTtmnwpUDDbNH9NyPrgUJ_z1XNh2p0tV
 
 
 
+### 10 数据恢复  
+
+- Recuva  
+
+  简介: CCleaner 公司出品的另一款精品软件,小巧但又功能强大的数据恢复软件  
+
+  官网下载: [https://www.ccleaner.com/recuva/download/standard](https://www.ccleaner.com/recuva/download/standard "https://www.ccleaner.com/recuva/download/standard")  
+
+  绿色版备用下载: [https://mega.nz/#!LbIx1YYZ!FSMEcTOQD4F56TnZlqs_leA8YGfBh5XczTcB5ja8bJ8](https://mega.nz/#!LbIx1YYZ!FSMEcTOQD4F56TnZlqs_leA8YGfBh5XczTcB5ja8bJ8 "https://mega.nz/#!LbIx1YYZ!FSMEcTOQD4F56TnZlqs_leA8YGfBh5XczTcB5ja8bJ8")  
+
+  Recuva Pro 注册: **断网** 以后在需要注册的地方输入注册信息即可  
+
+  姓名：`Hack520.com`  
+
+  密钥：`RK98-Q4JY-BS5M-9KKH-A44C`  
+
+- R-Studio  
+
+  简介: 功能强大的数据恢复软件  
+
+  绿色版下载: [https://mega.nz/#!ObhzUaQQ!qxL7KaUlAahjPlCjSxyXIoTEK8VLkADi9D4YBpKTCrc](https://mega.nz/#!ObhzUaQQ!qxL7KaUlAahjPlCjSxyXIoTEK8VLkADi9D4YBpKTCrc "https://mega.nz/#!ObhzUaQQ!qxL7KaUlAahjPlCjSxyXIoTEK8VLkADi9D4YBpKTCrc")  
+
+  
+
 
 
 ### X 系统插件  

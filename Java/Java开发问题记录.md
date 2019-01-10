@@ -68,6 +68,44 @@ org.springframework.transaction.CannotCreateTransactionException: Could not open
 
 参考: [Spring Boot打包war部署到tomcat，并解决404问题](https://my.oschina.net/yejunxi/blog/886023 "https://my.oschina.net/yejunxi/blog/886023")  
 
+### 13 spring boot 抛出 NoSuchBeanDefinitionException 异常   
+
+异常日志:  
+
+```
+2019-01-10 17:26:52:637 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext(AbstractApplicationContext.java 556) -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController': Unsatisfied dependency expressed through field 'commonService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonService': Unsatisfied dependency expressed through field 'pdfExportConfig'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ljq.demo.common.config.PDFExportConfig' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-01-10 17:26:52:656 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource(DruidDataSource.java 1825) -{dataSource-1} closed
+2019-01-10 17:26:52:658 [restartedMain] INFO  org.apache.catalina.core.StandardService(DirectJDKLog.java 180) -Stopping service [Tomcat]
+2019-01-10 17:26:52:673 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener(ConditionEvaluationReportLoggingListener.java 142) -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-10 17:26:53:073 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter(LoggingFailureAnalysisReporter.java 42) -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pdfExportConfig in com.ljq.demo.springboot.service.impl.CommonServiceImpl required a bean of type 'com.ljq.demo.common.config.PDFExportConfig' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.ljq.demo.common.config.PDFExportConfig' in your configuration.
+```
+
+出现场景: 引用其他模块的组件(Component),但是没有 spring boot 没有申明  
+
+解决办法: 在 spring boot 的启动类上边添加`@ComponentScan(basePackages = {"com.xxx.xxx"})`注解  
+
+`basePackages` 中必须包含所引用组件的包名(或父级包名)  
+
+参考资料: [Spring NoSuchBeanDefinitionException](https://www.baeldung.com/spring-nosuchbeandefinitionexception "https://www.baeldung.com/spring-nosuchbeandefinitionexception")  
+
 
 
 

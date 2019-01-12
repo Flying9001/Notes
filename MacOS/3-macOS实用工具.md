@@ -173,4 +173,65 @@
 截图:  
 
 <img src="img/3-macOS-tools-3-1-2.jpg" />
+​    
+​    
+### 4 Quick look 插件  
+
+#### 4.1 QLMarkdown--markdown 预览插件  
+
+简介: QLMarkdown 是一款Quick look 的markdown 预览插件，开源    
+
+使用 `homebrew` 安装 `brew cask install qlmarkdown`  
+
+Github 地址: [https://github.com/toland/qlmarkdown](https://github.com/toland/qlmarkdown "https://github.com/toland/qlmarkdown")  
+
+​    
+
+#### 4.2 QLColorCode--源码预览  
+
+简介: QLColorCode 是一款 Quick Look 的源码预览插件,可以将源码高亮显示,开源  
+
+`homebrew` 安装: `brew cask install qlcolorcode`  
+
+Github 地址: [https://github.com/anthonygelibert/QLColorCode](https://github.com/anthonygelibert/QLColorCode "https://github.com/anthonygelibert/QLColorCode")  
+
+​    
+
+#### 4.3 QLStephen--文本预览  
+
+简介: QLStephen 是一款 Quick Look 的文本预览插件,可以将未知格式的文本编码文件按照文本的形式进行预览,开源    
+
+`homebrew` 安装: `brew cask qlstephen`  
+
+Github 地址: [https://github.com/whomwah/qlstephen](https://github.com/whomwah/qlstephen "https://github.com/whomwah/qlstephen")  
+
+​    
+
+#### 4.4 QuickLookJSON--json预览    
+
+简介: QuickLookJSON 是一款 `json` 格式文件的 Quick Look 预览插件  
+
+`homebew` 安装: `brew cask install quicklook-json`  
+
+官网地址: [http://www.sagtau.com/quicklookjson.html](http://www.sagtau.com/quicklookjson.html "http://www.sagtau.com/quicklookjson.html")  
+
+​    
+
+#### 4.5 BetterZipQL—压缩包预览  
+
+简介: BetterZipQL 是 BetterZip 解压缩工具的 Quick Look 插件,支持预览压缩包的内容;betterzip 分收费版和免费版  
+
+`homebrew` 安装 `brew cask install betterzip` 安装 BetterZip 解压缩工具(内含 Quick Look 插件)    
+
+Quick Look 插件单独下载: [http://macitbetter.com/BetterZipQL.zip](http://macitbetter.com/BetterZipQL.zip "http://macitbetter.com/BetterZipQL.zip")      
+
+官网: [https://macitbetter.com/](https://macitbetter.com/ "https://macitbetter.com/")  
+
+​        
+
+
+
+ 
+
+
 

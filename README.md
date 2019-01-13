@@ -1,18 +1,26 @@
 ## Notes 
 
-作者是一名 **Java** 开发者,这里记录后台开发所需要用到的一些笔记，包括以下几部分:  
+作者是一名 **Java** 开发者,这里记录个人开发过程中遇到的一些问题    
 
-### Java    
+作为一名开发者，频繁重装系统是无可避免的,作者在这里将系统重装和软件安装所需要的注意事项归纳到一份笔记中,以供参考:  
 
-### Linux  
+Windows 平台:  
 
-### SQL    
+[1.windows系统重装](Windows/1.windows系统重装.md)  
 
-### Tools      
+[2.windows日常办公使用软件](Windows/2.windows日常办公使用软件.md)  
 
-#### MacOS    
+[3.windows实用极客工具](Windows/3.windows实用极客工具.md)  
 
-作为一名开发者，频繁重装系统是无可避免的,作者在这里将系统重装和环境搭建所需要的注意事项归纳到一份笔记中,以供参考:  
+[4.windows开发工具](Windows/4.windows开发工具.md)  
 
-###  [Windows 系统重装操作指南](Windows系统重装操作指南.md "Windows系统重装操作指南.md")  
+​    
+
+macOS 平台:  
+
+[1-macOS入门指南](MacOS/1-macOS入门指南.md)  
+
+[2-macOS开发工具](MacOS/2-macOS开发工具.md)  
+
+[3-macOS实用工具](MacOS/3-macOS实用工具.md)  
 

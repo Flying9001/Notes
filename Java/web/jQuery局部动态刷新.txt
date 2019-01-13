@@ -14,7 +14,7 @@ var ajaxFresh = function(plate){
             var tr = new String();
                 for(var i = 0;i < data.length;i++)
                 {
-
+    
                     tr += "<tr><td>"+data[i].columns["DATA:TIME"].value+"</td><td>"+data[i].columns["DATA:DEVICE_IN"].value+
                     "</td><td>"+data[i].columns["DATA:POS"].value+"</td><td>"+data[i].columns["DATA:SPEED"].value+"/"+data[i].columns["DATA:LIMIT"].value
                     +"</td><td>"+data[i].columns["DATA:LENGTH"].value+"</td><td>"+data[i].columns["DATA:COLOR"].value+"</td></tr>";
@@ -57,7 +57,7 @@ xhr - 包含 XMLHttpRequest 对象
          <h4 class="modal-title text-success" id="myPlateLael">
          </h4>           
          </div>
-         
+
          <div class="modal-body">
              <table class="table table-striped table-hover" width="100%">
                <thead class="text-left">
@@ -73,7 +73,7 @@ xhr - 包含 XMLHttpRequest 对象
                <tbody id="modal_content" class="text-left">
                </tbody>
               </table>
-
+    
          </div>
       </div><!-- /.modal-content -->
 </div><!-- /.modal -->

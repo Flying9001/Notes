@@ -32,7 +32,9 @@ mac 下 `brew` 安装 `git` 命令: `brew install git`
 
 [安装包损坏，打不开怎么处理？打不开“XXX”,因为它来自身份不明的开发者怎么处理？](http://mac.orsoon.com/news/187368.html "http://mac.orsoon.com/news/187368.html")  
 
+执行命令: `sudo spctl --master-disable`  
 
+​    
 
 ### 4 Mac 安装 JDK  
 

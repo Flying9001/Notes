@@ -58,7 +58,7 @@
 
 
 
-#### 1.4 Alfred--搜索  
+#### 1.4 Alfred--搜索&系统插件    
 
 简介: 一系列高效率系统工具集合,免费版常用功能:本地全局搜索(类似 Spotlight)、网络搜索、系统命令等  
 
@@ -76,7 +76,9 @@
 
 
 
-#### 1.5 Typora--Markdown编辑器  
+#### 1.5 Markdown编辑器  
+
+##### 1.5.1 Typora  
 
 简介: `Markdown` 编辑器,目前(2018)免费,简洁,好用,全平台支持(Windows/macOS/Linux)  
 
@@ -92,7 +94,9 @@
 
 
 
-#### 1.6 Keka--解压工具  
+#### 1.6 解压工具  
+
+##### 1.6.1 Keka    
 
 简介: 解压工具  
 
@@ -104,7 +108,24 @@
 
 <img src="img/3-macOS-tools-1-6-1.jpg" />
 
+​    
 
+##### 1.6.2 eZip    
+
+简介: 解压工具,支持 Quick Look 预览,支持加密,免费,功能强大  
+
+官网下载: [https://ezip.awehunt.com/](https://ezip.awehunt.com/ "https://ezip.awehunt.com/")  
+备用下载: [https://mega.nz/#!2OARhYzY!JlI0_DcmODYg5i6cI-HgxsfaMYgHLd6BxrWn4antZEQ](https://mega.nz/#!2OARhYzY!JlI0_DcmODYg5i6cI-HgxsfaMYgHLd6BxrWn4antZEQ "https://mega.nz/#!2OARhYzY!JlI0_DcmODYg5i6cI-HgxsfaMYgHLd6BxrWn4antZEQ")  
+
+​    
+
+#### 1.7 垃圾清理  
+
+##### 1.7.1 Lemon  
+
+简介: Lemon 是一款 mac 平台极致的垃圾清理软件,腾讯出品(截至2019-2,内测版)  
+
+官网: [https://mac.gj.qq.com/](https://mac.gj.qq.com/ "https://mac.gj.qq.com/")  
 
 
 
@@ -160,7 +181,7 @@
 
 
 
-### 3.2 iina—视频播放器  
+#### 3.2 iina—视频播放器  
 
 简介: iina 是 Mac 平台的万能视频播放器,开源,免费  
 
@@ -175,6 +196,7 @@
 <img src="img/3-macOS-tools-3-1-2.jpg" />
 ​    
 ​    
+
 ### 4 Quick look 插件  
 
 #### 4.1 QLMarkdown--markdown 预览插件  

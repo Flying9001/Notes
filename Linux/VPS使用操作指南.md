@@ -106,6 +106,9 @@ systemctl start v2ray
 ## 停止
 systemctl stop v2ray
 
+## 设置开机启动
+systemctl enable v2ray
+
 ## 重启
 systemctl restart v2ray
 ```

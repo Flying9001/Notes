@@ -28,6 +28,14 @@ MacOS: [homebrew 安装mysql后，如何配置mysql](https://segmentfault.com/q/
 
 [使用Navicat连接阿里云ECS服务器上的MySQL数据库](https://blog.csdn.net/nw_ningwang/article/details/76218997 "https://blog.csdn.net/nw_ningwang/article/details/76218997")  
 
+- Navicat 无法连接 MySQL 8.0  
+- Navicat 连接 MySQL 8.0 报错  
+- MySQL 8.0 2059 Authentication plugin 'caching_sha2_password' cannot be loaded
+
+解决办法:  
+
+[Authentication plugin 'caching_sha2_password' cannot be loaded](https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded)  
+[Changes in MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password "https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password")  
 
 
 ### 5. 使用 Navicat 对 Mysql 数据库的导入与导出(包括sql与数据模型)  
@@ -192,6 +200,7 @@ port=3306  ##端口
 character_set_server=utf8mb4 ##字符编码
 basedir=%MYSQL_HOME%  ##根目录
 datadir=%MYSQL_HOME%\data  ##数据库文件目录
+default_authentication_plugin=mysql_native_password  ## 设置 MySQL 密码加密方式
 [WinMySQLAdmin]
 %MYSQL_HOME%\bin\mysqld.exe
 

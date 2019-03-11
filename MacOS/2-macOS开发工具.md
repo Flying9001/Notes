@@ -58,7 +58,7 @@ mac 下 `brew` 安装 `git` 命令: `brew install git`
 
 6.1.1 安装: `brew install mysql`  
 
-6.1.2 启动 mysql: `mysql.server`  
+6.1.2 启动 mysql: `mysql.server start`  
 
 6.1.3 执行 mysql 初始化脚本(mysql 自带): `/usr/local/opt/mysql/bin/mysql_secure_installation`  
 
@@ -66,7 +66,7 @@ mac 下 `brew` 安装 `git` 命令: `brew install git`
 
 6.1.4 MySQL 常用命令  
 
-启动: `mysql.server stop`  
+启动: `mysql.server start`  
 
 停止: `mysql.server stop`  
 
@@ -91,6 +91,12 @@ mac 下 `brew` 安装 `git` 命令: `brew install git`
 ```bash
 - Authentication plugin 'caching_sha2_password' cannot be loaded
 ```
+
+错误原因:  
+
+**MySQL 8.0 开始,默认的密码加密方式从 `mysql_native_password` 更改为 `caching_sha2_password`**  
+
+参考资料: [Changes in MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password "https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password")  
 
 解决办法:  
 

@@ -168,7 +168,7 @@ Windows/macOS: [网易邮箱大师安装使用教程](./Windows/6.2.windows.163m
 
 下载与使用教程:  
 
-Windows: [Adobe Reader安装使用教程](./windows/7.1.windows.adobereader.md "./windows/7.1.windows.adobereader.md")  
+Windows: [Adobe Reader安装使用教程](./Windows/7.1.windows.adobereader.md "./Windows/7.1.windows.adobereader.md")  
 
 Mac 平台自带 PDF 预览功能,可不安装 PDF 阅读器  
 
@@ -180,7 +180,7 @@ Mac 平台自带 PDF 预览功能,可不安装 PDF 阅读器
 
 下载与使用教程:  
 
-Windows:  [Sumatra PDF 安装使用教程](./windows/7.2.windows.sumatrapdf.md "./windows/7.2.windows.sumatrapdf.md")  
+Windows:  [Sumatra PDF 安装使用教程](./Windows/7.2.windows.sumatrapdf.md "./Windows/7.2.windows.sumatrapdf.md")  
 
 ​    
 
@@ -194,7 +194,7 @@ Windows:  [Sumatra PDF 安装使用教程](./windows/7.2.windows.sumatrapdf.md "
 
 下载与使用教程:  
 
-Windows: [光影魔术手安装使用教程](./windows/8.1.windows.neoimaging.md "./windows/8.1.windows.neoimaging.md")  
+Windows: [光影魔术手安装使用教程](./Windows/8.1.windows.neoimaging.md "./Windows/8.1.windows.neoimaging.md")  
 
 #### 8.2 美图秀秀  
 
@@ -204,7 +204,7 @@ Windows: [光影魔术手安装使用教程](./windows/8.1.windows.neoimaging.md
 
 下载与使用教程:  
 
-Windows: [美图秀秀安装使用教程](./windows/8.2.windows.meitu.md "./windows/8.2.windows.meitu.md")  
+Windows: [美图秀秀安装使用教程](./Windows/8.2.windows.meitu.md "./Windows/8.2.windows.meitu.md")  
 
 ​    
 
@@ -218,7 +218,7 @@ Windows: [美图秀秀安装使用教程](./windows/8.2.windows.meitu.md "./wind
 
 下载与使用教程:  
 
-Windows: [BandiZip安装使用教程](./windows/9.1.windows.bandizip.md "./windows/9.1.windows.bandizip.md")  
+Windows: [BandiZip安装使用教程](./Windows/9.1.windows.bandizip.md "./Windows/9.1.windows.bandizip.md")  
 
 #### 9.2 7zip  
 
@@ -228,7 +228,7 @@ Windows: [BandiZip安装使用教程](./windows/9.1.windows.bandizip.md "./windo
 
 下载与使用教程:  
 
-Windows: [7zip安装使用教程](./windows/9.2.windows.7zip.md "./windows/9.2.windows.7zip.md")  
+Windows: [7zip安装使用教程](./Windows/9.2.windows.7zip.md "./Windows/9.2.windows.7zip.md")  
 
 #### 9.3 eZip  
 

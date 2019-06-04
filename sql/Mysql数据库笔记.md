@@ -37,8 +37,11 @@ MacOS: [homebrew 安装mysql后，如何配置mysql](https://segmentfault.com/q/
 [Authentication plugin 'caching_sha2_password' cannot be loaded](https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded)  
 [Changes in MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password "https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password")  
 
+### 5. 数据库备份  
 
-### 5. 使用 Navicat 对 Mysql 数据库的导入与导出(包括sql与数据模型)  
+**使用 Navicat 对 Mysql 数据库的导入与导出(包括sql与数据模型)**  
+
+[Linux定时备份与同步MySQL数据库](<https://blog.csdn.net/Mrqiang9001/article/details/90644834> "<https://blog.csdn.net/Mrqiang9001/article/details/90644834>")  
 
 
 

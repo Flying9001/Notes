@@ -139,6 +139,22 @@ Windows: [逍遥安卓模拟器安装使用教程](./Windows/5.2.windows.xyaz.md
 
 Windows/macOS: [Mumu 模拟器安装使用教程](./Windows/5.3.windows.mumu.md "./Windows/5.3.windows.mumu.md")  
 
+​    
+
+### 6 虚拟机  
+
+#### 6.1 VMware  
+
+简介: 专业虚拟机工具，收费  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows: [WMware Workstation Pro虚拟机安装使用教程](./Windows/6.1.windows.vmware.md "./Windows/6.1.windows.vmware.md")  
+
+macOS: [WMware Fusion Pro 虚拟机安装使用教程](./MacOS/6.1.mac.vmware.md "./MacOS/6.1.mac.vmware.md")  
+
 
 
 

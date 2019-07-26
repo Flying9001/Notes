@@ -369,6 +369,16 @@ macOS: [截屏与录屏使用教程](./MacOS/14.3.mac.screen.md "./MacOS/14.3.ma
 
 Windows: [ScreenToGif 安装使用教程](./Windows/14.4.windows.screentogif.md "./Windows/14.4.windows.screentogif.md")  
 
+#### 14.5 GIF Brewery by Gfycat  
+
+简介: 免费、简洁、功能强大的录屏、录像、GIF制作软件，自带GIF图床,唯一遗憾是暂不支持中文  
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS: [GIF Brewery by Gfycat](./MacOS/14.5.mac.gifbrewery.md "./MacOS/14.5.mac.gifbrewery.md")  
+
 ​    
 
 ### 15 文件预览  
@@ -477,6 +487,16 @@ Windows: [Wox 安装使用教程](./Windows/16.2.windows.wox.md "./Windows/16.2.
 
 macOS: [SpotLight 安装使用教程](./MacOS/16.3.mac.spotlight.md "./MacOS/16.3.mac.spotlight.md")  
 
+#### 16.4 Alfred  
+
+简介: 一系列高效率系统工具集合,免费版常用功能:本地全局搜索(类似 Spotlight)、网络搜索、系统命令等  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [Alfred 安装使用教程](./MacOS/16.4.mac.alfred.md "./MacOS/16.4.mac.alfred.md")  
+
 ​    
 
 ### 17 健康护眼  
@@ -539,7 +559,29 @@ Windows: [Space Sniffer 安装使用教程](./Windows/18.1.windows.spacesniffer.
 
 Windows: [万彩办公大师 安装使用教程](./Windows/19.1.windows.wancai.md "./Windows/19.1.windows.wancai.md")  
 
+​    
 
+### X 其他神器  
+
+#### x.1 Recents  
+
+简介: 用于显示最近常用软件以及最近使用软件的最近文档,目前(2019)免费  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+Windows: [Recents 安装使用教程](./MacOS/x.1.mac.recents.md "./MacOS/x.1.mac.recents.md")  
+
+#### x.2 TranslucentTB  
+
+简介: Windows 平台状态栏工具,可将状态栏设置为磨砂/全透明状态,开源，免费  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [TranslucentTB 安装使用教程](./Windows/x.2.windows.translucenttb.md "./Windows/x.2.windows.translucenttb.md")  
 
 
 

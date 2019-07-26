@@ -155,9 +155,389 @@ Windows: [WMware Workstation Pro虚拟机安装使用教程](./Windows/6.1.windo
 
 macOS: [WMware Fusion Pro 虚拟机安装使用教程](./MacOS/6.1.mac.vmware.md "./MacOS/6.1.mac.vmware.md")  
 
+​    
 
+### 7 下载工具  
 
+#### 7.1 迅雷  
 
+简介: 最强的下载工具,没有之一;目前出于版权原因，部分资源无法下载;同时也有限速  
+
+支持平台: Windows/macOS  
+
+下载与使用教程:  
+
+Windows: [迅雷安装使用教程](./Windows/7.1.windows.thunder.md "./Windows/7.1.windows.thunder.md")  
+
+macOS:[迅雷安装使用教程](./MacOS/7.1.mac.thunder.md "./MacOS/7.1.mac.thunder.md")   
+
+#### 7.2 IDM(Internet Download Manager)  
+
+简介: 老牌下载工具,不支持磁力链接,正版收费  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [IDM安装使用教程](./Windows/7.2.windows.idm.md "./Windows/7.2.windows.idm.md")  
+
+#### 7.3 Folx 
+
+简介: mac 平台老牌下载工具,支持 http 和 种子(Torrent)下载,不支持ed2k链接,不限速,免费版已经够用  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+maxOS: [Folx安装使用教程](./MacOS/7.3.mac.folx.md "./MacOS/7.3.mac.folx.md")  
+
+#### 7.4 Aria2  
+
+简介: 免费、开源的离线下载神器，上手难度大。支持协议有: http/https,ftp/sftp,BitTorrent(BT种子),Matelink(磁力链接)  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Linux: [Aria2安装使用教程](./Linux/7.4.linux.aria2.md "./Linux/7.4.linux.aria2.md")  
+
+​    
+
+### 8 垃圾清理工具  
+
+#### 8.1 火绒  
+
+简介: 火绒是一款 Windows 平台极致、简单的杀毒软件，其自带的垃圾清理了插件也功能强大  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [火绒安装使用教程](../../Software/GeneralTools/Windows/2.1.windows.huorong.md "../../Software/GeneralTools/Windows/2.1.windows.huorong.md")  
+
+#### 8.2 CCleaner  
+
+简介: 老牌垃圾清理工具,专业版收费  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [CCleaner 安装使用教程](./Windows/8.2.windows.ccleaner.md "./Windows/8.2.windows.ccleaner.md")  
+
+#### 8.3 腾讯柠檬清理  
+
+简介: 腾讯出品的为数不多的良心软件，mac 平台的极致垃圾清理软件  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [腾讯柠檬清理安装使用教程](./MacOS/8.3.mac.lemon.md "./MacOS/8.3.mac.lemon.md")  
+
+​    
+
+### 9 资源管理器  
+
+#### 9.1 Clover  
+
+简介: 一款像浏览器一样使用的 Windows 资源管理器,完美替代原生  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [Clover安装使用教程](./Windows/9.1.windows.clover.md "./Windows/9.1.windows.clover.md")  
+
+#### 9.2 Easy New File  
+
+简介: Mac 平台右键增强插件,可以在 Finder 中右键创建新文件  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [Easy New File 安装使用教程](./MacOS/9.2.mac.easynewfile.md "./MacOS/9.2.mac.easynewfile.md")  
+
+​    
+
+### 10 文件拷贝  
+
+#### 10.1 FastCopy  
+
+简介: 正如其名所示,FastCopy 是 windows 平台上边的快速 复制/删除 软件,开源,免费  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [FastCopy安装使用教程](./Windows/10.1.windows.fastcopy.md "./Windows/10.1.windows.fastcopy.md")  
+
+​    
+
+### 11 数据恢复  
+
+#### 11.1 Recuva  
+
+简介: CCleaner 公司出品的另一款精品软件,小巧但又功能强大的数据恢复软件  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [Recuova 安装使用教程](./Windows/11.1.windows.recuva.md "./Windows/11.1.windows.recuva.md")  
+
+#### 11.2 R-Studio  
+
+简介: 功能强大的数据恢复软件  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [R-Studio 安装使用教程](./Windows/11.2.windows.rstudio.md "./Windows/11.2.windows.rstudio.md")  
+
+​    
+
+### 12 12306 抢票  
+
+#### 12306 Bypass  
+
+简介: 12306Bypass 是一款免费、功能强大的火车票抢票软件,免安装  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [12306 Bypass 安装使用教程](./Windows/12.1.windows.12306bypass.md "./Windows/12.1.windows.12306bypass.md")  
+
+​    
+
+### 13 Markdown 编辑器  
+
+#### 13.1 Typora  
+
+简介: 所见即所得的 Markdown 编辑器，简洁，好用  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [Typora 安装使用教程](./Windows/13.1.windows.typora.md "./Windows/13.1.windows.typora.md")  
+
+​    
+
+### 14 截图&录屏&GIF制作  
+
+#### 14.1 Snipaste  
+
+简介: 方便好用的截图工具,免费，免安装  
+
+支持平台: Windows/macOS  
+
+下载与使用教程:  
+
+Windows/macOS: [Snipaste 安装使用教程](./Windows/14.1.windows.snipaste.md "./Windows/14.1.windows.snipaste.md")  
+
+#### 14.2 Xnip  
+
+简介: 免费易用的截图工具  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS:[Xnip 安装使用教程](./MacOS/14.2.mac.xnip.md "./MacOS/14.2.mac.xnip.md")  
+
+#### 14.3 截屏与录屏  
+
+简介: macOS 系统自带的截屏工具，使用起来也很方便  
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS: [截屏与录屏使用教程](./MacOS/14.3.mac.screen.md "./MacOS/14.3.mac.screen.md")  
+
+#### 14.4 ScreenToGif  
+
+简介: 录屏转为 gif, gif 制作,可逐帧编辑,开源，免费，免安装  
+
+支持系统: Windows  
+
+下载与使用教程:  
+
+Windows: [ScreenToGif 安装使用教程](./Windows/14.4.windows.screentogif.md "./Windows/14.4.windows.screentogif.md")  
+
+​    
+
+### 15 文件预览  
+
+#### 15.1 Seer  
+
+简介: 功能强大的文件预览工具,压缩包也支持，最新版收费  
+
+支持系统: Windows  
+
+下载与使用教程:  
+
+Windows: [Seer 安装使用教程](./Windows/15.1.windows.seer.md "./Windows/15.1.windows.seer.md")  
+
+#### 15.2 Quick Look  
+
+简介: macOS 系统自带预览工具，使用方便，但支持格式较少  
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS: [Quick Look 使用教程](./MacOS/15.2.mac.quicklook.md "./MacOS/15.2.mac.quicklook.md")  
+
+#### 15.3 QLMarkdown  
+
+简介: QLMarkdown 是一款Quick look 的markdown 预览插件，开源  
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS: [QLMarkdown 安装使用教程](./MacOS/15.3.mac.qlmarkdown.md "./MacOS/15.3.mac.qlmarkdown.md")  
+
+#### 15.4 QLColorCode  
+
+简介: QLColorCode 是一款 Quick Look 的源码预览插件,可以将源码高亮显示,开源  
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS:[QLColorCode 安装使用教程](./MacOS/15.4.mac.qlcolorcode.md "./MacOS/15.4.mac.qlcolorcode.md")  
+
+#### 15.5 QLStephen  
+
+简介: QLStephen 是一款 Quick Look 的文本预览插件,可以将未知格式的文本编码文件按照文本的形式进行预览,开源    
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS: [QLStephen 安装使用教程](./MacOS/15.5.mac.qlstephen.md "./MacOS/15.5.mac.qlstephen.md")  
+
+#### 15.6 QuickLookJSON  
+
+简介: QuickLookJSON 是一款 `json` 格式文件的 Quick Look 预览插件  
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS: [QuickLookJSON 安装使用教程](./MacOS/15.6.mac.quicklookjson.md "./MacOS/15.6.mac.quicklookjson.md")  
+
+#### 15.7 BetterZipQL  
+
+简介: BetterZipQL 是 BetterZip 解压缩工具的 Quick Look 插件,支持预览压缩包的内容;betterzip 分收费版和免费版  
+
+支持系统: macOS  
+
+下载与使用教程:  
+
+macOS: [BetterZipQL 安装使用教程](./MacOS/15.7.mac.betterzipql.md "./MacOS/15.7.mac.betterzipql.md")  
+
+​    
+
+### 16 本机全局搜索  
+
+#### 16.1 Everything  
+
+简介: 体积小巧、功能强大的本机文件(夹)搜索软件，极客必备  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [Everything 安装使用教程](./Windows/16.1.windows.everything.md "./Windows/16.1.windows.everything.md")  
+
+#### 16.2 Wox  
+
+简介: windows 平台**开源**的快速启动程序插件,类似与 macOS 的 SpoitLight,可和 Everything 无缝对接,插件丰富  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [Wox 安装使用教程](./Windows/16.2.windows.wox.md "./Windows/16.2.windows.wox.md")  
+
+#### 16.3 SpotLight  
+
+简介: macOS 系统自带的全局搜索软件,功能强大,这也是很多人喜欢 Mac 的原因之一  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [SpotLight 安装使用教程](./MacOS/16.3.mac.spotlight.md "./MacOS/16.3.mac.spotlight.md")  
+
+​    
+
+### 17 健康护眼  
+
+#### 17.1 f.lux  
+
+简介: 小巧、智能的护眼软件,可根据时间自动调节屏幕亮度  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [f.lux 安装使用教程](./Windows/17.1.windows.flux.md "./Windows/17.1.windows.flux.md")  
+
+#### 17.2 黑暗模式  
+
+简介: macOS 系统自带的黑暗主题模式，护眼效果良好  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [黑暗模式安装使用教程](./MacOS/17.2.mac.dark.md "./MacOS/17.2.mac.dark.md")  
+
+#### 17.3 夜间模式  
+
+简介: Windows 10 系统自带的护眼模式功能  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [夜间模式安装使用教程](./Windows/17.3.windows.dark.md "./Windows/17.3.windows.dark.md")  
+
+​    
+
+### 18 磁盘分析  
+
+#### 18.1 Space Sniffer  
+
+简介: 强大的磁盘分析工具  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [Space Sniffer 安装使用教程](./Windows/18.1.windows.spacesniffer.md "./Windows/18.1.windows.spacesniffer.md")  
+
+​    
+
+### 19 综合办公软件  
+
+#### 19.1 万彩办公大师  
+
+简介: 一系列办公软件集合,包括 `PDF`处理,格式转换,图片编辑,OCR图像识别,屏幕录制,教学办公,文件批处理等实用工具,最主要一点该软件**免费**  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [万彩办公大师 安装使用教程](./Windows/19.1.windows.wancai.md "./Windows/19.1.windows.wancai.md")  
 
 
 

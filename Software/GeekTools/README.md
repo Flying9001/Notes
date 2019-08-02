@@ -201,6 +201,26 @@ maxOS: [Folx安装使用教程](./MacOS/7.3.mac.folx.md "./MacOS/7.3.mac.folx.md
 
 Linux: [Aria2安装使用教程](./Linux/7.4.linux.aria2.md "./Linux/7.4.linux.aria2.md")  
 
+#### 7.5 proxyee-down  
+
+简介: 免费、开源的高速下载工具,支持百度云插件  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [proxyee-down 安装使用教程](./Windows/7.5.windows.proxyeedown.md "./Windows/7.5.windows.proxyeedown.md")  
+
+#### 7.6 Motrix  
+
+简介: 免费、开源的高速下载工具,核心是基于 Aria2 开发,属于一个综合下载工具，支持协议众多  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [Motrix 安装使用教程](./Windows/7.6.windows.motrix.md "./Windows/7.6.windows.motrix.md")  
+
 ​    
 
 ### 8 垃圾清理工具  

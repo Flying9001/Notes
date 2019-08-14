@@ -106,6 +106,10 @@ Consider defining a bean of type 'com.ljq.demo.common.config.PDFExportConfig' in
 
 参考资料: [Spring NoSuchBeanDefinitionException](https://www.baeldung.com/spring-nosuchbeandefinitionexception "https://www.baeldung.com/spring-nosuchbeandefinitionexception")  
 
+### 14 IntelliJ Idea解决Could not autowire. No beans of 'xxxx' type found的错误提示  
+
+[IntelliJ Idea解决Could not autowire. No beans of 'xxxx' type found的错误提示](https://blog.csdn.net/u012453843/article/details/54906905 "https://blog.csdn.net/u012453843/article/details/54906905")  
+
 
 
 

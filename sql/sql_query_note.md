@@ -1,6 +1,8 @@
-# SQL语句    
+# SQL查询笔记      
 
-### 1 多表联合查询    
+### 1 查询  
+
+#### 1.1 与 Mybatis 搭配      
 
 SQL 语句 & Mybatis mapper xml
 
@@ -31,7 +33,7 @@ SQL 语句 & Mybatis mapper xml
 	
 ```
 
-### 2. 多表联合查询分页  
+#### 1.2 多表联合查询分页  
 
 ```sql
     <!-- 获取商品列表 -->
@@ -57,8 +59,27 @@ SQL 语句 & Mybatis mapper xml
 ```
 
 
+#### 1.3 关联查询
+
+[MySQL SELECT COUNT 一对多关联查询去重](https://blog.csdn.net/Mrqiang9001/article/details/100180644 "https://blog.csdn.net/Mrqiang9001/article/details/100180644")  
+
+​    
+
+#### 1.4 条件查询  
+
+[MySQL范围查询 IN 使用注意事项](https://blog.csdn.net/Mrqiang9001/article/details/100074408 "https://blog.csdn.net/Mrqiang9001/article/details/100074408")  
 
 
+
+### 2 数据库设计方案  
+
+#### 2.1 具有用户已读状态的公告
+
+[具有用户已读状态功能的公告(1):数据库设计](https://blog.csdn.net/Mrqiang9001/article/details/98335457 "https://blog.csdn.net/Mrqiang9001/article/details/98335457")  
+
+[具有用户已读状态功能的公告(2):用户查询公告列表，同时包含读取状态](https://blog.csdn.net/Mrqiang9001/article/details/98340623 "https://blog.csdn.net/Mrqiang9001/article/details/98340623")  
+
+[具有用户已读状态功能的公告(3):一键已读所有公告](https://blog.csdn.net/Mrqiang9001/article/details/98347922 "https://blog.csdn.net/Mrqiang9001/article/details/98347922")  
 
 
 

@@ -17,7 +17,7 @@ Windows: [驱动精灵离线版安装使用教程](./Windows/1.1.windows.driverg
 
 ​    
 
-### 2 远程控制  
+### 2 远程控制
 
 #### 2.1 TeamViewer  
 

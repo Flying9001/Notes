@@ -244,3 +244,26 @@ chmod 777 ReverseProxy_darwin_amd64
 
 官方文档地址: [https://manuals.zeroturnaround.com/jrebel/standalone/maven.html](https://manuals.zeroturnaround.com/jrebel/standalone/maven.html)  
 
+#### 5.2 Lombok  
+
+Lombok 是一款用于简写Java bean 的插件，如使用 `@Setter` 注解即相当于类中的属性写了 `Setter` 方法，Java 开发者必备插件之一  
+
+- 安装:  
+
+File --- Settings --- Plugins --- Browse respositories --- 搜索「Lombok」 --- 选择「Lombok」安装即可  
+
+#### 5.3 Albaba Java Coding Guidelines  
+
+Albaba Java Coding Guidelines 功能正如其名，是阿里的 Java 代码规范插件，使用这个插件作为辅助，能够轻松写出规范的 Java 代码  
+
+- 安装:  
+
+File --- Settings --- Plugins --- Browse respositories --- 搜索「Albaba」 --- 选择「Albaba Java Coding Guidelines」安装即可   
+
+#### 5.4 RestfulToolKit  
+
+RestfulToolKit 是一套集成了 Restful 服务的辅助开发工具，可以实现通过 URL 定位到具体的 Controller,也能够实现基本的 Http 请求(类似 Postman 的功能)  
+
+- 安装:  
+
+File --- Settings --- Plugins --- Browse respositories --- 搜索「Restful」 --- 选择「RestfulToolKit」安装即可 

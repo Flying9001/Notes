@@ -110,6 +110,23 @@ Consider defining a bean of type 'com.ljq.demo.common.config.PDFExportConfig' in
 
 [IntelliJ Idea解决Could not autowire. No beans of 'xxxx' type found的错误提示](https://blog.csdn.net/u012453843/article/details/54906905 "https://blog.csdn.net/u012453843/article/details/54906905")  
 
+### 15 Mysq 禁用 ONLY_FULL_GROUP_BY  
+
+```sql
+-- 查询mysql属性设置
+-- SELECT @@sql_mode
+
+-- 删除 mysql ONLY_FULL_GROUP_BY 属性
+-- SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+-- SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+-- SET SESSION sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+-- 添加 mysql ONLY_FULL_GROUP_BY 属性
+-- SET sql_mode=(SELECT CONCAT(@@sql_mode,',ONLY_FULL_GROUP_BY'));
+```
+
+参考资料: [mysql 禁用 ONLY_FULL_GROUP_BY，暂时解决错误（sql_mode=only_full_group_by）](https://blog.csdn.net/weixin_34269583/article/details/88026517 "https://blog.csdn.net/weixin_34269583/article/details/88026517")  
+
 
 
 

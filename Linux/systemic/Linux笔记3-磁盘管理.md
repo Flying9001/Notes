@@ -38,12 +38,12 @@
         -n : 不更新 /etc/mtab 情况下卸载
         eg : umount /mnt/cdrom : 将挂载在 /mnt/cdrom 目录下的设备卸载
     开机挂载设置目录: /etc/fstab /etc/mtab (具体设置参考网络)   
-    
+
 2. 文件链接 link (不能跨文件系统(filesystem))
     ln [option] source target : 创建文件链接(hard link 不支持目录)
         -s : 创建的是 symbolic link(相当于 windows 快捷方式),不加 -s 相当于 hard link 		
 
 
 
-     
+
 </ode></pre>

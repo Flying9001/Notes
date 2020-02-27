@@ -221,6 +221,16 @@ Windows/macOS/Linux: [proxyee-down 安装使用教程](./Windows/7.5.windows.pro
 
 Windows/macOS/Linux: [Motrix 安装使用教程](./Windows/7.6.windows.motrix.md "./Windows/7.6.windows.motrix.md")  
 
+#### 7.7 MagentW  
+
+简介: 免费、开源的 BT 种子搜索工具,支持的搜索源丰富  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [MagentW 安装使用教程](./Windows/7.7.windows.magentw.md "./Windows/7.7.windows.magentw.md")  
+
 ​    
 
 ### 8 垃圾清理工具  

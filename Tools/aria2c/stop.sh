@@ -5,7 +5,7 @@
 
 
 # aria2c 配置文件路径(进程 id 文件保存路径)
-aria2cCfgPath="/root/.aria2/"
+aria2cCfgPath="/root/.aria2c/aria2c/"
 # 保存 aria2c 进程 id 的文件名
 aria2cPidFile="aria2c_pid_file.txt"
 

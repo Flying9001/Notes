@@ -11,9 +11,9 @@ downPath="/var/www/html/down/"
 # tracker 下载文件名
 trackerFile="trackers_all.txt"
 # aria2c 配置文件路径
-aria2cCfgPath="/root/.aria2/"
+aria2cCfgPath="/root/.aria2c/aria2c/"
 # aria2c 配置文件名称
-aria2cCfgFile="aria2.conf"
+aria2cCfgFile="aria2c.conf"
 
 # 这里的-x 参数判断${downPath}是否存在并且是否具有可执行权限 
 if [ ! -x "${downPath}" ]; then 

@@ -591,6 +591,20 @@ Windows: [万彩办公大师 安装使用教程](./Windows/19.1.windows.wancai.m
 
 ​    
 
+### 20 Hosts 管理  
+
+#### 20.1 Switch Hosts  
+
+简介: Switch Hosts 是一个管理、切换多个 hosts 方案的工具。它是一个免费开源软件。  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+windows/macOS/Linux: [Switch Host 安装使用教程](./Windows/20.1.windows.switch_host.md "./Windows/20.1.windows.switch_host.md")  
+
+​    
+
 ### X 其他神器  
 
 #### x.1 Recents  

@@ -105,6 +105,16 @@ Windows/macOS: [网易云音乐安装使用教程](./Windows/4.4.windows.yunmusi
 
 Windows/macOS: [SodaPlayer安装使用教程](./Windows/4.5.windows.sodaplayer.md "./Windows/4.5.windows.sodaplayer.md")  
 
+#### 4.6 爱奇艺万能联播  
+
+简介: 爱奇艺官方推出视频播放器，除了可以播放本地视频以外，还可以在线播放网盘中的视频，最关键一点，还能下载百度网盘中的文件，基本不限速(虽不是全速，但能达 2Mb/s)  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [爱奇艺万能联播 安装使用教程](./Windows/4.6.windows.baidu_gee_player.md "./Windows/4.6.windows.baidu_gee_player.md")  
+
 ​    
 
 ### 5 安卓模拟器  
@@ -602,6 +612,20 @@ Windows: [万彩办公大师 安装使用教程](./Windows/19.1.windows.wancai.m
 下载与使用教程:  
 
 windows/macOS/Linux: [Switch Host 安装使用教程](./Windows/20.1.windows.switch_host.md "./Windows/20.1.windows.switch_host.md")  
+
+​    
+
+### 21 软件卸载  
+
+#### 21.1 Geek Uninstaller  
+
+简介: 有效、快速、轻巧、免安装、免费的软件卸载工具  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+windows: [Geek Uninstaller 安装使用教程](./Windows/21.1.windows.geek_uninstaller.md "./Windows/21.1.windows.geek_uninstaller.md")  
 
 ​    
 

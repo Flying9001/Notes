@@ -611,7 +611,7 @@ Windows: [万彩办公大师 安装使用教程](./Windows/19.1.windows.wancai.m
 
 下载与使用教程:  
 
-windows/macOS/Linux: [Switch Host 安装使用教程](./Windows/20.1.windows.switch_host.md "./Windows/20.1.windows.switch_host.md")  
+windows/macOS/Linux: [Switch Hosts 安装使用教程](./Windows/20.1.windows.switch_hosts.md "./Windows/20.1.windows.switch_hosts.md")  
 
 ​    
 

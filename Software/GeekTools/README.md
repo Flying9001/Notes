@@ -313,6 +313,14 @@ macOS: [Easy New File 安装使用教程](./MacOS/9.2.mac.easynewfile.md "./MacO
 
 Windows: [FastCopy安装使用教程](./Windows/10.1.windows.fastcopy.md "./Windows/10.1.windows.fastcopy.md")  
 
+#### 10.2 NTFS for Mac  
+
+简介: 这是一款可以在 Mac 上实现外接硬盘读写功能的软件，对于 Mac 用户而言，非常实用，收费  
+
+支持平台: macOS  
+
+macOS: [NTFS for Mac 安装使用教程](./MacOS/10.2.mac.ntfs_for_mac.md "./MacOS/10.2.mac.ntfs_for_mac.md")  
+
 ​    
 
 ### 11 数据恢复  

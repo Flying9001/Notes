@@ -127,6 +127,10 @@ Consider defining a bean of type 'com.ljq.demo.common.config.PDFExportConfig' in
 
 参考资料: [mysql 禁用 ONLY_FULL_GROUP_BY，暂时解决错误（sql_mode=only_full_group_by）](https://blog.csdn.net/weixin_34269583/article/details/88026517 "https://blog.csdn.net/weixin_34269583/article/details/88026517")  
 
+### 16 MySQL 四种事务隔离级别  
+
+[关于 MySQL 四种事务隔离级别的设置与简要说明](https://blog.csdn.net/Mrqiang9001/article/details/105143411 "https://blog.csdn.net/Mrqiang9001/article/details/105143411")  
+
 
 
 

@@ -113,6 +113,59 @@ systemctl enable v2ray
 systemctl restart v2ray
 ```
 
+V2ray 服务端配置文件路径: `/etc/v2ray/config.json`  
+
+服务配置示例:  
+
+```json
+{
+ "log" : {
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log",
+    "loglevel": "warning"
+  },
+  "inbounds": [{
+    "port": 996,
+    "listen": "127.0.0.1",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "aaf45a10-5dc3-4bb3-9258-694e868afe8c",
+          "level": 2,
+          "alterId": 55
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+      "path": "/mmm"
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": ["geoip:private"],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
+```
+
+
+
 详细配置可参考教程:  
 
 [V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/ "https://yuan.ga/v2ray-complete-tutorial/")    
@@ -146,6 +199,16 @@ Android 系统:
 **该教程适用于 Shadowsocket 系列以及 V2ray**  
 
 推荐使用手动创建 `user-rule.txt ` 文件,将其放到和 `pac.txt` 同一个目录中,重启服务即可  
+
+​    
+
+### 8 TLS/SSL 证书申请  
+
+[免费 https 证书（Let's Encrypt）申请与配置](https://keelii.github.io/2016/06/12/free-https-cert-lets-encrypt-apply-install "https://keelii.github.io/2016/06/12/free-https-cert-lets-encrypt-apply-install")  
+
+步骤:  
+
+
 
 
 

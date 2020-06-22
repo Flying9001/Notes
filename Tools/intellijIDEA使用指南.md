@@ -12,6 +12,20 @@
 
 链接:https://pan.baidu.com/s/1An57LD065JicTtf6efB6jQ  密码:6g9x  
 
+2020.1.2 版下载与激活:  
+
+Windows: [https://mega.nz/file/HDgRHYyK#NjsOFgO3zItiKrBQCfJnUXvluV4e8Fa8Q8CFurtD2mA](https://mega.nz/file/HDgRHYyK#NjsOFgO3zItiKrBQCfJnUXvluV4e8Fa8Q8CFurtD2mA "https://mega.nz/file/HDgRHYyK#NjsOFgO3zItiKrBQCfJnUXvluV4e8Fa8Q8CFurtD2mA")  
+
+macOS: [https://mega.nz/file/XWpGlCYb#4P2E-Fg_8d1pLe9bBLxI-xkX2nwYwaH8fEmJKida3gs](https://mega.nz/file/XWpGlCYb#4P2E-Fg_8d1pLe9bBLxI-xkX2nwYwaH8fEmJKida3gs "https://mega.nz/file/XWpGlCYb#4P2E-Fg_8d1pLe9bBLxI-xkX2nwYwaH8fEmJKida3gs")  
+
+激活工具(通用):[https://mega.nz/file/3XImFQZT#1UHi_GZAUPdKVvReMoP1fEBOSF2ZaS85lxBKUpYHEmI](https://mega.nz/file/3XImFQZT#1UHi_GZAUPdKVvReMoP1fEBOSF2ZaS85lxBKUpYHEmI "https://mega.nz/file/3XImFQZT#1UHi_GZAUPdKVvReMoP1fEBOSF2ZaS85lxBKUpYHEmI")  
+
+激活教程:  
+
+[2020最新版IDEA破解教程，2020 IDEA破解](https://juejin.im/post/5e9fd3cb6fb9a03c880f5f4e "https://juejin.im/post/5e9fd3cb6fb9a03c880f5f4e")  
+
+简要说明: 将激活 jar 当做本地插件进行安装,若需要填写激活码,这复制激活工具包中`ACTIVATION_CODE.txt` 文件中的代码  
+
 ### 3. 教程  
 
 #### 3.1 教程文档  
@@ -120,8 +134,21 @@
   设置 其他/新建 项目的文件编码格式:  
 
   File --- Other Settings --- Default Settings --- Editor --- File encodings,格式设置同上  
+  
+- 设置 Java 类模板  
 
-   
+  File --- Settings --- Editor --- File and Code Templates,选择 Class/Interface/Enum,在 `public class/interface/enum ${NAME}`上边添加模板如下:  
+  
+  ```java
+  /**
+   * @Description: ${Description}
+   * @Author: ${USER}
+   * @Date: ${DATE}
+   */
+  ```
+  
+  
+  
 
 ### 5 插件安装  
 

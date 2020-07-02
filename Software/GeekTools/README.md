@@ -241,6 +241,16 @@ Windows/macOS/Linux: [Motrix 安装使用教程](./Windows/7.6.windows.motrix.md
 
 Windows/macOS/Linux: [MagentW 安装使用教程](./Windows/7.7.windows.magentw.md "./Windows/7.7.windows.magentw.md")  
 
+#### 7.8 黑科下载器  
+
+简介: 一款极速下载工具  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [黑科下载器 安装使用教程](./Windows/7.8.windows.heike.md "./Windows/7.8.windows.heike.md")  
+
 ​    
 
 ### 8 垃圾清理工具  
@@ -313,13 +323,25 @@ macOS: [Easy New File 安装使用教程](./MacOS/9.2.mac.easynewfile.md "./MacO
 
 Windows: [FastCopy安装使用教程](./Windows/10.1.windows.fastcopy.md "./Windows/10.1.windows.fastcopy.md")  
 
-#### 10.2 NTFS for Mac  
+#### 10.2 Paragon NTFS for Mac  
 
 简介: 这是一款可以在 Mac 上实现外接硬盘读写功能的软件，对于 Mac 用户而言，非常实用，收费  
 
 支持平台: macOS  
 
-macOS: [NTFS for Mac 安装使用教程](./MacOS/10.2.mac.ntfs_for_mac.md "./MacOS/10.2.mac.ntfs_for_mac.md")  
+下载与使用教程:  
+
+macOS: [Paragon NTFS for Mac 安装使用教程](./MacOS/10.2.mac.ntfs_for_mac.md "./MacOS/10.2.mac.ntfs_for_mac.md")  
+
+#### 10.3 赤友 NTFS 助手  
+
+简介: 这是一款可以在 Mac 上实现外接硬盘读写功能的软件，收费，但是可以一直免费试用  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [赤友NTFS 助手 安装使用教程](./MacOS/10.3.mac.chiyou_ntfs.md "./MacOS/10.3.mac.chiyou_ntfs.md")  
 
 ​    
 
@@ -634,6 +656,16 @@ windows/macOS/Linux: [Switch Hosts 安装使用教程](./Windows/20.1.windows.sw
 下载与使用教程:  
 
 windows: [Geek Uninstaller 安装使用教程](./Windows/21.1.windows.geek_uninstaller.md "./Windows/21.1.windows.geek_uninstaller.md")  
+
+#### 21.2 AppCleaner  
+
+简介: 免费、轻量、免安装的软件卸载工具  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [AppCleaner 安装使用教程](./MacOS/21.2.mac.appcleaner.md "./MacOS/21.2.mac.appcleaner.md")  
 
 ​    
 

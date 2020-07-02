@@ -4,23 +4,27 @@
 
 作为一名开发者，频繁重装系统是无可避免的,作者在这里将系统重装和软件安装所需要的注意事项归纳到一份笔记中,以供参考:  
 
-Windows 平台:  
+### 统一软件管理  
 
-[1.windows系统重装](Windows/1.windows系统重装.md)  
+[windows系统重装教程](./Windows/1.windows系统重装.md "./Windows/1.windows系统重装.md")  
 
-[2.windows日常办公使用软件](Windows/2.windows日常办公使用软件.md)  
+[macOS入门指南](./MacOS/1.macOS入门指南.md "./MacOS/1.macOS入门指南.md")  
 
-[3.windows实用极客工具](Windows/3.windows实用极客工具.md)  
+[常用办公软件](./Software/GeneralTools/README.md "./Software/GeneralTools/README.md")  
 
-[4.windows开发工具](Windows/4.windows开发工具.md)  
+[实用极客工具](./Software/GeekTools/README.md "./Software/GeekTools/README.md")  
+
+[开发工具](./Software/DevelopTools/README.md "./Software/DevelopTools/README.md")    
 
 ​    
 
-macOS 平台:  
+### 浏览器插件  
 
-[1-macOS入门指南](MacOS/1-macOS入门指南.md)  
+[常用浏览器插件](./Tools/browser_plugins.md "./Tools/browser_plugins.md")  
 
-[2-macOS开发工具](MacOS/2-macOS开发工具.md)  
+​    
 
-[3-macOS实用工具](MacOS/3-macOS实用工具.md)  
+### 常用工具网站  
+
+[常用工具网站](./Tools/frequently_used_website.md "./Tools/frequently_used_website.md")  
 

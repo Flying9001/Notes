@@ -240,3 +240,13 @@ Windows: [7zip安装使用教程](./Windows/9.2.windows.7zip.md "./Windows/9.2.w
 
 macOS: [eZip安装使用教程](./MacOS/9.3.mac.ezip.md "./MacOS/9.3.mac.ezip.md")  
 
+#### 9.4 Keka  
+
+简介: 免费的压缩软件  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [Keka 安装使用教程](./MacOS/9.4.mac.keka.md "./MacOS/9.4.mac.keka.md")  
+

@@ -313,6 +313,7 @@ youtube: [https://www.youtube.com/channel/UCKFB_rVEFEF3l-onQGvGx1A](https://www.
 | 蓝奏云       | 否       | 无限     | 无       | 单个文件不<br />超过100M  | 不支持   | [https://www.lanzou.com/](https://www.lanzou.com/ "https://www.lanzou.com/") |
 | 115网盘      | 否       | 0        | 无       | 无                        | 支持     | [https://115.com/](https://115.com/ "https://115.com/")      |
 | 腾讯微云     | 否       | 10G      | 无       | 无                        | 不支持   | [https://www.weiyun.com/](https://www.weiyun.com/ "https://www.weiyun.com/") |
+| 6盘          | 否       | 6T       | 无       | 无                        | 支持     | [https://v3-beta.6pan.cn](https://v3-beta.6pan.cn "https://v3-beta.6pan.cn") |
 
 ​    
 

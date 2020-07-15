@@ -171,13 +171,13 @@ macOS: [WMware Fusion Pro 虚拟机安装使用教程](./MacOS/6.1.mac.vmware.md
 
 #### 7.1 迅雷  
 
-简介: 最强的下载工具,没有之一;目前出于版权原因，部分资源无法下载;同时也有限速  
+简介: 最强的下载工具,没有之一;目前出于版权原因，部分资源无法下载;同时也有限速。最近(2020年7月)迅雷又上架苹果 App Store 了，同时带来了迅雷网盘，可玩性很高，值得推荐  
 
 支持平台: Windows/macOS  
 
 下载与使用教程:  
 
-Windows: [迅雷安装使用教程](./Windows/7.1.windows.thunder.md "./Windows/7.1.windows.thunder.md")  
+Windows/iOS: [迅雷安装使用教程](./Windows/7.1.windows.thunder.md "./Windows/7.1.windows.thunder.md")  
 
 macOS:[迅雷安装使用教程](./MacOS/7.1.mac.thunder.md "./MacOS/7.1.mac.thunder.md")   
 

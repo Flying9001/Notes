@@ -251,6 +251,14 @@ Windows/macOS/Linux: [MagentW 安装使用教程](./Windows/7.7.windows.magentw.
 
 Windows: [黑科下载器 安装使用教程](./Windows/7.8.windows.heike.md "./Windows/7.8.windows.heike.md")  
 
+#### 7.9 闪电下载  
+
+简介: 一款极速下载软件，除了基础的 http(s) 资源以外，还支持磁力、种子、电驴、百度网盘等资源，能够下载被限制的资源，老司机专用。免费用户每天只能下载 5 个资源。移动端也支持。  
+
+支持平台: Windows/macOS  
+
+Windows/macOS: [闪电下载 安装使用教程](./Windows/7.9.windows.shandian_download.md "./Windows/7.9.windows.shandian_download.md")  
+
 ​    
 
 ### 8 垃圾清理工具  
@@ -666,6 +674,30 @@ windows: [Geek Uninstaller 安装使用教程](./Windows/21.1.windows.geek_unins
 下载与使用教程:  
 
 macOS: [AppCleaner 安装使用教程](./MacOS/21.2.mac.appcleaner.md "./MacOS/21.2.mac.appcleaner.md")  
+
+​    
+
+### 22 文件同步  
+
+#### 22.1 FreeFileSync  
+
+简介: 免费开源的文件夹比对、同步软件。支持本地文件管理、FTP、SFTP、GoogleDrive 同步  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [FreeFileSync 安装使用教程](./Windows/22.1.windows.free_file_sync.md "./Windows/22.1.windows.free_file_sync.md")  
+
+#### 22.2 SyncToy  
+
+简介: 微软官方出品的文件夹同步软件，基于 `.net` 框架开发(需要安装 `.net` 框架)，操作简单，功能实用  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [SyncToy 安装使用教程](./Windows/22.2.windows.sync_toy.md "./Windows/22.2.windows.sync_toy.md")  
 
 ​    
 

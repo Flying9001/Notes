@@ -305,15 +305,16 @@ youtube: [https://www.youtube.com/channel/UCKFB_rVEFEF3l-onQGvGx1A](https://www.
 
 ### 6 网盘  
 
-| 网盘名称     | 是否帆樯 | 免费空间 | 下载限速 | 其他限制                  | 离线下载 | 地址                                                         |
-| ------------ | -------- | -------- | -------- | ------------------------- | -------- | ------------------------------------------------------------ |
-| 百度网盘     | 否       | 2T       | 限制     | 大文件必须<br/>客户端下载 | 支持     | [https://pan.baidu.com](https://pan.baidu.com "https://pan.baidu.com") |
-| MEGA         | 是       | 15G      | 无       | 无                        | 不支持   | [https://mega.nz](https://mega.nz "https://mega.nz")         |
-| Google Drive | 是       | 15G      | 无       | 无                        | 不支持   | [https://www.google.com/drive/](https://www.google.com/drive/ "https://www.google.com/drive/") |
-| 蓝奏云       | 否       | 无限     | 无       | 单个文件不<br />超过100M  | 不支持   | [https://www.lanzou.com/](https://www.lanzou.com/ "https://www.lanzou.com/") |
-| 115网盘      | 否       | 0        | 无       | 无                        | 支持     | [https://115.com/](https://115.com/ "https://115.com/")      |
-| 腾讯微云     | 否       | 10G      | 无       | 无                        | 不支持   | [https://www.weiyun.com/](https://www.weiyun.com/ "https://www.weiyun.com/") |
-| 6盘          | 否       | 6T       | 无       | 无                        | 支持     | [https://v3-beta.6pan.cn](https://v3-beta.6pan.cn "https://v3-beta.6pan.cn") |
+| 网盘名称     | 是否帆樯 | 免费空间 | 下载限速 | 其他限制                                  | 离线下载 | 地址                                                         |
+| ------------ | -------- | -------- | -------- | ----------------------------------------- | -------- | ------------------------------------------------------------ |
+| 百度网盘     | 否       | 2T       | 限制     | 大文件必须<br/>客户端下载                 | 支持     | [https://pan.baidu.com](https://pan.baidu.com "https://pan.baidu.com") |
+| MEGA         | 是       | 15G      | 无       | 无                                        | 不支持   | [https://mega.nz](https://mega.nz "https://mega.nz")         |
+| Google Drive | 是       | 15G      | 无       | 无                                        | 不支持   | [https://www.google.com/drive/](https://www.google.com/drive/ "https://www.google.com/drive/") |
+| 蓝奏云       | 否       | 无限     | 无       | 单个文件不<br />超过100M                  | 不支持   | [https://www.lanzou.com/](https://www.lanzou.com/ "https://www.lanzou.com/") |
+| 115网盘      | 否       | 0        | 无       | 无                                        | 支持     | [https://115.com/](https://115.com/ "https://115.com/")      |
+| 腾讯微云     | 否       | 10G      | 无       | 无                                        | 不支持   | [https://www.weiyun.com/](https://www.weiyun.com/ "https://www.weiyun.com/") |
+| 6盘          | 否       | 6T       | 无       | 无                                        | 支持     | [https://v3-beta.6pan.cn](https://v3-beta.6pan.cn "https://v3-beta.6pan.cn") |
+| 迅雷网盘     | 否       | 2T       | 无       | BT资源下载较快,<br />个人上传资源下载较慢 | 支持     | iOS 客户端 <br />手机网页端:[https://pan.xunlei.com](https://pan.xunlei.com "https://pan.xunlei.com") |
 
-​    
+
 

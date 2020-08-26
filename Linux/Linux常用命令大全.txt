@@ -125,6 +125,8 @@ pwck 检查 '/etc/passwd' 的文件格式和语法修正以及存在的用户
 grpck 检查 '/etc/passwd' 的文件格式和语法修正以及存在的群组 
 newgrp group_name 登陆进一个新的群组以改变新创建文件的预设群组 
 
+[linux下添加，删除，修改，查看用户和用户组](http://blog.51yip.com/linux/1137.html "http://blog.51yip.com/linux/1137.html")  
+
 
 
 ##文件的权限 - 使用 "+" 设置权限，使用 "-" 用于取消 

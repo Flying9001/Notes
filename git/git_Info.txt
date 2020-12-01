@@ -51,11 +51,14 @@ d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relat
 ​	//id_rsa 私钥，不要泄露(windows路径: C:\Users\username\.ssh)
 ​	//id_rsa.pub 公钥
 ​	git remote add origin url	//将本地仓库与远程仓库关联
+    git remote rm origin  // 删除远程仓库关联  
+
 3.2推送push
 ​	git push -u origin master	//将本地仓库分支master推送到远程仓库(第一次推送使用)
 ​	git push origin master 	//将本地仓库分支master推送到远程仓库(创建之后使用,如果远程仓库没有该分支,则创建新的)
 3.3克隆远程库
 ​	git clone url	//将远程库克隆到本地
+ git clone -b branch-name url  // 将远程库克隆到本地并指定分支  
 3.4创建与合并分支
 ​	git checkout dev 	//查看dev分支
 ​	git checkout -b dev	//创建并切换到dev分支

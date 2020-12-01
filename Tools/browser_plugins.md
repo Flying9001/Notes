@@ -71,6 +71,16 @@ Chrome 插件地址: [https://chrome.google.com/webstore/detail/stream-video-dow
 
 Chrome 插件地址: [https://chrome.google.com/webstore/detail/bilibili%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B/bfcbfobhcjbkilcbehlnlchiinokiijp?hl=zh-CN](https://chrome.google.com/webstore/detail/bilibili哔哩哔哩下载助手/bfcbfobhcjbkilcbehlnlchiinokiijp?hl=zh-CN)  
 
+### 2.8 猫抓  
+
+简介：媒体文件嗅探，可获取网站上的视频、音频文件下载链接  
+
+Chrome 插件地址:  
+
+[https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb](https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb "https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb")  
+
+​     
+
 
 ​    
 

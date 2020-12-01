@@ -699,6 +699,18 @@ Windows/macOS/Linux: [FreeFileSync 安装使用教程](./Windows/22.1.windows.fr
 
 Windows: [SyncToy 安装使用教程](./Windows/22.2.windows.sync_toy.md "./Windows/22.2.windows.sync_toy.md")  
 
+### 23 图床  
+
+#### 23.1 PicGo  
+
+简介: 一个用于快速上传图片并获取图片 URL 链接的工具，即图传应用，支持的图床包括：七牛图床、腾讯云、又拍云、GitHub、SM.MS、阿里云OSS、Imgul等。支持第三方拓展。免费、开源。  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [PicGo 安装使用教程](./Windows/23.1.windows.picgo.md "./Windows/23.1.windows.picgo.md")  
+
 ​    
 
 ### X 其他神器  

@@ -79,7 +79,13 @@ Chrome 插件地址:
 
 [https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb](https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb "https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb")  
 
-​     
+### 3.9 Video Downloader Professional  
+
+简介: 视频下载插件，可获取网站上视频文件下载链接，可选择文件大小，支持P站  
+
+FireFox 插件地址:  
+
+[https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession](https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession "https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession")       
 
 
 ​    

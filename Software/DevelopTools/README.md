@@ -256,3 +256,33 @@ Windows: [MobaXterm 安装使用教程](./Windows/9.1.windows.mobaxterm.md "./Wi
 
 Windows/macOS: [Royal TS 安装使用教程](./MacOS/9.2.mac.royal.md "./MacOS/9.2.mac.royal.md")  
 
+​    
+
+### 10 Api 管理  
+
+#### 10.1 Yapi  
+
+简介：Yapi 是一个免费、开源的 API 接口管理工具，能够极大地提升开发文档的管理效率。  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [Yapi 安装使用教程](./Windows/10.1.windows.yapi.md "./Windows/10.1.windows.yapi.md")  
+
+​    
+
+### 11 项目进度管理  
+
+#### 11.1 禅道  
+
+简介: 禅道是开源的项目进度管理系统，分为免费版和企业版，作为小公司的项目管理工具，免费版功能足够使用。  
+
+支持平台: Windows/macOS/Linux  
+
+狭窄与使用教程:  
+
+Windows/macOS/Linux: [禅道安装使用教程](./Windows/11.1.windows.chandao.md "./Windows/11.1.windows.chandao.md")  
+
+
+

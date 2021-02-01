@@ -317,6 +317,16 @@ Windows: [Clover安装使用教程](./Windows/9.1.windows.clover.md "./Windows/9
 
 macOS: [Easy New File 安装使用教程](./MacOS/9.2.mac.easynewfile.md "./MacOS/9.2.mac.easynewfile.md")  
 
+#### 9.3 超级右键-iRightMouse  
+
+简介: Mac 平台右键增强软件，免费  
+
+支持平台: macOS  
+
+下载与使用教程:  
+
+macOS: [超级右键-iRightMouse 安装使用教程]()
+
 ​    
 
 ### 10 文件拷贝  
@@ -350,6 +360,8 @@ macOS: [Paragon NTFS for Mac 安装使用教程](./MacOS/10.2.mac.ntfs_for_mac.m
 下载与使用教程:  
 
 macOS: [赤友NTFS 助手 安装使用教程](./MacOS/10.3.mac.chiyou_ntfs.md "./MacOS/10.3.mac.chiyou_ntfs.md")  
+
+
 
 ​    
 

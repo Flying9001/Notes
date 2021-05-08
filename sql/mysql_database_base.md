@@ -215,7 +215,66 @@ Linux: `my.cnf` 文件
 
 [Mysql 之配置文件my.cnf](http://blog.51cto.com/zhujiangtao/1296931 "http://blog.51cto.com/zhujiangtao/1296931")  
 
+### 11 查询数据库表结构  
 
+```sql
+SELECT 
+       Column_Name      AS 列名,
+       data_type        AS 数据类型,
+       (
+           CASE
+               WHEN data_type = 'FLOAT'
+                   OR data_type = 'DOUBLE'
+                   OR data_type = 'TINYINT'
+                   OR data_type = 'SMALLINT'
+                   OR data_type = 'MEDIUMINT'
+                   OR data_type = 'INT'
+                   OR data_type = 'INTEGER'
+                   OR data_type = 'DECIMAL'
+                   OR data_type = 'BIGINT'
+               THEN NUMERIC_PRECISION
+               ELSE CHARACTER_MAXIMUM_LENGTH
+               END
+       ) AS 长度,
+       NUMERIC_SCALE AS 精度,
+       (
+           CASE
+               WHEN EXTRA = 'auto_increment' THEN 'Y'
+               ELSE ''
+               END
+       ) AS 是否自增,        
+			 IS_NULLABLE 是否为空,
+	     IF(column_key = 'PRI','Y','') 是否为主键,
+       COLUMN_DEFAULT   AS 默认值,
+			 COLUMN_COMMENT   AS 备注
+FROM information_schema.COLUMNS
+WHERE table_schema = 'sunline_fms' AND table_name = 'BILL_INFO_BEFORE_GENERAL_DETAIL';
+```
+
+数据库字段信息:  
+
+| TABLE_CATALOG            | 表限定符                                                     |
+| ------------------------ | ------------------------------------------------------------ |
+| TABLE_SCHEMA             | 表格所属的库                                                 |
+| TABLE_NAME               | 表名                                                         |
+| COLUMN_NAME              | 字段名                                                       |
+| ORDINAL_POSITION         | 顺序                                                         |
+| COLUMN_DEFAULT           | 默认值                                                       |
+| IS_NULLABLE              | 是否为null                                                   |
+| DATA_TYPE                | 数据类型                                                     |
+| CHARACTER_MAXIMUM_LENGTH | 数据长度(字段的最大字符数)                                   |
+| CHARACTER_OCTET_LENGTH   | 存储长度(字段的最大字节数)                                   |
+| NUMERIC_PRECISION        | 数字精度                                                     |
+| NUMERIC_SCALE            | 小数位数                                                     |
+| DATETIME_PRECISION       | datetime类型和SQL-92interval类型数据库的子类型代码。         |
+| CHARACTER_SET_NAME       | 字段字符集名称。比如utf8                                     |
+| COLLATION_NAME           | 字符集排序规则                                               |
+| COLUMN_TYPE              | 字段类型。比如varchar(50)                                    |
+| COLUMN_KEY               | 索引类型,可包含的值有PRI，代表主键，UNI，代表唯一键，MUL，可重复 |
+| EXTRA                    | 定义列的时候的其他信息，例如自增                             |
+| PRIVILEGES               | 操作权限有：select,insert,update,references                  |
+| COLUMN_COMMENT           | 字段的备注                                                   |
+| GENERATION_EXPRESSION    | 组合字段的公式                                               |
 
 
 

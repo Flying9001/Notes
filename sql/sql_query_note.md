@@ -69,6 +69,14 @@ SQL 语句 & Mybatis mapper xml
 
 [MySQL范围查询 IN 使用注意事项](https://blog.csdn.net/Mrqiang9001/article/details/100074408 "https://blog.csdn.net/Mrqiang9001/article/details/100074408")  
 
+​    
+
+#### 1.5 查询数据库表结构  
+
+[使用Navicat 导出 MySQL 数据库表结构、表数据到Excel表格中](https://blog.csdn.net/Mrqiang9001/article/details/108242759 "https://blog.csdn.net/Mrqiang9001/article/details/108242759")  
+
+[mysql获取表字段信息(字段名,字段长度,字段类型,精度,小数点位)](https://blog.csdn.net/eleven_i/article/details/112727464 "https://blog.csdn.net/eleven_i/article/details/112727464")  
+
 
 
 ### 2 数据库设计方案  

@@ -36,7 +36,7 @@ Windows/Linux/macOS: [Eclipse安装使用教程](./Windows/2.1.windows.eclipse.m
 
 下载与使用教程:  
 
-Windows/Linux/macOS: [intelliJ IDEA 安装使用教程]()
+Windows/Linux/macOS: [intelliJ IDEA 安装使用教程](./Windows/2.2.windows.idea.md "./Windows/2.2.windows.idea.md")  
 
 #### 2.3 VS Code (Visual Studio Code)  
 

@@ -138,9 +138,17 @@
 
 网址: [https://gitee.com](https://gitee.com "https://gitee.com")  
 
+### 1.21 域名购买  
 
+- Namesilo  
 
+  简介: 国外服务商，价格优惠，无需备案，支持微信/支付宝支付  
 
+  网址: [https://www.namesilo.com](https://www.namesilo.com)  
+
+  
+
+  
 
 
 
@@ -325,16 +333,18 @@ youtube: [https://www.youtube.com/channel/UCKFB_rVEFEF3l-onQGvGx1A](https://www.
 
 ### 6 网盘  
 
-| 网盘名称     | 是否帆樯 | 免费空间 | 下载限速 | 其他限制                                  | 离线下载 | 地址                                                         |
-| ------------ | -------- | -------- | -------- | ----------------------------------------- | -------- | ------------------------------------------------------------ |
-| 百度网盘     | 否       | 2T       | 限制     | 大文件必须<br/>客户端下载                 | 支持     | [https://pan.baidu.com](https://pan.baidu.com "https://pan.baidu.com") |
-| MEGA         | 是       | 15G      | 无       | 无                                        | 不支持   | [https://mega.nz](https://mega.nz "https://mega.nz")         |
-| Google Drive | 是       | 15G      | 无       | 无                                        | 不支持   | [https://www.google.com/drive/](https://www.google.com/drive/ "https://www.google.com/drive/") |
-| 蓝奏云       | 否       | 无限     | 无       | 单个文件不<br />超过100M                  | 不支持   | [https://www.lanzou.com/](https://www.lanzou.com/ "https://www.lanzou.com/") |
-| 115网盘      | 否       | 0        | 无       | 无                                        | 支持     | [https://115.com/](https://115.com/ "https://115.com/")      |
-| 腾讯微云     | 否       | 10G      | 无       | 无                                        | 不支持   | [https://www.weiyun.com/](https://www.weiyun.com/ "https://www.weiyun.com/") |
-| 6盘          | 否       | 6T       | 无       | 无                                        | 支持     | [https://v3-beta.6pan.cn](https://v3-beta.6pan.cn "https://v3-beta.6pan.cn") |
-| 迅雷网盘     | 否       | 2T       | 无       | BT资源下载较快,<br />个人上传资源下载较慢 | 支持     | iOS 客户端 <br />手机网页端:[https://pan.xunlei.com](https://pan.xunlei.com "https://pan.xunlei.com") |
+| 网盘名称     | 是否帆樯 | 免费空间 | 下载限速 | 其他限制                                  | 离线下载 | 地址                                                         | 备注                               | 用途推荐               |
+| ------------ | -------- | -------- | -------- | ----------------------------------------- | -------- | ------------------------------------------------------------ | ---------------------------------- | ---------------------- |
+| 百度网盘     | 否       | 1T       | 限制     | 大文件必须<br/>客户端下载                 | 支持     | [https://pan.baidu.com](https://pan.baidu.com "https://pan.baidu.com") | 容量大，不支持部分版权资源下载     | 备份大批量文件         |
+| MEGA         | 是       | 15G      | 基本无   | 无                                        | 不支持   | [https://mega.nz](https://mega.nz "https://mega.nz")         | 安全                               | 保存少量重要文件       |
+| Google Drive | 是       | 15G      | 无       | 无                                        | 不支持   | [https://www.google.com/drive](https://www.google.com/drive/ "https://www.google.com/drive/") | 安全                               | 保存少量重要文件       |
+| 蓝奏云       | 否       | 无限     | 无       | 单个文件不<br />超过100M                  | 不支持   | [https://www.lanzou.com](https://www.lanzou.com "https://www.lanzou.com") | 适合分享小文件                     | 文件分享               |
+| 115网盘      | 否       | 15G      | 无       | 无                                        | 支持     | [https://115.com/](https://115.com/ "https://115.com/")      | 所有BT资源均可下载，无视DMCA(版权) | 下载资源               |
+| 腾讯微云     | 否       | 10G      | 无       | 无                                        | 不支持   | [https://www.weiyun.com](https://www.weiyun.com "https://www.weiyun.com") | 共享文档                           | 共享文档               |
+| 6盘          | 否       | 6T       | 无       | 无                                        | 支持     | [https://v3-beta.6pan.cn](https://v3-beta.6pan.cn "https://v3-beta.6pan.cn") | 免费用户不如狗                     | 不再建议使用           |
+| 迅雷网盘     | 否       | 2T       | 无       | BT资源下载较快,<br />个人上传资源下载较慢 | 支持     | iOS 客户端 <br />手机网页端:[https://pan.xunlei.com](https://pan.xunlei.com "https://pan.xunlei.com") | 不支持版权资源下载                 | 下载资源               |
+| 阿里网盘     | 否       | 1T+      | 无       | 无                                        | 不支持   | [https://www.aliyundrive.com](https://www.aliyundrive.com "https://www.aliyundrive.com") | 新势力                             | 备份大批量文件         |
+| 坚果云       | 否       | 无限     | 无       | 免费用户上传 1G/月，下载 3G/月            | 不支持   | [https://www.jianguoyun.com](https://www.jianguoyun.com "https://www.jianguoyun.com") | 协同办公与个人文档云端化           | 同步个人工作文档(少量) |
 
 
 

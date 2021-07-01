@@ -87,6 +87,16 @@ FireFox 插件地址:
 
 [https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession](https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession "https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession")       
 
+### 3.10 下载管理器  
+
+简介: Chrome 浏览器下载管理插件，简洁、好用、开源、免费、轻巧  
+
+Chrome 插件地址:  
+
+[https://chrome.google.com/webstore/detail/download-manager/ofpglhlcdbjdhlacgbljnildhajfmlei](https://chrome.google.com/webstore/detail/download-manager/ofpglhlcdbjdhlacgbljnildhajfmlei "https://chrome.google.com/webstore/detail/download-manager/ofpglhlcdbjdhlacgbljnildhajfmlei")  
+
+
+
 
 ​    
 
@@ -189,7 +199,6 @@ Chrome 插件地址: [<https://chrome.google.com/webstore/detail/read-aloud-a-te
 简介: 可以控制网页 H5 视频倍速播放,开源,**支持多平台**  
 
 Chrome 插件地址: [https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk "https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk")  
-
 
 
 

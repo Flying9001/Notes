@@ -224,11 +224,11 @@ Windows: [BandiZip安装使用教程](./Windows/9.1.windows.bandizip.md "./Windo
 
 简介: 轻巧、快速、免费、开源的压缩软件  
 
-支持平台: Windows  
+支持平台: Windows/macOS/Linux  
 
 下载与使用教程:  
 
-Windows: [7zip安装使用教程](./Windows/9.2.windows.7zip.md "./Windows/9.2.windows.7zip.md")  
+Windows/macOS/Linux: [7zip安装使用教程](./Windows/9.2.windows.7zip.md "./Windows/9.2.windows.7zip.md")  
 
 #### 9.3 eZip  
 

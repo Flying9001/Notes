@@ -11,9 +11,14 @@ passcode=12345qwert
 ## 文件名去空格
 rename 's/ /_/g' *
 
+timeStart=`date +%s`
+
 list=`ls -1`
 for var in ${list}
 do
     7z a -r -t7z -p${passcode} -mhe -mx3 ${currentDir}/${subDir}/${var}.7z ${var} 
 done 
+
+timeEnd=`date +%s`
+echo "Running time of program is $[timeEnd - timeStart] seconds ."
 

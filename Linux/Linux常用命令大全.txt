@@ -406,3 +406,10 @@ nmblookup -A ip_addr netbios name resolution
 smbclient -L ip_addr/hostname show remote shares of a windows host 
 smbget -Rr smb://ip_addr/share like wget can download files from a host windows via smb 
 mount -t smbfs -o username=user,password=pass //WinClient/share /mnt/share mount a windows network share
+
+### 批量修改文件名  
+
+```
+rename 's/old/new/' this.old
+```
+

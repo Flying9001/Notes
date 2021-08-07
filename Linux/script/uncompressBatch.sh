@@ -9,9 +9,15 @@ subDir=extracts
 ## 压缩密码
 passcode=12345qwert
 
+timeStart=`date +%s`
+
 list=`ls -1`
 for var in ${list}
 do
     7z x -r -p${passcode} -o${currentDir}/${subDir} ${var} 
 done 
+
+timeEnd=`date +%s`
+echo "Running time of program is $[timeEnd - timeStart] seconds ."
+
 

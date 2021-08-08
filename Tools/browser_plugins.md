@@ -200,6 +200,14 @@ Chrome 插件地址: [<https://chrome.google.com/webstore/detail/read-aloud-a-te
 
 Chrome 插件地址: [https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk "https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk")  
 
+### 3.16 HCOS - Hide Chrome Omnibox Suggestions    
+
+简介: HCOS 用于关闭 Chrome 浏览器搜索建议，保护浏览器使用者隐私安全  
+
+Chrome 插件地址: [https://chrome.google.com/webstore/detail/hcos-hide-chrome-omnibox/aldijnffnfojelcpcfoekkeifffkhldo](https://chrome.google.com/webstore/detail/hcos-hide-chrome-omnibox/aldijnffnfojelcpcfoekkeifffkhldo "https://chrome.google.com/webstore/detail/hcos-hide-chrome-omnibox/aldijnffnfojelcpcfoekkeifffkhldo")  
+
+
+
 
 
 

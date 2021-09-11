@@ -146,6 +146,14 @@ Windows/Linux/macOS: [Redis 安装使用教程](./Windows/4.5.windows.redis.md "
 
 Windows/Linux/macOS: [Robo 3T 安装使用教程](./Windows/4.6.windows.robo.3t.md "./Windows/4.6.windows.robo.3t.md")  
 
+#### 4.7 AnotherRedisDesktopManager  
+
+简介: 一款免费、开源的 Redis 可视化管理工具，可提供 Redis 数据源监控功能，在读取大量的 key 时不会崩溃  
+
+支持平台: Windows/Linux/macOS  
+
+Windows/Linux/macOS: [AnotherRedisDesktopManager 安装使用教程](./Windows/4.7.windows.anorther_redis_desktop_manager.md "./Windows/4.7.windows.anorther_redis_desktop_manager.md")  
+
 ​    
 
 ### 5 依赖管理  

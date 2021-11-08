@@ -79,7 +79,7 @@ Chrome 插件地址:
 
 [https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb](https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb "https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb")  
 
-### 3.9 Video Downloader Professional  
+### 2.9 Video Downloader Professional  
 
 简介: 视频下载插件，可获取网站上视频文件下载链接，可选择文件大小，支持P站  
 
@@ -87,13 +87,35 @@ FireFox 插件地址:
 
 [https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession](https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession "https://addons.mozilla.org/en-US/firefox/addon/video-downloader-profession")       
 
-### 3.10 下载管理器  
+### 2.10 下载管理器  
 
-简介: Chrome 浏览器下载管理插件，简洁、好用、开源、免费、轻巧  
+简介: Chrome 浏览器下载管理插件，简洁、好用、开源、免费、轻巧(Win10 出现下载时CPU占用过高问题)  
 
 Chrome 插件地址:  
 
 [https://chrome.google.com/webstore/detail/download-manager/ofpglhlcdbjdhlacgbljnildhajfmlei](https://chrome.google.com/webstore/detail/download-manager/ofpglhlcdbjdhlacgbljnildhajfmlei "https://chrome.google.com/webstore/detail/download-manager/ofpglhlcdbjdhlacgbljnildhajfmlei")  
+
+### 2.11 哔哩哔哩助手  
+
+简介: 哔哩哔哩助手是一款针对B站的拓展插件，支持更换 H5 视频播放器、下载B站视频、弹幕反查发送者等功能。开源免费。  
+
+Chrome 插件地址:  [https://chrome.google.com/webstore/detail/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8A%A9%E6%89%8B%EF%BC%9Abilibilicom-%E7%BB%BC%E5%90%88%E8%BE%85%E5%8A%A9%E6%89%A9%E5%B1%95/kpbnombpnpcffllnianjibmpadjolanh](https://chrome.google.com/webstore/detail/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8A%A9%E6%89%8B%EF%BC%9Abilibilicom-%E7%BB%BC%E5%90%88%E8%BE%85%E5%8A%A9%E6%89%A9%E5%B1%95/kpbnombpnpcffllnianjibmpadjolanh)  
+
+Github 地址: [https://github.com/bilibili-helper/bilibili-helper-o](https://github.com/bilibili-helper/bilibili-helper-o "https://github.com/bilibili-helper/bilibili-helper-o")  
+
+### 2.12 Chrono 下载管理器  
+
+简介: Chrome 浏览器下载管理插件，简洁、好用，曾经因为 Chrome 浏览器隐私协议更新而下架，如今已经满血复活  
+
+Chrome 插件地址:  
+
+[https://chrome.google.com/webstore/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn](https://chrome.google.com/webstore/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn "https://chrome.google.com/webstore/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn")  
+
+
+
+
+
+
 
 
 
@@ -205,6 +227,16 @@ Chrome 插件地址: [https://chrome.google.com/webstore/detail/video-speed-cont
 简介: HCOS 用于关闭 Chrome 浏览器搜索建议，保护浏览器使用者隐私安全  
 
 Chrome 插件地址: [https://chrome.google.com/webstore/detail/hcos-hide-chrome-omnibox/aldijnffnfojelcpcfoekkeifffkhldo](https://chrome.google.com/webstore/detail/hcos-hide-chrome-omnibox/aldijnffnfojelcpcfoekkeifffkhldo "https://chrome.google.com/webstore/detail/hcos-hide-chrome-omnibox/aldijnffnfojelcpcfoekkeifffkhldo")  
+
+### 3.17 沙拉查词(Saladict)  
+
+简介: 沙拉查词是一款非常好用的高评分翻译插件，支持多种翻译源(谷歌、百度、Bing等)，翻译查询结果显示详细。免费开源、支持多平台。  
+
+Chrome 插件地址: [https://chrome.google.com/webstore/detail/%E6%B2%99%E6%8B%89%E6%9F%A5%E8%AF%8D-%E8%81%9A%E5%90%88%E8%AF%8D%E5%85%B8%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/cdonnmffkdaoajfknoeeecmchibpmkmg](https://chrome.google.com/webstore/detail/%E6%B2%99%E6%8B%89%E6%9F%A5%E8%AF%8D-%E8%81%9A%E5%90%88%E8%AF%8D%E5%85%B8%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/cdonnmffkdaoajfknoeeecmchibpmkmg "https://chrome.google.com/webstore/detail/%E6%B2%99%E6%8B%89%E6%9F%A5%E8%AF%8D-%E8%81%9A%E5%90%88%E8%AF%8D%E5%85%B8%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/cdonnmffkdaoajfknoeeecmchibpmkmg")  
+
+Github 地址: [https://github.com/crimx/ext-saladict](https://github.com/crimx/ext-saladict "https://github.com/crimx/ext-saladict")  
+
+
 
 
 

@@ -158,6 +158,118 @@ systemctl restart sshd.service
 
 
 
+### 6 yum 常用命令  
+
+从 yum 库安装软件  
+
+```
+yum install <software_name>
+```
+
+安装本地 rpm 软件  
+
+```
+yum localinstall /path/to/rpm/file
+```
+
+列出所有可更新软件  
+
+```
+yum check-update
+```
+
+更新所有 yum 安装的软件  
+
+```
+yum update
+```
+
+更新指定软件  
+
+```
+yum update <software_name>
+```
+
+列出所有可安装软件  
+
+```
+yum list
+```
+
+查询 yum 库中某个可安装软件  
+
+```
+yum list | grep <keyword>
+```
+
+查询某个已安装软件  
+
+```
+yum list installed | grep <keyword>
+```
+
+删除/卸载软件  
+
+```
+yum remove <software_name>
+```
+
+从 yum 库查找软件  
+
+```
+yum search <keyword>
+```
+
+清除所有缓存  
+
+```
+yum clean all
+```
+
+创建缓存  
+
+```
+yum makecache
+```
+
+参考资料:  
+
+[Linux yum 命令-菜鸟教程](https://www.runoob.com/linux/linux-yum.html "https://www.runoob.com/linux/linux-yum.html")  
+
+​    
+
+### 7 将 yum 源替换为国内阿里云镜像  
+
+备份默认 yum 源  
+
+```
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+```
+
+使用 aliyun 的 yum 源  
+
+```
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+```
+
+清除缓存  
+
+```
+yum clean all
+```
+
+重建缓存  
+
+```
+yum makecache
+```
+
+
+
+参考资料:  
+
+[修改CentOS默认yum源为国内yum镜像源](https://cloud.tencent.com/developer/article/1173087 "https://cloud.tencent.com/developer/article/1173087")  
+
 
 
 

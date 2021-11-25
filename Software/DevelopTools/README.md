@@ -190,6 +190,16 @@ Windows/Linux/macOS: [Maven 安装使用教程](./Windows/5.1.windows.maven.md "
 
 Windows/Linux/macOS: [Tomcat 安装使用教程](./Windows/6.1.windows.tomcat.md "./Windows/6.1.windows.tomcat.md")  
 
+#### 6.2 Nginx  
+
+简介: Nginx 是一款高性能的 Web 以及反向代理服务器，服务器必备软件之一  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/Linux/macOS: [Nginx 安装使用教程](./Windows/6.2.windows.nginx.md "./Windows/6.2.windows.nginx.md")  
+
 ​    
 
 ### 7 测试工具  
@@ -264,7 +274,7 @@ Windows/Linux/macOS: [SourceTree 安装使用教程](./Windows/8.3.windows.sourc
 
 #### 9.1 MobaXterm  
 
-简介: 全能的 ssh 客户端,支持建立ssh/telnet/rsh/ftp/sftp/serial/vnc/xdmcp/rdp等多种远程会话，其中xdmcp/vnc可以用于访问远程桌面。也支持本地bash或者cmd。专业版按用户收费。  
+简介: 全能的 ssh 客户端,支持建立ssh/telnet/rsh/ftp/sftp/serial/vnc/xdmcp/rdp等多种远程会话，其中xdmcp/vnc可以用于访问远程桌面。也支持本地bash或者cmd。支持 ssh 和 sftp 同时连接，可显示服务器的内存、CPU 使用情况。专业版按用户收费。  
 
 支持平台: Windows  
 
@@ -281,6 +291,16 @@ Windows: [MobaXterm 安装使用教程](./Windows/9.1.windows.mobaxterm.md "./Wi
 下载与使用教程:  
 
 Windows/macOS: [Royal TS 安装使用教程](./MacOS/9.2.mac.royal.md "./MacOS/9.2.mac.royal.md")  
+
+#### 9.3 Electerm  
+
+简介: 国产开源免费的多平台远程连接工具,支持 ssh/sftp,操作界面友好  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/macOS: [Electerm 安装使用教程](./Windows/9.3.windows.electerm.md "./Windows/9.3.windows.electerm.md")  
 
 ​    
 

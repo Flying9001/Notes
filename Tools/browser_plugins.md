@@ -238,6 +238,14 @@ Github 地址: [https://github.com/crimx/ext-saladict](https://github.com/crimx/
 
 
 
+## 4 插件脚本  
+
+### 4.1 网页解除限制  
+
+简介: 解除网页的复制限制，可以自由复制页面文字  
+
+脚本地址: [https://greasyfork.org/zh-CN/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4](https://greasyfork.org/zh-CN/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4 "https://greasyfork.org/zh-CN/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4")  
+
 
 
 

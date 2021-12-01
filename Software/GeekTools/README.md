@@ -407,13 +407,23 @@ Windows: [12306 Bypass 安装使用教程](./Windows/12.1.windows.12306bypass.md
 
 #### 13.1 Typora  
 
-简介: 所见即所得的 Markdown 编辑器，简洁，好用  
+简介: 所见即所得的 Markdown 编辑器，简洁，好用(正式版已开始收费)  
 
 支持平台: Windows/macOS/Linux  
 
 下载与使用教程:  
 
 Windows/macOS/Linux: [Typora 安装使用教程](./Windows/13.1.windows.typora.md "./Windows/13.1.windows.typora.md")  
+
+#### 13.2 Mark Text  
+
+简介: 一款免费、开源、简洁的 Markdown 编辑器  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [Mark Text 安装使用教程](./Windows/13.2.windows.marktext.md "./Windows/13.2.windows.marktext.md")  
 
 ​    
 

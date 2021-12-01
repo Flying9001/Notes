@@ -6,9 +6,9 @@
 
 ### 统一软件管理  
 
-[windows系统重装教程](./Windows/1.windows系统重装.md "./Windows/1.windows系统重装.md")  
+[windows系统重装教程](./Windows/1.windows_system_reinstall.md "./Windows/1.windows_system_reinstall.md")  
 
-[macOS入门指南](./MacOS/1.macOS入门指南.md "./MacOS/1.macOS入门指南.md")  
+[macOS入门指南](./MacOS/1.macOS_quick_start.md "./MacOS/1.macOS_quick_start.md")  
 
 [常用办公软件](./Software/GeneralTools/README.md "./Software/GeneralTools/README.md")  
 

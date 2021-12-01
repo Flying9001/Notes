@@ -72,16 +72,6 @@ Windows/Linux/macOS: [Sublime Text 3 安装使用教程](./Windows/3.1.windows.s
 
 Windows: [Notepad++ 安装使用教程](./Windows/3.2.windows.notepad.plus.plus.md "./Windows/3.2.windows.notepad.plus.plus.md")  
 
-#### 3.3 Typora  
-
-简介: 可能是 Windows 平台最好的 markdown 编辑器,简洁，支持多平台(win/mac)  
-
-支持平台: Windows/macOS  
-
-下载与使用教程:  
-
-Windows/macOS: [Typora 安装使用教程](./Windows/3.3.windows.typora.md "./Windows/3.3.windows.typora.md")  
-
 ​    
 
 ### 4 数据库相关  

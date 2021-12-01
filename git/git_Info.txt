@@ -135,9 +135,20 @@ d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relat
 5.删除本地仓库
 ​    find . -name ".git" | xargs rm -Rf
 
-6. 多设备使用同一个 ssh key
+6.多设备使用同一个 ssh key
     备份旧设备上的 ssh key(Windows目录:c/user/.ssh;Linux/Unix目录 ~/.ssh)
     在新设备上生成新的 ssh key --- 将旧设备的key值覆盖新设备的 key值    
+
+7.git 恢复被修改文件  
+
+```
+// 如果文件未被 git add
+git checkout fileName
+
+// 如果文件已经被 git add
+git reset HEAD fileName
+git checkout fileName
+```
 
 
 

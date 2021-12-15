@@ -46,7 +46,7 @@ Windows/Linux/macOS: [intelliJ IDEA 安装使用教程](./Windows/2.2.windows.id
 
 下载与使用教程:  
 
-Windows/Linux/macOS: [VS Code 安装使用教程]()
+Windows/Linux/macOS: [VS Code 安装使用教程](./Windows/2.3.windows.vscode.md "./Windows/2.3.windows.vscode.md")  
 
 ​    
 
@@ -151,6 +151,14 @@ Windows/Linux/macOS: [AnotherRedisDesktopManager 安装使用教程](./Windows/4
 支持平台: Windows/Linux/macOS  
 
 Windows/Linux/macOS: [MongoDB 安装使用教程](./Windows/4.8.windows.mongodb.md "./Windows/4.8.windows.mongodb.md")  
+
+#### 4.9 Elasticsearch  
+
+简介: Elasticsearch 是一款分布式数据存储系统，和传统的关系型数据库相比，其最大的特性是全文搜索功能  
+
+支持平台: Windows/Linux/macOS  
+
+Windows/Linux/macOS: [Elasticsearch 安装使用教程](./Linux/4.9.linux.elasticsearch.md "./Linux/4.9.linux.elasticsearch.md")  
 
 ​    
 

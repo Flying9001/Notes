@@ -18,7 +18,7 @@ passwd userName xxx
 groupadd groupName
 ```
 
-同时创建用户和工作组  
+创建用户并将其加入到已经存在的工作组  
 
 ```
 useradd -g groupName userName
@@ -39,4 +39,16 @@ cat /etc/passwd
 参考文档:  
 
 [Linux添加/删除用户和用户组](https://www.cnblogs.com/xd502djj/archive/2011/11/23/2260094.html "https://www.cnblogs.com/xd502djj/archive/2011/11/23/2260094.html")  
+
+切换用户  
+
+```
+su userName
+```
+
+给用户添加目录权限  
+
+```
+sudo chown -R userGroup:userName /path
+```
 

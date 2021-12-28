@@ -72,6 +72,14 @@ MacOS: [Mac 平台谷歌浏览器 Chrome 安装与使用教程](./MacOS/3.1.mac.
 
 Windows/MacOS/Linux: [火狐浏览器 Firefox 安装使用教程](./Windows/3.2.windows.firefox.md)  
 
+### 3.3 Brave Browser
+
+简介: 一款免费、开源的浏览器，基于 Chrominum 内核，注重隐私保护，自带广告拦截功能的浏览器。支持 Tor 浏览，作为 Chrome 的替代品或者备用浏览器是一个不错的选择  
+
+支持平台: Windows/macOS/Linux  
+
+Windows/macOS/Linux: [Brave Browser 安装使用教程](./Windows/3.3.windows.brave_browser.md "./Windows/3.3.windows.brave_browser.md")
+
 ​    
 
 ### 4 即时聊天软件  

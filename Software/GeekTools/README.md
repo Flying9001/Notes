@@ -53,6 +53,16 @@ Windows/macOS/Linux: [ShadowSocks安装使用教程](./Windows/3.1.windows.shado
 
 Windows/macOS/Linux: [V2ray安装使用教程](./Windows/3.2.windows.v2ray.md "./Windows/3.2.windows.v2ray.md")  
 
+#### 3.3 Clash  
+
+简介: Clash 是一款客户端代理工具，支持多种协议(VMess, Shadowsocks, Trojan)，支持多种代理同时使用，支持实时网速显示与流量统计，客户端自动选择最佳路线  
+
+支持平台: Windows/macOS  
+
+下载与使用教程:  
+
+Windows/macOS: [Clash 安装使用教程](./MacOS/3.3.mac.clashx.md "./MacOS/3.3.mac.clashx.md")  
+
 ​        
 
 ### 4 音视频播放器    
@@ -114,6 +124,14 @@ Windows/macOS: [SodaPlayer安装使用教程](./Windows/4.5.windows.sodaplayer.m
 下载与使用教程:  
 
 Windows: [爱奇艺万能联播 安装使用教程](./Windows/4.6.windows.baidu_gee_player.md "./Windows/4.6.windows.baidu_gee_player.md")  
+
+#### 4.7 Kodi(Xbmc) 播放器  
+
+简介: Kodi 播放器是一款专业的 4K 播放器，支持格式众多，可玩性高，全平台支持(包括电视)，适合搭建家庭影院  
+
+支持平台: Windows/macOS/Linux/iOS/Android  
+
+Windows/macOS/Linux: [Kodi 播放器安装使用教程](./Windows/4.7.windows.kodi.md "./Windows/4.7.windows.kodi.md")  
 
 ​    
 

@@ -99,7 +99,7 @@ macOS: [iina安装使用教程](./MacOS/4.3.mac.iina.md "./MacOS/4.3.mac.iina.md
 
 #### 4.4 网易云音乐  
 
-简介: 中国可能缺乏国际一流的音乐作品,但是不缺一流的音乐播放器  
+简介: 中国可能缺乏国际一流的音乐作品,但是不缺一流的音乐播放器。优势在于音乐评论和根据听歌风格智能推荐  
 
 支持平台: Windows/macOS  
 
@@ -132,6 +132,22 @@ Windows: [爱奇艺万能联播 安装使用教程](./Windows/4.6.windows.baidu_
 支持平台: Windows/macOS/Linux/iOS/Android  
 
 Windows/macOS/Linux: [Kodi 播放器安装使用教程](./Windows/4.7.windows.kodi.md "./Windows/4.7.windows.kodi.md")  
+
+#### 4.8 洛雪音乐助手  
+
+简介: 一款开源的在线音乐播放器，几乎能够听到所有歌手的任何歌曲，最重要的是**免费**，同时支持下载功能  
+
+支持平台: Windows/macOS/Linux/iOS/Android  
+
+Windows/macOS/Linux: [洛雪音乐助手安装使用教程](./Windows/4.8.windows.luoxue_music.md "./Windows/4.8.windows.luoxue_music.md")  
+
+#### 4.9 Listen 1  
+
+简介: 一款开源的在线音乐播放器，支持登录网易云账号，支持播放网易云、QQ、酷狗等平台的音乐，多平台支持(windows、mac、Linux、Android、浏览器插件)，支持网易云歌单导入，但不支持下载  
+
+支持平台: Windows/macOS/Linux  
+
+Windows/macOS/Linux: [Listen 1安装使用教程](./Windows/4.9.windows.listen1.md "./Windows/4.9.windows.listen1.md")  
 
 ​    
 
@@ -750,6 +766,18 @@ Windows: [SyncToy 安装使用教程](./Windows/22.2.windows.sync_toy.md "./Wind
 下载与使用教程:  
 
 Windows/macOS/Linux: [PicGo 安装使用教程](./Windows/23.1.windows.picgo.md "./Windows/23.1.windows.picgo.md")  
+
+### 24 局域网工具  
+
+#### 24.1 NetBScanner  
+
+简介: 局域网 ip 扫描工具，小巧、免费、免安装  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [NetBScanner 安装使用教程](./Windows/24.1.windows.netbscanner.md "./Windows/24.1.windows.netbscanner.md")  
 
 ​    
 

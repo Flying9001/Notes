@@ -410,6 +410,6 @@ mount -t smbfs -o username=user,password=pass //WinClient/share /mnt/share mount
 ### 批量修改文件名  
 
 ```
-rename 's/old/new/' this.old
+rename 's/old/new//g' this.old
 ```
 

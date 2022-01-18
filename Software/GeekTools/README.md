@@ -803,5 +803,13 @@ Windows: [Recents 安装使用教程](./MacOS/x.1.mac.recents.md "./MacOS/x.1.ma
 
 Windows: [TranslucentTB 安装使用教程](./Windows/x.2.windows.translucenttb.md "./Windows/x.2.windows.translucenttb.md")  
 
+#### x.3 Stats  
+
+简介: macOS 平台系统插件，可实时显示 CPU、GPU、硬盘、内存、网速等信息，开源、免费  
+
+支持平台: macOS  
+
+macOS: [Stats 安装使用教程](./MacOS/x.3.mac.stats.md "./MacOS/x.3.mac.stats.md")  
+
 
 

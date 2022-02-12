@@ -35,8 +35,8 @@ git config --global https.proxy http://proxy_ip:proxy_port
 如若取消代理，删除即可  
 
 ```
-git config --global unset http.proxy
-git config --global unset https.proxy
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 ```
 
 

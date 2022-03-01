@@ -198,6 +198,14 @@ Windows/Linux/macOS: [Tomcat 安装使用教程](./Windows/6.1.windows.tomcat.md
 
 Windows/Linux/macOS: [Nginx 安装使用教程](./Windows/6.2.windows.nginx.md "./Windows/6.2.windows.nginx.md")  
 
+#### 6.3 ZooKeeper  
+
+简介: ZooKeeper 是一种分布式协调服务。常用语分布式配置管理、服务命名、分布式同步等服务。在分布式系统中应用广泛。  
+
+支持平台: Windows/Linux/macOS  
+
+Windows/Linux/macOS: [Zookeeper 安装使用教程](./Linux/6.3.linux.zookeeper.md "./Linux/6.3.linux.zookeeper.md")  
+
 ​    
 
 ### 7 测试工具  
@@ -341,6 +349,16 @@ Windows/macOS/Linux: [禅道安装使用教程](./Windows/11.1.windows.chandao.m
 下载与使用教程:  
 
 Windows/macOS/Linux: [RocketMQ 安装使用教程](./Linux/12.1.linux.rocketmq.md "./Linux/12.1.linux.rocketmq.md")  
+
+#### 12.2 Kafka  
+
+简介: Kafka 是一个分布式事件流框架，也可以作为消息队列。  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [Kafka 安装使用教程](./Linux/12.2.linux.kafka.md "./Linux/12.2.linux.kafka.md")  
 
 
 

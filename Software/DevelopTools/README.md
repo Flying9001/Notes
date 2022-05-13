@@ -362,3 +362,15 @@ Windows/macOS/Linux: [Kafka 安装使用教程](./Linux/12.2.linux.kafka.md "./L
 
 
 
+### 13 MQTT 客户端  
+
+#### 13.1 MQTT X  
+
+简介: MQTT X 是一款开源免费的 MQTT 客户端，支持多平台，用户界面友好  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/Linux/macOS: [MQTT X 安装使用教程](./Windows/13.1.windows.mqttx.md "./Windows/13.1.windows.mqttx.md")  
+

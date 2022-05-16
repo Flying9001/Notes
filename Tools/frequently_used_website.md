@@ -333,6 +333,8 @@ youtube: [https://www.youtube.com/channel/UCKFB_rVEFEF3l-onQGvGx1A](https://www.
 
 ### 6 网盘  
 
+#### 6.1 永久网盘  
+
 | 网盘名称     | 是否帆樯 | 免费空间 | 下载限速 | 其他限制                                  | 离线下载 | 地址                                                         | 备注                               | 用途推荐               |
 | ------------ | -------- | -------- | -------- | ----------------------------------------- | -------- | ------------------------------------------------------------ | ---------------------------------- | ---------------------- |
 | 百度网盘     | 否       | 1T       | 限制     | 大文件必须<br/>客户端下载                 | 支持     | [https://pan.baidu.com](https://pan.baidu.com "https://pan.baidu.com") | 容量大，不支持部分版权资源下载     | 备份大批量文件         |
@@ -346,5 +348,17 @@ youtube: [https://www.youtube.com/channel/UCKFB_rVEFEF3l-onQGvGx1A](https://www.
 | 阿里网盘     | 否       | 1T+      | 无       | 无                                        | 不支持   | [https://www.aliyundrive.com](https://www.aliyundrive.com "https://www.aliyundrive.com") | 新势力                             | 备份大批量文件         |
 | 坚果云       | 否       | 无限     | 无       | 免费用户上传 1G/月，下载 3G/月            | 不支持   | [https://www.jianguoyun.com](https://www.jianguoyun.com "https://www.jianguoyun.com") | 协同办公与个人文档云端化           | 同步个人工作文档(少量) |
 
+#### 6.2 临时网盘  
 
+##### 6.2.1 文叔叔  
+
+简介: 提供免费的临时文件存储，免费，不需要注册，可以不填写任何个人信息(手机号/邮箱)，支持发送到对方邮箱，单个文件最大5G  
+
+地址: [https://www.wenshushu.cn](https://www.wenshushu.cn "https://www.wenshushu.cn")  
+
+##### 6.2.2 WeTransfer  
+
+简介: 提供免费的临时文件存储，免费，不需要注册，上传文件需要填写发送方邮箱以及收件方邮箱  
+
+地址: [https://wetransfer.com](https://wetransfer.com "https://wetransfer.com")  
 

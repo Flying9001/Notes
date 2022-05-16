@@ -238,15 +238,15 @@ Windows: [BandiZip安装使用教程](./Windows/9.1.windows.bandizip.md "./Windo
 
 Windows/macOS/Linux: [7zip安装使用教程](./Windows/9.2.windows.7zip.md "./Windows/9.2.windows.7zip.md")  
 
-#### 9.3 eZip  
+#### 9.3 MacZip  
 
-简介: 专为 macOS 而设计的压缩软件  
+简介: 专为 macOS 而设计的压缩软件，原名 eZip  
 
 支持平台: macOS  
 
 下载与使用教程:  
 
-macOS: [eZip安装使用教程](./MacOS/9.3.mac.ezip.md "./MacOS/9.3.mac.ezip.md")  
+macOS: [MacZip安装使用教程](./MacOS/9.3.mac.ezip.md "./MacOS/9.3.mac.ezip.md")  
 
 #### 9.4 Keka  
 

@@ -164,11 +164,20 @@ V2ray 服务端配置文件路径: `/etc/v2ray/config.json`
 }
 ```
 
+卸载 V2ray  
 
+```sh
+停用并卸载服务（systemd）：
+systemctl stop v2ray
+systemctl disable v2ray
 
-详细配置可参考教程:  
-
-[V2Ray完全使用教程](https://yuan.ga/v2ray-complete-tutorial/ "https://yuan.ga/v2ray-complete-tutorial/")    
+然后删除以下文件：
+/etc/v2ray/* (配置文件)
+/usr/bin/v2ray/* (程序)
+/var/log/v2ray/* (日志)
+/lib/systemd/system/v2ray.service (systemd 启动项)
+/etc/init.d/v2ray (sysv 启动项)
+```
 
 
 
@@ -183,6 +192,8 @@ windows 系统:
 macOS 系统:  
 
 [https://github.com/Cenmrev/V2RayX](https://github.com/Cenmrev/V2RayX "https://github.com/Cenmrev/V2RayX")  
+
+[https://github.com/yichengchen/clashX](https://github.com/yichengchen/clashX "https://github.com/yichengchen/clashX")  
 
 Android 系统:  
 
@@ -206,9 +217,9 @@ Android 系统:
 
 [免费 https 证书（Let's Encrypt）申请与配置](https://keelii.github.io/2016/06/12/free-https-cert-lets-encrypt-apply-install "https://keelii.github.io/2016/06/12/free-https-cert-lets-encrypt-apply-install")  
 
-步骤:  
+[阿里云-申请免费DV试用证书](https://help.aliyun.com/document_detail/156645.html)    
 
-
+[使用脚本自制 SSL 域名证书](https://blog.csdn.net/Mrqiang9001/article/details/125459866)  
 
 
 
@@ -229,7 +240,6 @@ Android 系统:
 ​    
 ​    
 —— update 2018-12-12  
-
 
 
 

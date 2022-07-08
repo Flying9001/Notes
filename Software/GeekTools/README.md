@@ -63,6 +63,16 @@ Windows/macOS/Linux: [V2ray安装使用教程](./Windows/3.2.windows.v2ray.md ".
 
 Windows/macOS: [Clash 安装使用教程](./MacOS/3.3.mac.clashx.md "./MacOS/3.3.mac.clashx.md")  
 
+#### 3.4 Xray  
+
+简介: 基于 V2ray 开发，功能比 V2ray 强大，兼容 V2ray，开源，社区活跃度高  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [Xray 安装使用教程](./Windows/3.4.windows.xray.md "./Windows/3.4.windows.xray.md")  
+
 ​        
 
 ### 4 音视频播放器    

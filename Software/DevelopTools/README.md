@@ -308,6 +308,16 @@ Windows/macOS: [Royal TS 安装使用教程](./MacOS/9.2.mac.royal.md "./MacOS/9
 
 Windows/macOS: [Electerm 安装使用教程](./Windows/9.3.windows.electerm.md "./Windows/9.3.windows.electerm.md")  
 
+#### 9.4 WindTerm  
+
+简介: 开源、免费、免安装、多平台的远程连接终端工具，支持 ssh/sftp，界面优雅，内存占用小。  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/Linux/macOS: [WindTerm 安装使用教程](./Windows/9.4.windows.windterm.md "./Windows/9.4.windows.windterm.md")  
+
 ​    
 
 ### 10 Api 管理  

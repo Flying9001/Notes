@@ -240,6 +240,16 @@ Windows/macOS: [Wireshark 安装使用教程](./Windows/7.2.windows.wireshark.md
 
 Windows/Linux/macOS: [JMeter 安装使用教程](./Windows/7.3.windows.jmeter.md "./Windows/7.3.windows.jmeter.md")  
 
+#### 7.4  ApiFox  
+
+简介: 一款集接口测试、接口文档、压力测试于一体的测试软件，功能强大，是 Postman 的很好替代品，支持云同步。不过必须在有网络的地方使用，不支持查询请求的历史记录。  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/Linux/macOS: [ApiFox 安装使用教程](./Windows/7.4.windows.apifox.md)  
+
 ​    
 
 ### 8 版本管理相关  

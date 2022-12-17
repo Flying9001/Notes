@@ -523,6 +523,16 @@ Windows: [ScreenToGif 安装使用教程](./Windows/14.4.windows.screentogif.md 
 
 macOS: [GIF Brewery by Gfycat](./MacOS/14.5.mac.gifbrewery.md "./MacOS/14.5.mac.gifbrewery.md")  
 
+#### 14.6 PicPick  
+
+简介: 一款在 Windows 平台支持滚动截屏的截屏软件。个人用户免费，商用收费  
+
+支持系统: Windows  
+
+下载与使用教程:   
+
+Windows: [PicPick 安装使用教程](./Windows/14.6.windows.picpick.md)  
+
 ​    
 
 ### 15 文件预览  

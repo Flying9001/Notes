@@ -4,13 +4,25 @@
 
 ### 1 Office 办公软件  
 
+#### 1.1 微软 Office  
+
 简介: 微软 Office 办公软件,包括 Word、Excel、PPT等  
 
 支持平台: Windows/MacOS  
 
 安装与使用教程:  
 
-Windows: [Windows 平台微软 Office 安装与使用教程](./Windows/1.windows.office.md)  
+Windows: [Windows 平台微软 Office 安装与使用教程](./Windows/1.1.windows.office.md)  
+
+#### 1.2 LibreOffice  
+
+简介: LibreOffice 是一款能够兼容微软 Office 的办公软件，使用体验可能稍弱于微软 Office，但是软件开源、免费，而且社区活跃度高，值得一用。  
+
+支持平台: Windows/Linux/macOS  
+
+安装与使用教程:  
+
+Windows/Linux/macOS: [LibreOffice 安装与使用教程](./Windows/1.2windows.libreoffice.md)  
 
 ​    
 

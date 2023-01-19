@@ -65,34 +65,12 @@ v2ray 是比 shadowSocket **更快更安全**的代理工具
 
 #### 6.1 V2ray 服务端配置    
 
-- 安装 `wget` 工具  
+安装教程: [fhs-install-v2ray](https://github.com/v2fly/fhs-install-v2ray)  
+
+- 下载并安装 v2ray 
 
 ```bash
-yum -y install wget
-```
-
-- 安装解压工具 `unzip`  
-
-```bash
-yum install zip unzip
-```
-
-- 下载 v2ray 自动安装脚本  
-
-```bash
-wget https://install.direct/go.sh
-```
-
-- 修改脚本权限  
-
-```bash
-chmod 700 go.sh
-```
-
-- 执行自动安装脚本  
-
-```bash
-bash ./go.sh
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
 ```
 
 脚本执行完成之后,v2ray就已经安装完成,但是**并没有启动服务**  
@@ -113,56 +91,80 @@ systemctl enable v2ray
 systemctl restart v2ray
 ```
 
-V2ray 服务端配置文件路径: `/etc/v2ray/config.json`  
+V2ray 服务端配置文件路径: 
+
+````
+/usr/local/etc/v2ray/config.json
+````
 
 服务配置示例:  
 
+[v2ray-examples](https://github.com/v2fly/v2ray-examples "https://github.com/v2fly/v2ray-examples")    
+
 ```json
 {
- "log" : {
-    "access": "/var/log/v2ray/access.log",
-    "error": "/var/log/v2ray/error.log",
-    "loglevel": "warning"
-  },
-  "inbounds": [{
-    "port": 996,
-    "listen": "127.0.0.1",
-    "protocol": "vmess",
-    "settings": {
-      "clients": [
-        {
-          "id": "aaf45a10-5dc3-4bb3-9258-694e868afe8c",
-          "level": 2,
-          "alterId": 55
-        }
-      ]
+    "log": {
+        "loglevel": "warning"
     },
-    "streamSettings": {
-      "network": "ws",
-      "wsSettings": {
-      "path": "/mmm"
-      }
-    }
-  }],
-  "outbounds": [{
-    "protocol": "freedom",
-    "settings": {}
-  },{
-    "protocol": "blackhole",
-    "settings": {},
-    "tag": "blocked"
-  }],
-  "routing": {
-    "rules": [
-      {
-        "type": "field",
-        "ip": ["geoip:private"],
-        "outboundTag": "blocked"
-      }
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "type": "field",
+                "ip": [
+                    "geoip:private"
+                ],
+                "outboundTag": "block"
+            }
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 1234,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": ""
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "certificates": [
+                        {
+                            "certificateFile": "/path/to/certificate.crt",
+                            "keyFile": "/path/to/key.key"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
     ]
-  }
 }
 ```
+
+日志文件  
+
+```sh
+installed: /var/log/v2ray/access.log
+installed: /var/log/v2ray/error.log
+```
+
+​	
 
 卸载 V2ray  
 
@@ -171,12 +173,7 @@ V2ray 服务端配置文件路径: `/etc/v2ray/config.json`
 systemctl stop v2ray
 systemctl disable v2ray
 
-然后删除以下文件：
-/etc/v2ray/* (配置文件)
-/usr/bin/v2ray/* (程序)
-/var/log/v2ray/* (日志)
-/lib/systemd/system/v2ray.service (systemd 启动项)
-/etc/init.d/v2ray (sysv 启动项)
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove
 ```
 
 
@@ -232,7 +229,10 @@ Android 系统:
 [搬瓦工换IP方法总结：免费换IP / 付费换IP方法](https://www.bandwagonhost.net/1983.html "https://www.bandwagonhost.net/1983.html")    
 
 [2018 最新检查搬瓦工 IP / 端口是否被封的方法](https://www.bandwagonhost.net/1934.html "https://www.bandwagonhost.net/1934.html")  
-    
+
+[IP 端口检测是否被封工具](https://port.ping.pe "https://port.ping.pe")  
+
+​    
 ​    
 ​    
 ​    

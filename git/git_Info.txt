@@ -33,24 +33,24 @@
 d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 2.4版本回退
-​	git reset --hard HEAD^		//会退到上一个版本
-​	git reset --hard HEAD^^		//回退到上上一个版本
-​	git reset --hard HEAD~100	//回退到前100个版本
+	git reset --hard HEAD^		//会退到上一个版本
+	git reset --hard HEAD^^		//回退到上上一个版本
+	git reset --hard HEAD~100	//回退到前100个版本
 2.5撤销回退
-​	git reflog		//查询所有版本(包含已经回退的版本),每个版本前边都是版本的编号
-​	git reset --hard 1234asd 	//恢复到版本号为1234asd的版本(当前版本已经撤销)
+	git reflog		//查询所有版本(包含已经回退的版本),每个版本前边都是版本的编号
+	git reset --hard 1234asd 	//恢复到版本号为1234asd的版本(当前版本已经撤销)
 2.6文件的撤销
-​	git checkout -- test.txt	//撤销没有保存到暂存区的所有操作,已经保存到暂存区的操作将会被保留,即使还没有提交
+	git checkout -- test.txt	//撤销没有保存到暂存区的所有操作,已经保存到暂存区的操作将会被保留,即使还没有提交
 2.7删除文件
-​	rm test.txt 	//删除test.txt文件
-​	git checkout -- test.txt 	//恢复已经删除的test.txt文件(注意2.6/2.7区别)
+	rm test.txt 	//删除test.txt文件
+	git checkout -- test.txt 	//恢复已经删除的test.txt文件(注意2.6/2.7区别)
 3、远程仓库
 3.1管理GitHub仓库
-​	先注册一个GitHub账号
-​	ssh-keygen -t rsa -C "youremail@example.com" //创建SSH Key
-​	//id_rsa 私钥，不要泄露(windows路径: C:\Users\username\.ssh)
-​	//id_rsa.pub 公钥
-​	git remote add origin url	//将本地仓库与远程仓库关联
+	先注册一个GitHub账号
+	ssh-keygen -t ed25519 -C "youremail@example.com" //创建SSH Key
+	//id_ed25519 私钥，不要泄露(windows路径: C:\Users\username\.ssh)
+	//id_ed25519.pub 公钥
+	git remote add origin url	//将本地仓库与远程仓库关联
     git remote rm origin  // 删除远程仓库关联  
 
 3.2推送push

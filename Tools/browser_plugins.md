@@ -236,19 +236,23 @@ Chrome 插件地址: [https://chrome.google.com/webstore/detail/%E6%B2%99%E6%8B%
 
 Github 地址: [https://github.com/crimx/ext-saladict](https://github.com/crimx/ext-saladict "https://github.com/crimx/ext-saladict")  
 
+### 3.18 腾讯翻译
+
+简介: 腾讯出品的翻译插件，不会出现因为网络封锁导致连接不稳定的情况。支持单词翻译、画词翻译以及全页翻译。  
+
+Chrome 插件地址: [https://chrome.google.com/webstore/detail/%E8%85%BE%E8%AE%AF%E7%BF%BB%E8%AF%91/lkjkfecdnfjopaeaibboihfkmhdjmanm](https://chrome.google.com/webstore/detail/%E8%85%BE%E8%AE%AF%E7%BF%BB%E8%AF%91/lkjkfecdnfjopaeaibboihfkmhdjmanm)  
+
 
 
 ## 4 插件脚本  
 
-### 4.1 网页解除限制  
+### 4.1 网页解除限制(改)  
 
 简介: 解除网页的复制限制，可以自由复制页面文字  
 
-脚本地址: [https://greasyfork.org/zh-CN/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4](https://greasyfork.org/zh-CN/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4 "https://greasyfork.org/zh-CN/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4")  
+脚本地址: [https://greasyfork.org/zh-CN/scripts/28497-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4-%E6%94%B9](https://greasyfork.org/zh-CN/scripts/28497-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4-%E6%94%B9)  
 
-
-
-
+Github 地址: [https://github.com/qxinGitHub/Remove-web-limits-](https://github.com/qxinGitHub/Remove-web-limits-)  
 
 
 

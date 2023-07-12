@@ -17,6 +17,14 @@
 
 2.1.4 Win + R --- 输入 `gpedit.msc` 进入策略组，左侧菜单树选择「本地计算机策略」-> 「计算机配置」-> 「管理模板」 -> 「Windows 组件」 -> 右侧窗口选择并双击「Windows 更新」-> 双击「配置自动更新」-> 选择左上角「已禁用」选项，点击右下角「应用」
 
+2.1.5 右键「我的电脑」，选择「管理」，在「计算机管理（本地）」菜单下的「系统工具」中找到「任务计划程序」，依次点击展开「任务计划程序库」>「Microsoft」> 「Windows」，下拉找到「WindowsUpdate」选项，点击，在右侧框中会出现的定时任务，选中后，右键禁用  
+
+2.1.6 借助第三方软件「Windows Update Blocker」  
+
+软件下载地址: [https://www.sordum.org/9470/windows-update-blocker-v1-8/](https://www.sordum.org/9470/windows-update-blocker-v1-8/)  
+
+备用下载地址: [WindowsUpdateBlocker_v1.8.zip](https://mega.nz/file/uWxXHZLB#ZkJXoEeLSAJoIz8qTTBxkM79vfGigzPpidSHllUcKjM)  
+
 #### 2.2 卸载无关应用
 
   6.2.1 Win + R --- 输入 `control`进入「控制面板」  --- 选择「卸载程序」  --- 卸载无关紧要的程序  

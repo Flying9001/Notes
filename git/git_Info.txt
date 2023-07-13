@@ -152,15 +152,31 @@ git checkout fileName
 
 8. git 合并指定提交  
 
-当需要将其他分支上边的某一次提交合并到当前分支时，可以使用以下命令
+当需要将其他分支上边的某一次或多次提交合并到当前分支时，可以使用以下命令
+
+```bash
+git cherry-pick xxx1 xxx2
+```
+
+合并单个提交
 
 ```bash
 git cherry-pick xxx
 ```
 
+合并多次提交
+
+```bash
+git cherry-pick xxx1 xxx2
+```
+
+合并连续的多次提交
+
+```bash
+git cherry-pick xxx1^...xxx2
+```
+
 在团队协作中，会有众多的分支，然而有些提交是未上线的，而新开发的信息在新的分支上，这是可以不必将整个分支合并到主分支，而只合并新分支上的某一次提交即可。  
 
-参考: [Git合并特定commits 到另一个分支](https://blog.csdn.net/ybdesire/article/details/42145597)  
-
-
+参考: [git cherry-pick 教程-阮一峰](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)  
 

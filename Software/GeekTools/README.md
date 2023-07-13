@@ -29,6 +29,16 @@ Windows: [驱动精灵离线版安装使用教程](./Windows/1.1.windows.driverg
 
 Windows/macOS/Linux: [TeamViewer安装使用教程](./Windows/2.1.windows.teamviewer.md "./Windows/2.1.windows.teamviewer.md")  
 
+#### 2.2 ToDesk
+
+简介: 国内使用体验优秀的远程控制软件，免费版已经够用  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [TeamViewer安装使用教程](./Windows/2.2.windows.todesk.md "./Windows/2.2.windows.todesk.md")  
+
 ​    
 
 ### 3 代理软件

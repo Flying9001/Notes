@@ -1,5 +1,8 @@
-1、配置Git
-1.1创建与删除用户
+## Git 入门教程
+
+### 1 配置Git
+#### 1.1创建与删除用户
+
 ​	创建全局用户：
 ​	git config --global user.name "yourname"
 ​	git config --global user.email "example@email.com"
@@ -9,57 +12,82 @@
 ​	创建本地用户(一般用于多用户提交/不同的用户向不同的库提交):
 ​	git config user.name "yourname"
 ​	git config user.email "example@email.com"
-1.2创建版本库
+#### 1.2创建版本库
+
 ​	cd e: /*表明将要在e盘创建*/
 ​	cd git	/*打开E盘下的文件夹git*/
 ​	mkdir testgit	/*在git下边创建文件夹testgit*/
 ​	pwd //显示当前目录
-1.3初始化git(初始化之后这个目录将会变成git可以管理仓库)
-​	git init //生成的.git(系统默认隐藏)是Git用来追踪还礼版本的，勿动
-2、文件管理
-2.1添加文件
+
+#### 1.3初始化git
+
+(初始化之后这个目录将会变成git可以管理仓库)
+
+git init //生成的.git(系统默认隐藏)是Git用来追踪还礼版本的，勿动
+### 2 文件管理
+
+#### 2.1添加文件
+
 ​	前提：在版本库testgit目录下创建一个记事本test.txt文件,内容为11111
 ​	git add test.txt	//将test.txt文件添加到缓存区
 ​	git commit -m "添加test.txt文件"	//提交操作，-m:对操作进行注释说明
-2.2查看文件
+
+#### 2.2查看文件
+
 ​	git status //检查文件是否提交
 ​	cat test.txt	//查看test.txt文件中的内容
 ​	git diff test.txt	//查看test.txt文件中修改的内容(没有保存到暂存区的操作)
-2.3查看日志
+
+#### 2.3查看日志
+
 ​	git log 	//每一次操作以一个结果显示
 ​	git log --pretty=oneline 	//所用操作在一个结果显示,每次操作占一行
 ​	设置日志格式与别名: 
 ​	git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%
 d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
-2.4版本回退
-	git reset --hard HEAD^		//会退到上一个版本
-	git reset --hard HEAD^^		//回退到上上一个版本
-	git reset --hard HEAD~100	//回退到前100个版本
-2.5撤销回退
-	git reflog		//查询所有版本(包含已经回退的版本),每个版本前边都是版本的编号
-	git reset --hard 1234asd 	//恢复到版本号为1234asd的版本(当前版本已经撤销)
-2.6文件的撤销
-	git checkout -- test.txt	//撤销没有保存到暂存区的所有操作,已经保存到暂存区的操作将会被保留,即使还没有提交
-2.7删除文件
-	rm test.txt 	//删除test.txt文件
-	git checkout -- test.txt 	//恢复已经删除的test.txt文件(注意2.6/2.7区别)
-3、远程仓库
-3.1管理GitHub仓库
-	先注册一个GitHub账号
-	ssh-keygen -t ed25519 -C "youremail@example.com" //创建SSH Key
-	//id_ed25519 私钥，不要泄露(windows路径: C:\Users\username\.ssh)
-	//id_ed25519.pub 公钥
-	git remote add origin url	//将本地仓库与远程仓库关联
-    git remote rm origin  // 删除远程仓库关联  
+#### 2.4版本回退
 
-3.2推送push
+​	git reset --hard HEAD^		//会退到上一个版本
+​	git reset --hard HEAD^^		//回退到上上一个版本
+​	git reset --hard HEAD~100	//回退到前100个版本
+
+#### 2.5撤销回退
+
+​	git reflog		//查询所有版本(包含已经回退的版本),每个版本前边都是版本的编号
+​	git reset --hard 1234asd 	//恢复到版本号为1234asd的版本(当前版本已经撤销)
+
+#### 2.6文件的撤销
+
+​	git checkout -- test.txt	//撤销没有保存到暂存区的所有操作,已经保存到暂存区的操作将会被保留,即使还没有提交
+#### 2.7删除文件
+
+​	rm test.txt 	//删除test.txt文件
+​	git checkout -- test.txt 	//恢复已经删除的test.txt文件(注意2.6/2.7区别)
+
+### 3 远程仓库
+
+#### 3.1管理GitHub仓库
+
+​	先注册一个GitHub账号
+​	ssh-keygen -t ed25519 -C "youremail@example.com" //创建SSH Key
+​	//id_ed25519 私钥，不要泄露(windows路径: C:\Users\username\.ssh)
+​	//id_ed25519.pub 公钥
+​	git remote add origin url	//将本地仓库与远程仓库关联
+​    git remote rm origin  // 删除远程仓库关联  
+
+#### 3.2推送push
+
 ​	git push -u origin master	//将本地仓库分支master推送到远程仓库(第一次推送使用)
 ​	git push origin master 	//将本地仓库分支master推送到远程仓库(创建之后使用,如果远程仓库没有该分支,则创建新的)
-3.3克隆远程库
-​	git clone url	//将远程库克隆到本地
- git clone -b branch-name url  // 将远程库克隆到本地并指定分支  
-3.4创建与合并分支
+
+#### 3.3克隆远程库
+
+git clone url	//将远程库克隆到本地
+git clone -b branch-name url  // 将远程库克隆到本地并指定分支  
+
+#### 3.4创建与合并分支
+
 ​	git checkout dev 	//查看dev分支
 ​	git checkout -b dev	//创建并切换到dev分支
 ​	git checkout -b origin/dev 	//在远程库上创建dev分支
@@ -75,7 +103,8 @@ d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relat
 ​	git merge --no-ff dev 	//将dev合并到当前分支，并且分支dev删除之后，分支上边修改的信息
 ​	//不变(这一种情况需要重新添加代码)
 
-3.5分支策略
+#### 3.5分支策略
+
 ​	git stash //隐藏当前分支
 ​	git stash list 	//查看所有隐藏分支
 ​	git stash apply		//恢复隐藏
@@ -85,19 +114,25 @@ d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relat
 	则 dev 分支上边没有提交的代码也会被带到新的分支 master, 不论原来的 dev 分支上边的修改代码是否添加到缓存区
 	(git add file-changed),解决办法,在切换分支之前先执行 git stash 命令,切换回来之后再执行 git stash apply 命令
 
-3.6查看远程库
+#### 3.6查看远程库
+
 ​	git remote 	//查看远程库的信息
 ​	git remote -v 	//查看远程库的详细信息
-3.7多人协作
+
+#### 3.7多人协作
+
 ​	首先，可以试图用git push origin branch-name推送自己的修改.
 ​	如果推送失败，则因为远程分支比你的本地更新早，需要先用git pull试图合并。
 ​	如果合并有冲突，则需要解决冲突，并在本地提交。再用git push origin branch-name推送
-3.8 将本地分支与远程分支关联
+
+#### 3.8 将本地分支与远程分支关联
+
 ​    git pull origin branch-name // 将本地当前分支与远程分支匹配
-3.9 取消本地仓库与远程仓库的关联
+#### 3.9 取消本地仓库与远程仓库的关联
+
 ​    git remote remove origin 
 
-4、Git常用指令
+### 4 Git常用指令
 ​	mkdir test	//创建一个test目录
 ​	pwd 	//显示当前的路径
 ​	git init 	//把单签的目录变成一个可以管理的git仓库(会生成隐藏.git文件)
@@ -132,14 +167,15 @@ d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relat
 ​	git remote 	//查看远程库的信息
 ​	git remote -v 	//查看远程库的详细信息
 ​	git pull 	//从远程库中将文件下载下来	
-5.删除本地仓库
+
+### 5 删除本地仓库
 ​    find . -name ".git" | xargs rm -Rf
 
-6.多设备使用同一个 ssh key
-    备份旧设备上的 ssh key(Windows目录:c/user/.ssh;Linux/Unix目录 ~/.ssh)
-    在新设备上生成新的 ssh key --- 将旧设备的key值覆盖新设备的 key值    
+### 6 多设备使用同一个 ssh key
+​    备份旧设备上的 ssh key(Windows目录:c/user/.ssh;Linux/Unix目录 ~/.ssh)
+​    在新设备上生成新的 ssh key --- 将旧设备的key值覆盖新设备的 key值    
 
-7.git 恢复被修改文件  
+### 7 git 恢复被修改文件  
 
 ```
 // 如果文件未被 git add
@@ -150,7 +186,9 @@ git reset HEAD fileName
 git checkout fileName
 ```
 
-8. git 合并指定提交  
+
+
+### 8 git 合并指定提交  
 
 当需要将其他分支上边的某一次或多次提交合并到当前分支时，可以使用以下命令
 

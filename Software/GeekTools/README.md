@@ -83,6 +83,16 @@ Windows/macOS: [Clash 安装使用教程](./MacOS/3.3.mac.clashx.md "./MacOS/3.3
 
 Windows/macOS/Linux: [Xray 安装使用教程](./Windows/3.4.windows.xray.md "./Windows/3.4.windows.xray.md")  
 
+#### 3.5 Subconverter
+
+简介: Subconverter 是一款将普通机场订阅(ss/v2ray) 转换为 Clash 配置文件的工具，开源，免费，可安装在本地，也可以部署在服务器上  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+ Windows/macOS/Linux: [Subconverter 安装使用教程](./Linux/3.5.linux.subconverter.md)  
+
 ​        
 
 ### 4 音视频播放器

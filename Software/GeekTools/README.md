@@ -809,7 +809,7 @@ Windows/macOS/Linux: [PicGo 安装使用教程](./Windows/23.1.windows.picgo.md 
 
 #### 24.1 NetBScanner
 
-简介: 局域网 ip 扫描工具，小巧、免费、免安装  
+简介: 局域网 ip 扫描工具，小巧、免费、免安装。只支持扫描在线的PC设备，扫描结果不够准确  
 
 支持平台: Windows  
 
@@ -817,7 +817,17 @@ Windows/macOS/Linux: [PicGo 安装使用教程](./Windows/23.1.windows.picgo.md 
 
 Windows: [NetBScanner 安装使用教程](./Windows/24.1.windows.netbscanner.md "./Windows/24.1.windows.netbscanner.md")  
 
-​    
+#### 24.1 Advanced IP Scaner
+
+简介: 专业局域网 ip 扫描工具，能够扫描局域网内所有类型设备，包括但不限于电脑、手机、智能联网设备等。不在线的设备也能够扫描出来，同时还能够扫描出设备是否对外提供http服务。功能非常强大。  
+
+支持平台: Windows  
+
+下载与使用教程:  
+
+Windows: [Advanced IP Scaner 安装使用教程](./Windows/24.2.windows.advanced_ip_scaner.md "./Windows/24.2.windows.advanced_ip_scaner.md")  
+
+
 
 ### X 其他神器
 

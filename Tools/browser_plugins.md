@@ -89,6 +89,8 @@ FireFox 插件地址:
 
 ### 2.10 下载管理器  
 
+不再推荐使用，2021 年已经停止更新  
+
 简介: Chrome 浏览器下载管理插件，简洁、好用、开源、免费、轻巧(Win10 出现下载时CPU占用过高问题)  
 
 Chrome 插件地址:  
@@ -241,6 +243,12 @@ Github 地址: [https://github.com/crimx/ext-saladict](https://github.com/crimx/
 简介: 腾讯出品的翻译插件，不会出现因为网络封锁导致连接不稳定的情况。支持单词翻译、画词翻译以及全页翻译。  
 
 Chrome 插件地址: [https://chrome.google.com/webstore/detail/%E8%85%BE%E8%AE%AF%E7%BF%BB%E8%AF%91/lkjkfecdnfjopaeaibboihfkmhdjmanm](https://chrome.google.com/webstore/detail/%E8%85%BE%E8%AE%AF%E7%BF%BB%E8%AF%91/lkjkfecdnfjopaeaibboihfkmhdjmanm)  
+
+### 3.19 ChatGPT for Google
+
+简介: ChatGPT 针对搜索的浏览器插件，可以在通过搜索引擎搜索的时候同时显示 ChatGPT 的回答结果。目前支持市面上流行的搜索引擎: 谷歌，百度，bing等  
+
+Chrome 插件地址: [https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf](https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf)  
 
 
 

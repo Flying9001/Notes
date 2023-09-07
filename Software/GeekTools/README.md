@@ -135,7 +135,9 @@ macOS: [iina安装使用教程](./MacOS/4.3.mac.iina.md "./MacOS/4.3.mac.iina.md
 
 Windows/macOS: [网易云音乐安装使用教程](./Windows/4.4.windows.yunmusic.md "./Windows/4.4.windows.yunmusic.md")  
 
-#### 4.5 SodaPlayer
+#### ~~4.5 SodaPlayer~~
+
+**软件已停止维护**  
 
 简介: 磁力链接,BT 播放器  
 
@@ -275,15 +277,15 @@ maxOS: [Folx安装使用教程](./MacOS/7.3.mac.folx.md "./MacOS/7.3.mac.folx.md
 
 Linux: [Aria2安装使用教程](./Linux/7.4.linux.aria2.md "./Linux/7.4.linux.aria2.md")  
 
-#### 7.5 proxyee-down
+#### 7.5 Free Download Manager(FDM)
 
-简介: 免费、开源的高速下载工具,支持百度云插件  
+简介: 同样是老牌的下载软件，但是比 IDM 支持的系统更多，速度不必 IDM 差。能够完美模拟 HTTP 请求，可以用来下载通过插件获取到的 HTTP 连接，其他下载器下载资源会被屏蔽，而 FDM 不会。  
 
 支持平台: Windows/macOS/Linux  
 
 下载与使用教程:  
 
-Windows/macOS/Linux: [proxyee-down 安装使用教程](./Windows/7.5.windows.proxyeedown.md "./Windows/7.5.windows.proxyeedown.md")  
+Windows/macOS/Linux: [Free Download Manager 安装使用教程](./Windows/7.5.windows.fdm.md "./Windows/7.5.windows.fdm.md")  
 
 #### 7.6 Motrix
 
@@ -295,33 +297,7 @@ Windows/macOS/Linux: [proxyee-down 安装使用教程](./Windows/7.5.windows.pro
 
 Windows/macOS/Linux: [Motrix 安装使用教程](./Windows/7.6.windows.motrix.md "./Windows/7.6.windows.motrix.md")  
 
-#### 7.7 MagentW
 
-简介: 免费、开源的 BT 种子搜索工具,支持的搜索源丰富  
-
-支持平台: Windows/macOS/Linux  
-
-下载与使用教程:  
-
-Windows/macOS/Linux: [MagentW 安装使用教程](./Windows/7.7.windows.magentw.md "./Windows/7.7.windows.magentw.md")  
-
-#### 7.8 黑科下载器
-
-简介: 一款极速下载工具  
-
-支持平台: Windows  
-
-下载与使用教程:  
-
-Windows: [黑科下载器 安装使用教程](./Windows/7.8.windows.heike.md "./Windows/7.8.windows.heike.md")  
-
-#### 7.9 闪电下载
-
-简介: 一款极速下载软件，除了基础的 http(s) 资源以外，还支持磁力、种子、电驴、百度网盘等资源，能够下载被限制的资源，老司机专用。免费用户每天只能下载 5 个资源。移动端也支持。  
-
-支持平台: Windows/macOS  
-
-Windows/macOS: [闪电下载 安装使用教程](./Windows/7.9.windows.shandian_download.md "./Windows/7.9.windows.shandian_download.md")  
 
 ​    
 

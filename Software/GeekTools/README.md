@@ -279,7 +279,7 @@ Linux: [Aria2安装使用教程](./Linux/7.4.linux.aria2.md "./Linux/7.4.linux.a
 
 #### 7.5 Free Download Manager(FDM)
 
-简介: 同样是老牌的下载软件，但是比 IDM 支持的系统更多，速度不必 IDM 差。能够完美模拟 HTTP 请求，可以用来下载通过插件获取到的 HTTP 连接，其他下载器下载资源会被屏蔽，而 FDM 不会。  
+简介: 同样是老牌的下载软件，但是比 IDM 支持的系统更多，速度不比 IDM 差。能够完美模拟 HTTP 请求，可以用来下载通过插件获取到的 HTTP 连接，其他下载器下载资源会被屏蔽，而 FDM 不会。  
 
 支持平台: Windows/macOS/Linux  
 
@@ -526,6 +526,16 @@ macOS: [GIF Brewery by Gfycat](./MacOS/14.5.mac.gifbrewery.md "./MacOS/14.5.mac.
 下载与使用教程:   
 
 Windows: [PicPick 安装使用教程](./Windows/14.6.windows.picpick.md)  
+
+#### 14.7 VeryCapture
+
+简介: 一款全能的截图软件，除了基本的截图外，还支持长截图、任意截图、延时截图、gif 录屏、录屏等功能，软件完全免费，非常良心，值得推荐。  
+
+支持系统: Windows/macOS  
+
+下载与使用教程:  
+
+Windows: [VeryCapture 安装使用教程](./Windows/14.7.windows.verycapture.md)  
 
 ​    
 

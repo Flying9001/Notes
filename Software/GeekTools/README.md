@@ -231,6 +231,18 @@ Windows: [WMware Workstation Pro虚拟机安装使用教程](./Windows/6.1.windo
 
 macOS: [WMware Fusion Pro 虚拟机安装使用教程](./MacOS/6.1.mac.vmware.md "./MacOS/6.1.mac.vmware.md")  
 
+
+
+#### 6.2 VirtualBox  
+
+简介: VirtualBox 是 Oracle 旗下的虚拟机软件，免费，功能虽然不如 VMware 强大，但是只作为虚拟机而言，完全够用  
+
+支持平台: Windows/macOS/Linux  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [WirtualBox 安装使用教程](./Windows/6.2.windows.virtualbox.md)  
+
 ​    
 
 ### 7 下载工具

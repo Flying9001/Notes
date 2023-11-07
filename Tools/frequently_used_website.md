@@ -66,85 +66,53 @@
 
 网址: [http://sc.chinaz.com/](http://sc.chinaz.com/)  
 
-### 1.9 UEditer  
+### 1.9 内网穿透
 
-简介: **百度** 开发的在线富文本编辑工具,可嵌入 `web` 项目  
+#### 1.9.1 NATAPP  
 
-网址: [http://ueditor.baidu.com/website/index.html](http://ueditor.baidu.com/website/index.html)  
-
-### 1.10 HTML 在线颜色选择器  
-
-简介: HTML 在线颜色选择器  
-
-地址: [https://htmlcolorcodes.com/zh/](https://htmlcolorcodes.com/zh/)  
-
-### 1.11 NATAPP  
-
-简介: 内网穿透,免费域名  
+简介: 内网穿透,免费域名（域名会动态更新），适合短暂调试  
 
 地址: [https://natapp.cn/](https://natapp.cn/)  
 
-### 1.12 菜鸟教程  
+#### 1.9.2 路由侠
+
+简介: 提供免费内网穿透，域名为永久固定域名  
+
+地址: [https://www.luyouxia.com](https://www.luyouxia.com "https://www.luyouxia.com")  
+
+### 1.10 菜鸟教程  
 
 简介: 综合性编程学习网站  
 
 网址: [http://www.runoob.com/](http://www.runoob.com/)  
 
-### 1.13 力谱云-帮助中心  
-
-简介: 网站包含一些第三方应用集成等教程  
-
-网址: [https://www.leapcloud.cn/website/docs/doc_config/](https://www.leapcloud.cn/website/docs/doc_config/)  
-
-### 1.14 小程序开发教学视频  
-
-简介: 微信小程序开发教学视频,入门到实战教程(需要**科学上网**)  
-
-网址: [https://www.youtube.com/playlist?list=PLXbU-2B80FvA5bNILAS8-zY3_KkE-PVn0](https://www.youtube.com/playlist?list=PLXbU-2B80FvA5bNILAS8-zY3_KkE-PVn0)  
-
-### 1.15 聚合数据  
+### 1.11 聚合数据  
 
 简介: 聚合数据提供各种 API 查询接口,覆盖 金融、日常生活、车辆、短信、位置等各种应用场景,系统稳定，价格实惠  
 
 网址: [https://www.juhe.cn/](https://www.juhe.cn/)  
 
-### 1.16 快递鸟  
-
-简介: 快递查询 API  接口,可查询市面绝大多数快递物流信息,支持快递下单操作  
-
-网址: [https://www.kdniao.com/](https://www.kdniao.com/)  
-
-### 1.17 v2ray  
-
-简介: 代理工具,支持全平台,比 Shadowrocket 性能好,安全性高，但配置复杂  
-
-网址: [https://www.v2ray.com/](https://www.v2ray.com/ "https://www.v2ray.com/")  
-
-### 1.18 云片  
-
-简介: 短信接口提供商,支持国内和国外短信(**所发短信必须在管理后台添加模板，有SDK**)  
-
-网址: [https://www.yunpian.com/](https://www.yunpian.com/ "https://www.yunpian.com/")  
-
-### 1.19 亿美  
-
-简介: 短信接口提供商,支持国内和国外短信(**所发短信不需要提前添加模板,无SDK**)  
-
-网址: [http://www.emay.cn/](http://www.emay.cn/ "http://www.emay.cn/")  
-
-### 1.20 Gitee  
+### 1.12 Gitee  
 
 简介: 中国版的 Github,代码托管中心，支持将 GitHub 仓库一键导入  
 
 网址: [https://gitee.com](https://gitee.com "https://gitee.com")  
 
-### 1.21 域名购买  
+### 1.13 域名购买  
 
 - Namesilo  
 
   简介: 国外服务商，价格优惠，无需备案，支持微信/支付宝支付  
 
   网址: [https://www.namesilo.com](https://www.namesilo.com)  
+
+### 1.14 代理网站
+
+- JustMysocks
+
+  简介: 搬瓦工(BandwagonHost) 官方出品的代理网站，高速、稳定，有点小贵  
+
+  网址: [https://justmysocks.net](https://justmysocks.net "https://justmysocks.net")  
 
   
 
@@ -186,28 +154,11 @@
 
 地址: [https://www.applex.net/pages/macos/](https://www.applex.net/pages/macos/ "https://www.applex.net/pages/macos/")  
 
-### 2.6 龙喵网  
-
-简介: 资源分类网站,日常工作、生活所需要用到的,这里都有  
-
-地址: [http://ailongmiao.com/](http://ailongmiao.com/ "http://ailongmiao.com/")  
-
-### 2.7 免费接码  
-
-简介: 提供免费手机号接收验证码。当一些网站需要手机注册才能使用，但是不想使用自己的手机号注册时，可以使用这里提供的手机号接收验证码。**这里的验证码是公开的，所以不要在该手机号上操作重要信息**  
-
-地址: [<https://www.becmd.com/>](<https://www.becmd.com/> "<https://www.becmd.com/>")  
-
 ### 2.8 ProtonMail  
 
 简介: 加密邮箱，无需任何信息即可注册  
 
-地址: [<https://protonmail.com/>](<https://protonmail.com/> "<https://protonmail.com/>")  
-
-### 2.9 实用在线工具推荐-by 极客之选  
-简介: 使用在线工具集合，包括格式转换、文件分享、网站视频图片下载、表情包制作、网址短连接、数码产品对比等  
-
-地址: [https://shimo.im/docs/tD83FySh9d8sk6Ma/read](https://shimo.im/docs/tD83FySh9d8sk6Ma/read "https://shimo.im/docs/tD83FySh9d8sk6Ma/read")  
+地址: [https://protonmail.com](https://protonmail.com "https://protonmail.com")  
 
 ### 2.10 ProcessOn  
 
@@ -215,9 +166,7 @@
 
 地址: [https://processon.com](https://processon.com "https://processon.com")  
 
-### 2.11 软件下载  
 
-[https://www.waitsun.com](https://www.waitsun.com "https://www.waitsun.com")  
 
 
 
@@ -253,65 +202,41 @@
 
 youtube: [https://www.youtube.com/channel/UCKFB_rVEFEF3l-onQGvGx1A](https://www.youtube.com/channel/UCKFB_rVEFEF3l-onQGvGx1A)  
 
-### 3.5 老D博客  
-
-简介: 关注Google服务,分享互联网精神  
-
-网址: [https://laod.cn/](https://laod.cn/)  
-
 
 
 
 
 ## 4 视频音影  
 
-### 4.1 VIP 视频解析
+### 4.1 NBA & 视频录像
 
-简介: 国内主流网站的 VIP 视频解析  
-
-网址: [http://zhangwenbing.com/tools/video/?](http://zhangwenbing.com/tools/video/?)  
-
-### 4.2 NBA & 视频录像
-
-#### 4.2.1 阳光美文网
-
-简介: 综合性收集网站，包括 NBA、电影、城市排名等等  
-
-网址: [http://www.fengup.com/](http://www.fengup.com/)  
-
-#### 4.2.2 直播吧  
+#### 4.1.1 直播吧  
 
 简介: 国内外篮球、足球直播录像  
 
 网址: [https://www.zhibo8.cc/nba/luxiang.htm](https://www.zhibo8.cc/nba/luxiang.htm)  
 
-#### 4.2.3 CCTV5直播  
+#### 4.1.2 CCTV5直播  
 
 简介: 非 CCTV5 官网,主要记录各种体育赛事直播视频  
 
 网址: [http://www.cctv5bo.com/](http://www.cctv5bo.com/)  
 
-### 4.3  电影  
+### 4.2  电影  
 
-#### 4.3.1 唯电影  
+#### 4.2.1 唯电影  
 
 简介: 国内外最新电影抢先看  
 
 网址: [https://www.vdianying.cc/](https://www.vdianying.cc/)  
 
-#### 4.3.2 我的电影网  
+#### 4.2.2 我的电影网  
 
 简介: 提供国内外电影在线观看功能  
 
 网址: [http://www.wodedy.net/](http://www.wodedy.net/ "http://www.wodedy.net/")  
 
-#### 4.3.3 阿哥美剧  
-
-简介: 最新美剧在线观看  
-
-网址: [https://agmeiju.com/](https://agmeiju.com/ "https://agmeiju.com/")  
-
-#### 4.3.4 6V 电影  
+#### 4.2.3 6V 电影  
 
 简介: 提供国内外电影在线观看与下载功能  
 

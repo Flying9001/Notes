@@ -390,6 +390,18 @@ Windows/macOS/Linux: [RocketMQ 安装使用教程](./Linux/12.1.linux.rocketmq.m
 
 Windows/macOS/Linux: [Kafka 安装使用教程](./Linux/12.2.linux.kafka.md "./Linux/12.2.linux.kafka.md")  
 
+#### 12.3 RabbitMQ  
+
+简介: 分布式消息队列，速度最快的消息队列。  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [RabbitMQ 安装使用教程](./Linux/12.3.linux.rabbitmq.md "./Linux/12.3.linux.rabbitmq.md")  
+
+
+
 
 
 ### 13 MQTT 客户端  

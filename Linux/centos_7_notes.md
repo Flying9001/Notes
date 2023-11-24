@@ -354,6 +354,12 @@ vm.swappiness=70
 sudo sysctl -p
 ```
 
+查看 swap 系统参数  
+
+```bash
+sudo sysctl vm.swappiness
+```
+
 
 
 

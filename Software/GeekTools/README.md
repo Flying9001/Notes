@@ -825,6 +825,18 @@ Windows: [NetBScanner 安装使用教程](./Windows/24.1.windows.netbscanner.md 
 
 Windows: [Advanced IP Scaner 安装使用教程](./Windows/24.2.windows.advanced_ip_scaner.md "./Windows/24.2.windows.advanced_ip_scaner.md")  
 
+### 25 音视频操作工具
+
+#### 25.1 MediaInfo
+
+简介: 可以查看媒体文件的详细信息，包括真实的文件格式、帧率、编码格式等等，非常专业。软件免费  
+
+支持平台: Windows/Linux/macOS  
+
+下载与使用教程:  
+
+Windows/macOS/Linux: [MediaInfo 安装使用教程](./Windows/25.1.windows.mediainfo.md "./Windows/25.1.windows.mediainfo.md")  
+
 
 
 ### X 其他神器

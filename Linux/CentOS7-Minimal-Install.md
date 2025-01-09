@@ -8,6 +8,6 @@
     /          LVM                  5G+
     /home      LVM                  2G+
     /swap      LVM                  512M-1G
-      
+
 </code></pre>     
 
